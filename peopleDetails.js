@@ -1,0 +1,412 @@
+/*
+jsonData- name every object with student's name-this name is passed as link from people.html page
+
+description of object-
+name:Name of student
+info: students description
+imgsrc:img address
+
+*/
+jsonData=`{
+    "elaheh-khorasani":{ 
+        "name":"Elaheh Khorasani",
+        "info":"Elaheh joined the research team in June 2022 as a Postdoctoral Fellow under the supervision of Dr. Julio Fiore Jr. and me (co-supervisor).  She will be working in partnership with McGill University on developing a patient-reported outcome measure (PROM) to assess recovery after abdominal surgery based on Item analysis using Rasch measurement theory. She holds a Ph.D. in Pharmacoeconomics and an M.Sc. in Healthcare Management. She is interested in outcomes research, health economic evaluations, digital health, systematic reviews, and the analysis of large databases.",
+        "imgsrc":"images/studentImages/Elaheh2.jpg"
+    },
+    "shri-Harini":{ 
+        "name":"Shri Harini Ramesh",
+        "info":"Shri joined the research team in September 2023 as a PhD student in biomedical engineering. She will focus on developing an interactive data visualization system for virtual cardiac rehabilitation for older adults. Shri holds a master's degree in applied science in biomedical engineering from the University of Ottawa and has a background in Artificial Intelligence and computer vision. Her research interests include health data visualization and human-computer interaction.",
+        "imgsrc":"images/studentImages/Shri2.jpg"
+    },
+    "mahsa-sinaei":{ 
+        "name":"Mahsa Sinaei",
+        "info":"Mahsa joined the team in Sep 2022 as a PhD student. She is working on a medical data visualization project. She has a background in machine learning and has worked as a UI/UX designer.  Her research interests are Human-computer interaction, Health data visualization, and Physical data visualization. She is interested in conducting research on designing technologies for older adults and developing these technologies to meet the needs of older adults when caring for their health. She was selected as the recipient of the Tom Skinner Award in Computer and System Engineering on July 05, 2022.",
+        "imgsrc":"images/studentImages/Mahsa3.png"
+    },
+    "connor-haberl":{ 
+        "name":"Connor Haberl",
+        "info":"Connor joined the research team in September 2021 as a graduate research assistant. He successfully completed his MASc in Biomedical Engineering in Aug 2023 and is now continuing his research as a PhD student. He works in partnership with the University of Ottawa Heart Institute developing multi-modal imaging software to support the therapy planning of non-invasive cardiac radioablation. Connor has an undergraduate degree in Engineering Physics from UBC and a background in transcatheter heart valve design. He enjoys working at the interface between new technologies and their application in the healthcare industry, where he must speak the language of both clinicians and engineers.",
+        "imgsrc":"images/studentImages/Connor.jpg",
+        "degrees": [
+            "MASc, Biomedical Engineering (Systems & Computer Engineering), Carleton University (2023)",
+            "BASc, Engineering Physics (Mechanical), University of British Columbia (2016)"
+        ],
+        "connectWithMe": {
+            "Email": "mailto:connorhaberl@cmail.carleton.ca",
+            "LinkedIn": "https://www.linkedin.com/in/connor-haberl-5baa325a/",
+            "GitHub": "https://github.com/connorhaberl",
+            "ORCID": "https://orcid.org/my-orcid?orcid=0009-0001-6222-4750",
+            "Google Scholar": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=QobUTtwAAAAJ"
+        },
+        "pubName":"C. Haberl",
+        "journal_publications":[
+            {
+                "title": "Role of Nuclear Imaging in Cardiac Stereotactic Body Radiotherapy for Ablation of Ventricular Tachycardia",
+                "authors": "C. Haberl, A.M. Crean, J.G.E. Zelt, C. Redpath, R.A. deKemp",
+                "journal": "Seminars in Nuclear Medicine",
+                "volume": "54:3",
+                "month": "April",
+                "year" : "2024",
+                "doi": "https://doi.org/10.1053/j.semnuclmed.2024.03.002"
+            }
+            ],
+        "conf_publications":[
+            {
+                "title": "A 4D Visualization Tool for Treatment Planning of Non-Invasive Radioablation in Patients with Ventricular Tachycardia",
+                "authors": "C. Haberl, A.M. Crean, K. Lekx-Toniolo, E. Ali, P.B. Nery, G.M. Nair, G. Cook, F. Rajabiyazdi, C. Redpath, R. deKemp",
+                "journal": "SPIE Medical Imaging: Image-Guided Procedures, Robotic Interventions, and Modeling",
+                "volume": "12466",
+                "month": "April",
+                "year" : "2023",
+                "doi": "https://doi.org/10.1117/12.2654482"
+            },
+            {
+                "title": "PO-06-070 Recurrent Ventricular Tachycardia Post Cardiac Radioablation: Insights From Repeat VT Ablation Post RA",
+                "authors": "C.J. Redpath, G. Almidani, A. Crean, P.B. Nery, G.M. Nair, M. Golian, S.P. Hansom, C. Haberl, R. deKemp, G. Cook",
+                "journal": "Heart Rhythm",
+                "volume": "21:5",
+                "month": "May",
+                "year" : "2024",
+                "doi": "https://doi.org/10.1117/12.2654482"
+            }
+        ],
+        "extended_abstracts":[
+
+        ],
+        "external_awards":[
+            "NSERC PGSD, Jan 2024",
+            "Top Poster Abstract, Canada Heart Rhythm Society AGM 2023"
+        ],
+        "internal_awards":[
+            "Tom Skinner Award in Systems & Computer Engineering, Jan 2024",
+            "Innovation Award, Ottawa Cardiovascular Research Day, May 2023",
+            "Allan Buchanan Scholarship, May 2022"
+        ]
+    },
+    "beck-langstone":{ 
+        "name":"Beck Langstone",
+        "info":"Beck joined the research team in September 2021 as a graduate research student. She will be working on a medical data visualization project. Beck has a background in Linguistics, and has worked in development in private and public sectors. Beck is starting her first year in Human-Computer Interaction, and is keenly interested in robotics, AI, and design.",
+        "imgsrc":"images/studentImages/Beck.jpg"
+    },
+    "alicia-ouskine":{ 
+        "name":"Alicia Ouskine",
+        "info":"Alicia joined the research team in September 2021 as a graduate research assistant. She will be working on a data visualization project within medical care. Alicia has a background in Cognitive Science specializing in the biological foundation of behaviour and has experience in mental health research. She is starting her first year in Human-Computer Interaction and is interested in UX/UI design, mental health, rehabilitation, and artificial intelligence.",
+        "imgsrc":"images/studentImages/Alicia.jpg"
+    },
+    "mariana-perez-rodriguez":{ 
+        "name":"Mariana Perez Rodriguez",
+        "info":"Mariana is an international student with a background in graphic design. She is currently enrolled in the Master of Design program at SID. Her research interests are UX/UI design, data visualization and human-computer interaction. She is working as a Research Assistant on a User Experience and User Interface design project for interactive tabletops, with the objective of improving doctor-patient communication in health care delivery.",
+        "imgsrc":"images/studentImages/Mariana.jpg"
+    },
+    "sam-serdah":{ 
+        "name":"Sam Serdah",
+        "info":"Sam joined the research team in September 2022 as a graduate student in the Master of Applied Science with interest in Data Science and Analytics. He will be working on a data visualization project with the focus on integration to the healthcare industry. Sam has a background in applied health science and health informatics research, which he acquired as an undergraduate at the University of Waterloo. He is passionate about applying technological advancement into the healthcare system to facilitate the patient’s experience.",
+        "imgsrc":"images/studentImages/Sam.jpeg"
+    },
+    "darwin-jull":{ 
+        "name":"Darwin Jull",
+        "info":"Darwin is an undergraduate engineering student in his fourth year of Biomedical and Electrical Engineering. He has joined the team as an I-CUREUS student for the Fall 2023 semester to aid in the analysis of barriers to virtual cardiac rehabilitation. Outside of the lab, Darwin works as a lead on the CU InSpace design team to design and manufacture rockets to compete at international competitions in the US and Canada. He is passionate about applying knowledge to create person-centered solutions.",
+        "imgsrc":"images/studentImages/Darwin1.jpeg"
+    },
+    "ali-shajari":{ 
+        "name":"Ali Shajari",
+        "info":"Ali is a first-year undergraduate student majoring in arts. Currently, he is contributing to the team as a SaPP student for the Fall 2023 semester, focusing on creating educational materials for SYSC 4906, Intro to Data Science & Data Visualization. Outside the lab, Ali is a Research Assistant for the Morrisseau Project, where he is developing automation scripts for their extensive database. Additionally, he is involved in the Carleton Internet Security Lab (CISL), where his working on IoT longevity, particularly in the realm of security. Ali is dedicated to contributing to meaningful projects that align with his academic and research interests.",
+        "imgsrc":"images/studentImages/Ali.jpg"
+    },
+    "alaa-alsatari":{ 
+        "name":"Alaa Alsatari",
+        "info":"Alaa alsatari is a fourth year Neuroscience and Mental Health undergraduate student at Carleton University. Alaa has been admitted into the I-CUREUS program for the Fall 2022 semester. She is working as a research assistant on a project about virtual care in cardiac rehabilitation. The goal of this project is to identify the gaps, barriers and challenges of old adults adapting with virtual care. She is very interested in and motivated by any health-related topic.",
+        "imgsrc":"images/studentImages/Alaa.png"
+    },
+    "paddy-greene":{ 
+        "name":"Paddy Greene",
+        "info":"In May 2022, Paddy joined the research team as an undergraduate research assistant to help continue the development of a feedback application that visualizes high-volume data from the ORCATECH CART home sensors, a project done in tandem with the Bruyère Research Institute. The goal of the system is to provide seniors with a visualization of their daily and weekly habits, allowing the individuals and their physicians to have a clearer image of their health over time. In particular, the system is designed to help monitor the impact of potential progressive cognitive impairment such as dementia. He will be starting his third year in Biomedical Computing at Queen’s University and is interested in and motivated by the ever-expanding possibilities of interdisciplinary applications of computer science. In his free time, he is deeply invested in music: production, journalism and live performance.",
+        "imgsrc":"images/studentImages/Paddy2.jpg"
+    },
+    "erin-lui-hing":{ 
+        "name":"Erin Lui-Hing",
+        "info":"Erin Lui-Hing is a third year Biomedical and Electrical Engineering undergraduate student at Carleton. Erin was accepted into the I-CUREUS program for the Fall 2022 semester. She is working on the research project to track the date, time, and level of chronic pain occurrences. She’s a passionate leader who enjoys circuits, coding, and impacting the health and wellness of others.",
+        "imgsrc":"images/studentImages/Erin.jpeg"
+    },
+    "abhishek-mayurbhai-patel":{ 
+        "name":"Abhishek Mayurbhai Patel",
+        "info":"Abhishek has experience as a software engineer at IDEX Corporation. He was engaged in web development, firmware development for RTOS and have experience doing E2E testing with python. He is passionate about diving deep into web technologies and code compilation in browsers. His research lies in developing efficient and affordable tech products.",
+        "imgsrc":"images/studentImages/Abhishek.png"
+    },
+    "sanhita":{ 
+        "name":"Sanhita Paluskar",
+        "info":"Sanhita completed her graduation from Carleton University. She has professional experience as a software development engineer in building web applications. She is certified in Core Java and Full Stack Development and has a passion for programming and problem solving.",
+        "imgsrc":"images/studentImages/Sanhita.png"
+    },
+    "arsh":{ 
+        "name":"Arsh Saleem",
+        "info":"In May 2021 Arsh joined the research team as an undergraduate research assistant to conduct research about self-reporting pain patterns for patients with chronic pain conditions using a hardware tracker. He will be starting his third year in Biomedical and Electrical Engineering and is passionate about using engineering techniques to provide a more enhanced healthcare experience. He is very interested in learning about biomedical sensor development and nanorobotics.",
+        "imgsrc":"images/studentImages/Arsh.jpg"
+    },
+    "rahel":{ 
+        "name":"Rahel Gunaratne",
+        "info":"Rahel is a 3rd-year student pursuing a degree in Software Engineering with minors in Physics and Computer Science. He is interested in machine learning, web development and data visualization.From Summer 2021 to Winter 2022, he was developing visualizations of Carleton Students’ data under Professor Rajabiyazdi’s supervision.His project page can be found here.His interests are rock climbing, basketball and Brazilian jiu jitsu with hopes to one day become a competitive rock climber.",
+        "imgsrc":"images/studentImages/Rahel.jpg"
+    },
+    "abishekahuja":{ 
+        "name":"Abhishek Ahuja",
+        "info":"Abhishek Ahuja, a Carleton University master's graduate, possesses expertise in Data Analysis and Visualization using tools such as Excel, Python, SQL, Alteryx, Tableau, and Power BI. Leveraging these skills, he delivers insightful perspectives on crucial data to empower informed decision-making for stakeholders. Beyond his professional endeavors, Abhishek enjoys immersing himself in music and staying informed about the latest developments in technology and historical events, particularly those related to World War history. Feel free to reach out at any time for discussions on technology and world wars.",
+        "imgsrc":"images/studentImages/AbhishekAhuja.jpg"
+    },
+    "roshan":{ 
+        "name":"Roshan Faisal Zaki",
+        "info":"Roshan Faisal Zaki is a Master's student in Electrical and Computer Engineering, specializing in Software Engineering. With a rich portfolio of experiences, his journey includes an internship at the Indian Space Research Organisation (ISRO) and impactful data visualization work at Huawei Tech. He has contributed to significant projects like a neural robotic arm and the REVA Ventilator project during the COVID-19 pandemic. Balancing his academic pursuits with professional achievements, Roshan embodies a blend of humility, technical expertise, and a dedication to making a positive societal impact.",
+        "imgsrc":"images/studentImages/Roshan.jpeg"
+    }
+
+}`;
+/*
+jsonData- name every object with professor's name- this name is passed as link from people.html page
+
+description of object-
+name:Name of professor
+img:img address
+personalInfo:{
+    designation: designation
+    degree: degree
+}
+description:[
+    {
+        line: paragraph of description
+    }
+]
+
+*/
+profData=`{
+    "fateme":{
+        "name":"Fateme Rajabiyazdi, PEng, PhD",
+        "img":"images/profImages/Fateme.jpg",
+        "personalInfo":{
+            "designation":"Assistant Professor",
+            "degree":"B.Eng, M.Sc, Ph.D."
+        },
+        "description":[
+        { 
+            "line":"Her research focuses on addressing real-world problems by designing effective technologies and information visualization tools."
+        },
+        {
+            "line":"She graduated with a Ph.D. in Computer Science in the area of information visualization from the Interactions Lab at the University of Calgary in December 2018. During my Ph.D., she was awarded the Ward of 21st Century Health Services Research Scholarship and as the data visualization researcher, she collaborated in designing the first patient-centred care planning tool in Alberta."
+        },
+        {
+            "line":"Before joining Carleton, she was a postdoctoral fellow at McGill University from January 2019; she was awarded the postdoctoral scholarship from Fonds de la Recherche du Quebec Santé (FRQS) 2020, where she was ranked 4th amongst all postdoctoral applicants in the province of Quebec."
+        }
+        ]
+    },
+    "juan":{
+      
+    }
+
+}`
+//fetching the queryparameters from url
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const selection = urlParams.get('people')
+const type = urlParams.get('type')
+var parsedData = JSON.parse(jsonData);
+var parsedProfData = JSON.parse(profData);
+
+if(type!='prof'){
+   
+    document.getElementById("about").innerHTML = `
+    <div id='photo'>
+        <img style="width:85%;" src="${parsedData[selection].imgsrc}" alt="img">
+    </div>
+    <div id='connectWithMe'>
+    `
+
+    const degrees = parsedData[selection].degrees;
+    if (degrees != null){
+    document.getElementById("description").innerHTML = `
+        <article>
+            <header>
+                <h2>${parsedData[selection].name}</h2>
+                ${degrees.map((degree, index) => `
+                    <p style="margin: 0;">${degree}</p>
+                    ${index === parsedData[selection].degrees.length - 1 ? '<br>' : ''}
+                `).join('')}
+                <p style="margin-top: 10px;">${parsedData[selection].info}</p>
+            </header>
+        </article>`
+    }
+    else {
+    document.getElementById("description").innerHTML = `
+        <article>
+            <header>
+                <h2>${parsedData[selection].name}</h2>
+                <p style="margin-top: 10px;">${parsedData[selection].info}</p>
+            </header>
+        </article>`
+    }
+}
+else{
+    document.getElementById("profData").innerHTML = `
+
+    <div class="row gtr-200">
+		<div class="row square">
+			<div class="col-3 about">
+            <img style="width:85%;" src="${parsedProfData[selection].img}" alt="img">					
+			</div>
+			<div class="col-9">
+				<section id="roles">
+					<p></p>
+					<h2>
+                     ${parsedProfData[selection].name}
+					</h2>
+                    <h3>
+                     ${parsedProfData[selection].personalInfo.designation}
+                    </h3>
+                    <h3>
+                    Degrees: ${parsedProfData[selection].personalInfo.degree}
+                    </h3>
+				</section>
+                <section id="description">
+				${parsedProfData[selection].description.map(function(lines){
+                    return `
+                    <p>${lines.line}
+                    </p>`
+                }).join(' ')}
+                </section>
+									
+			</div>	
+								
+		</div>
+	</div>
+    `
+         }
+
+//function for navigating to particular people section
+function selectPeople(loc){
+        //setting path parameter as the choice selected in the dropdown
+        link='people.html?people='+loc;
+        window.location=link;
+        
+    }
+//function for navigating to main people tab
+function gotoPeople(){
+     //setting path parameter as the choice selected in the dropdown
+    link='people.html';
+    window.location=link;
+        
+}
+
+populate_pubs_awards(parsedData[selection]);
+
+function generateIEEEReference(publication, pubName) {
+    // Make the name bold in authors
+    const authorsWithBoldName = publication.authors.replace(pubName, '<strong>'.concat(pubName,'</strong>'));
+
+    return `${authorsWithBoldName}, "${publication.title}," <em>${publication.journal}</em>, vol. ${publication.volume}, ${publication.month}, ${publication.year}. DOI: <a href="${publication.doi}" target="_blank">${publication.doi}</a>`;
+}
+
+function abbreviateAuthors(authors, pubName) {
+    const formattedAuthors = authors.replace(pubName, '<strong>'.concat(pubName,'</strong>'));
+    return formattedAuthors.split(", ").map(author => {
+        const nameParts = author.trim().split(" ");
+        if (nameParts.length > 1) {
+            const lastName = nameParts.pop();
+            const initials = nameParts.map(name => name.charAt(0).toUpperCase() + ".").join(" ");
+            return `${initials} ${lastName}`;
+        }
+        return author;
+    }).join(", ");
+}
+
+function abbreviateMonth(fullMonth) {
+    const monthAbbreviations = {
+        January: "Jan.",
+        February: "Feb.",
+        March: "Mar.",
+        April: "Apr.",
+        May: "May",
+        June: "Jun.",
+        July: "Jul.",
+        August: "Aug.",
+        September: "Sep.",
+        October: "Oct.",
+        November: "Nov.",
+        December: "Dec."
+    };
+
+    return monthAbbreviations[fullMonth] || fullMonth;
+}
+
+function populate_pubs_awards(data) {
+
+    const journal_publications = data.journal_publications;
+    const conf_publications = data.conf_publications;
+    const extended_abstracts = data.extended_abstracts;
+    const int_awards = data.internal_awards;
+    const ext_awards = data.external_awards;
+    const connectWithMeData = data.connectWithMe;
+    const pubName = data.pubName;
+
+    if (!connectWithMeData){
+        document.getElementById("connectWithMe").remove();
+    }
+    else{
+        const connectWithMeSection = document.getElementById("connectWithMe");
+        const linksHTML = Object.keys(connectWithMeData).map(key => {
+                return `<li><a href="${connectWithMeData[key]}" target="_blank">${key}</a></li>`;
+            }).join('');
+        connectWithMeSection.innerHTML = `
+                <h3>Connect With Me</h3>
+                <ul>${linksHTML}</ul>
+            `;
+    }
+    if (!journal_publications){
+        document.getElementById("peer-pub-wrapper").remove();
+    }
+    else{
+        journal_publications.forEach(publication => {
+            const publicationItem = document.createElement('li');
+            publicationItem.innerHTML = generateIEEEReference(publication, pubName);
+            document.getElementById('peer-publications').appendChild(publicationItem);
+        });
+    }
+    if (!conf_publications){
+        document.getElementById("conf-pub-wrapper").remove();
+    }
+    else{
+        conf_publications.forEach(publication => {
+            const publicationItem = document.createElement('li');
+            publicationItem.innerHTML = generateIEEEReference(publication, pubName);
+            document.getElementById('conf-publications').appendChild(publicationItem);
+        });
+    }
+    if (!extended_abstracts){
+        document.getElementById("ext-abst-wrapper").remove();
+    }
+    else{
+        extended_abstracts.forEach(publication => {
+            const publicationItem = document.createElement('li');
+            publicationItem.innerHTML = generateIEEEReference(publication, pubName);
+            document.getElementById('extended-abstracts').appendChild(publicationItem);
+        });
+
+    }
+    if (!ext_awards){
+        document.getElementById("ext-award-wrapper").remove();
+    }
+    else{
+        ext_awards.forEach(award => {
+            const awardItem = document.createElement('li');
+            awardItem.innerHTML = award;
+            document.getElementById('ext-awards').appendChild(awardItem);
+        });
+    }
+    if (!int_awards){
+        document.getElementById("int-award-wrapper").remove();
+    }
+    else{
+        int_awards.forEach(award => {
+            const awardItem = document.createElement('li');
+            awardItem.innerHTML = award;
+            document.getElementById('int-awards').appendChild(awardItem);
+        });
+    }
+}
