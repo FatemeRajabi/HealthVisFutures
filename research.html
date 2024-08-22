@@ -18,6 +18,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li id="logo" class="current"><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
                     <li><a href="teaching.html">Teaching</a></li>
                     <li>
                         <a href="people.html">People</a>
@@ -59,19 +60,19 @@
                                 <h2>Research Areas</h2>
                             </div>
                             <div class="col-md-4">
-                                <div>
+                                <!-- <div>
                                     <a href="#" onclick="gotoPublications()">View All Publications</a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
-                       
-                        
+
+
                     </header>
-                    
+
                     <div class="row">
                         <div class="col-md-6" style="cursor: pointer;">
-                            <div class="card width100">
-                                <img src="images/projectImages/P12.png" alt="Avatar" style="width:100%">
+                            <div class="card width100" onclick="gotoPublications('human')">
+                                <img src="images/projectImages/P12.png" class="imgZoom" alt="Avatar" style="width:100%">
                                 <div class="align_center">
                                     <h4><b>Human Computer Interaction</b></h4>
                                     <p>Interior Designer</p>
@@ -79,8 +80,8 @@
                             </div>
                         </div>
                         <div class="col-md-6" style="cursor: pointer;">
-                            <div class="card width100">
-                                <img src="images/projectImages/P12.png" alt="Avatar" style="width:100%">
+                            <div class="card width100" onclick="gotoPublications('data')">
+                                <img src="images/projectImages/P12.png" class="imgZoom" alt="Avatar" style="width:100%">
                                 <div class="align_center">
                                     <h4><b>Data Visualization</b></h4>
                                     <p>Interior Designer</p>
@@ -90,8 +91,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6" style="cursor: pointer;">
-                            <div class="card width100">
-                                <img src="images/projectImages/P12.png" alt="Avatar" style="width:100%">
+                            <div class="card width100" onclick="gotoPublications('health')">
+                                <img src="images/projectImages/P12.png" class="imgZoom" alt="Avatar" style="width:100%">
                                 <div class="align_center">
                                     <h4><b>Health & Medicine</b></h4>
                                     <p>Interior Designer</p>
@@ -99,8 +100,8 @@
                             </div>
                         </div>
                         <div class="col-md-6" style="cursor: pointer;">
-                            <div class="card width100">
-                                <img src="images/projectImages/P12.png" alt="Avatar" style="width:100%">
+                            <div class="card width100" onclick="gotoPublications('artificial')">
+                                <img src="images/projectImages/P12.png" class="imgZoom" alt="Avatar" style="width:100%">
                                 <div class="align_center">
                                     <h4><b>Artificial Intelligence</b></h4>
                                     <p>Interior Designer</p>
@@ -121,7 +122,20 @@
             </div>
         </section>
     </div>
+    
     <style>
+        .imgZoom {
+            padding: 25px;
+            cursor: pointer;
+        }
+
+        .imgZoom:hover {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            transform-origin: center center;
+        }
+
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             transition: 0.3s;

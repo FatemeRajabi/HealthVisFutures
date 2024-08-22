@@ -14,7 +14,7 @@
  * }
  */
  
-jsonData={
+ jsonData={
     "research_desc":[
         { 
             "line":"The Positive Technology Lab is an interdisciplinarity initiative that aims at bringing together faculty, students, and industry to creatively design, build and study digital experiences to improve and strengthen people’s well-being at the individual collective, and organizational levels. "

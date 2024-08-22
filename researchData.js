@@ -104,17 +104,17 @@ jsonData={
     ]
 }; 
 labName="healthViz"
-document.getElementById("projects").innerHTML = `${jsonData.projects.map(function(project){
-    return `
-    <div class="col-md-4 col-sm-12 article">
-		<span class="image">
-			<img src="${project.imgsrc}" alt="" />
-		</span>
-		<a href="project-details.html?lab=${labName}&project=${project.id}">
-			<h3 class="projectTitle">${project.title}</h3>
-		</a>
-	</div>`
-}).join(' ')}`;
+// document.getElementById("projects").innerHTML = `${jsonData.projects.map(function(project){
+//     return `
+//     <div class="col-md-4 col-sm-12 article">
+// 		<span class="image">
+// 			<img src="${project.imgsrc}" alt="" />
+// 		</span>
+// 		<a href="project-details.html?lab=${labName}&project=${project.id}">
+// 			<h3 class="projectTitle">${project.title}</h3>
+// 		</a>
+// 	</div>`
+// }).join(' ')}`;
 
 //function for navigating to a specific section on people tab
 function selectPeople(loc){
@@ -125,9 +125,9 @@ function selectPeople(loc){
 }
 
 //funciton to navigate to all the publications page
-function gotoPublications(){
+function gotoPublications(from){
     //setting path parameter as the choice selected in the dropdown
-    link='publications.html';
+    link='publications.html?from='+from;
     window.location=link;
     
 }
