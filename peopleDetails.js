@@ -13,15 +13,87 @@ jsonData=`{
         "info":"Elaheh joined the research team in June 2022 as a Postdoctoral Fellow under the supervision of Dr. Julio Fiore Jr. and me (co-supervisor).  She will be working in partnership with McGill University on developing a patient-reported outcome measure (PROM) to assess recovery after abdominal surgery based on Item analysis using Rasch measurement theory. She holds a Ph.D. in Pharmacoeconomics and an M.Sc. in Healthcare Management. She is interested in outcomes research, health economic evaluations, digital health, systematic reviews, and the analysis of large databases.",
         "imgsrc":"images/studentImages/Elaheh2.jpg"
     },
-    "shri-Harini":{ 
-        "name":"Shri Harini Ramesh",
-        "info":"Shri joined the research team in September 2023 as a PhD student in biomedical engineering. She will focus on developing an interactive data visualization system for virtual cardiac rehabilitation for older adults. Shri holds a master's degree in applied science in biomedical engineering from the University of Ottawa and has a background in Artificial Intelligence and computer vision. Her research interests include health data visualization and human-computer interaction.",
-        "imgsrc":"images/studentImages/Shri2.jpg"
-    },
+
     "mahsa-sinaei":{ 
         "name":"Mahsa Sinaei",
         "info":"Mahsa joined the team in Sep 2022 as a PhD student. She is working on a medical data visualization project. She has a background in machine learning and has worked as a UI/UX designer.  Her research interests are Human-computer interaction, Health data visualization, and Physical data visualization. She is interested in conducting research on designing technologies for older adults and developing these technologies to meet the needs of older adults when caring for their health. She was selected as the recipient of the Tom Skinner Award in Computer and System Engineering on July 05, 2022.",
         "imgsrc":"images/studentImages/Mahsa3.png"
+    },
+        "shri-Harini":{ 
+        "name":"Shri Harini Ramesh",
+        "info":"Shri joined the research team in September 2023 as a PhD student in biomedical engineering. She will focus on developing an interactive data visualization system for virtual cardiac rehabilitation for older adults. Shri holds a master's degree in applied science in biomedical engineering from the University of Ottawa and has a background in Artificial Intelligence and computer vision. Her research interests include health data visualization and human-computer interaction.",
+        "imgsrc":"images/studentImages/Shri2.jpg",
+        "degrees": [
+            "MASc, Biomedical Engineering (Mechanical Engineering), University of Ottawa (2023)",
+            "BEngg, Biomedical Engineering, Anna University (2021)"
+        ],
+        "connectWithMe": {
+            "Email": "mailto:shrihariniramesh@cmail.carleton.ca",
+            "LinkedIn": "https://www.linkedin.com/in/shri-harini-ramesh/",
+            "GitHub": "https://github.com/Shri-harini-ramesh",
+            "ORCID": "https://orcid.org/my-orcid?orcid=0009-0002-4245-7693",
+            "Google Scholar": "https://scholar.google.com/citations?user=VkreB9AAAAAJ&hl=en"
+        },
+        "pubName":"Shri Harini Ramesh",
+        "journal_publications":[
+            {
+                "title": "Automated Implementation of the Edinburgh Visual Gait Score (EVGS) Using OpenPose and Handheld Smartphone Video",
+                "authors": "Shri Harini Ramesh and Lemaire, Edward D. and Tu, Amy and Cheung, Kevin and Baddour, Noura",
+                "journal": "MDPI Sensors",
+                "volume": "23",
+                "month": "May",
+                "year" : "2023",
+                "doi": "https://doi.org/10.3390/s23104839"
+            }
+            ],
+        "conf_publications":[
+            {
+                "title": "A Data Visualization Tool for Patients and Healthcare Providers to Communicate during Inpatient Stroke Rehabilitation",
+                "authors": "Shri Harini Ramesh, Alicia Ouskine, Elahe Khorasani, Mona Ebrahimipour, Hillel Finestone, Adrian DC Chan, Fateme Rajabiyazdi",
+                "journal": "Graphics Interface",
+                "month": "June",
+                "year" : "2024",
+                "doi": "https://openreview.net/pdf?id=HSPRA1VW9l"
+            },
+            {
+                "title": "TextVista: NLP-Enriched Time-Series Text Data Visualizations",
+                "authors": "Fateme Rajabiyazdi, Shri Harini Ramesh, Beck Langstone, Daniil Kulik, Justin Pontalba",
+               "journal": "Graphics Interface",
+                "month": "June",
+                "year" : "2024",
+                "doi": "https://openreview.net/forum?id=CX4uT5cauk"
+            },
+                {
+                "title": "Automated Stride Detection from OpenPose Keypoints Using Handheld Smartphone Video",
+                "authors": "Shri Harini Ramesh, Edward D Lemaire, Kevin Cheung, Albert Tu, Natalie Baddour",
+                "journal": "IEEE Sensors Applications Symposium (SAS)",
+                "pages": "01-06",
+                "month": "July",
+                "year" : "2023",
+                "doi": "10.1109/SAS58821.2023.10254104"
+            },
+            {
+                "title": "Parametrization of Optical Flow Kymograms",
+                "authors": "B Panchami, S Pravin Kumar, AJ Rajkumar, V Rishika, Shri Harini Ramesh",
+               "journal": "International Conference on Intelligent Systems for Communication, IoT and Security (ICISCoIS)",
+                "pages": "114-119",
+                "month": "February",
+                "year" : "2023",
+                "doi": "https://ieeexplore.ieee.org/abstract/document/10100493"
+            }
+        ],
+        "extended_abstracts":[
+
+        ],
+        "external_awards":[
+            "Best Paper Award - GI '24 (Selected from 37 accepted papers)",
+            "Best Scientific Poster Award (Selected from 192 posters)"
+        ],
+        "internal_awards":[
+            "Bhargave Family Scholarship, Jan 2024",
+            "Allan Buchanan Scholarship, May 2023",
+            "International Doctoral Excellence Award (IDE), 2023 - 2025"
+        ]
     },
     "connor-haberl":{ 
         "name":"Connor Haberl",
@@ -69,9 +141,6 @@ jsonData=`{
                 "year" : "2024",
                 "doi": "https://doi.org/10.1117/12.2654482"
             }
-        ],
-        "extended_abstracts":[
-
         ],
         "external_awards":[
             "NSERC PGSD, Jan 2024",
@@ -298,10 +367,19 @@ populate_pubs_awards(parsedData[selection]);
 
 function generateIEEEReference(publication, pubName) {
     // Make the name bold in authors
-    const authorsWithBoldName = publication.authors.replace(pubName, '<strong>'.concat(pubName,'</strong>'));
+    const authorsWithBoldName = publication.authors.replace(pubName, `<strong>${pubName}</strong>`);
 
-    return `${authorsWithBoldName}, "${publication.title}," <em>${publication.journal}</em>, vol. ${publication.volume}, ${publication.month}, ${publication.year}. DOI: <a href="${publication.doi}" target="_blank">${publication.doi}</a>`;
+    // Construct the volume and page parts only if they exist
+    const volumePart = publication.volume ? `vol. ${publication.volume}` : '';
+    const pagePart = publication.pages ? `pp. ${publication.pages}` : '';
+
+    // Combine volume and page parts, ensuring proper spacing
+    const volumeOrPagePart = volumePart && pagePart ? `${volumePart}, ${pagePart}` : volumePart || pagePart;
+
+    return `${authorsWithBoldName}, "${publication.title}," <em>${publication.journal}</em>, ${volumeOrPagePart} ${publication.month}, ${publication.year}. DOI: <a href="${publication.doi}" target="_blank">${publication.doi}</a>`;
 }
+
+
 
 function abbreviateAuthors(authors, pubName) {
     const formattedAuthors = authors.replace(pubName, '<strong>'.concat(pubName,'</strong>'));
