@@ -60,7 +60,7 @@ jsonData={
             "course":"MASc - Information technology",
             "imgsrc":"images/studentImages/dummy.png",
             "extraInfo":"",
-            "link":"darwin-jull"   
+            "link":"matteo"   
         },
         {
             "name":"Connor Haberl",

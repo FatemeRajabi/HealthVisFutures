@@ -177,6 +177,11 @@ jsonData=`{
         "info":"Darwin is an undergraduate engineering student in his fourth year of Biomedical and Electrical Engineering. He has joined the team as an I-CUREUS student for the Fall 2023 semester to aid in the analysis of barriers to virtual cardiac rehabilitation. Outside of the lab, Darwin works as a lead on the CU InSpace design team to design and manufacture rockets to compete at international competitions in the US and Canada. He is passionate about applying knowledge to create person-centered solutions.",
         "imgsrc":"images/studentImages/Darwin1.jpeg"
     },
+    "matteo":{ 
+        "name":"Matteo Sotelo",
+        "info":" ",
+        "imgsrc":"images/studentImages/dummy.png"
+    },
     "ali-shajari":{ 
         "name":"Ali Shajari",
         "info":"Ali is a first-year undergraduate student majoring in arts. Currently, he is contributing to the team as a SaPP student for the Fall 2023 semester, focusing on creating educational materials for SYSC 4906, Intro to Data Science & Data Visualization. Outside the lab, Ali is a Research Assistant for the Morrisseau Project, where he is developing automation scripts for their extensive database. Additionally, he is involved in the Carleton Internet Security Lab (CISL), where his working on IoT longevity, particularly in the realm of security. Ali is dedicated to contributing to meaningful projects that align with his academic and research interests.",
