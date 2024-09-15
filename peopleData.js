@@ -190,13 +190,6 @@ jsonData={
             "extraInfo":"I-CUREUS",
             "link":"erin-lui-hing"
         },
-        {
-            "name":"Sam Serdah",
-            "course":"MASc – Data Science",
-            "imgsrc":"images/studentImages/Sam2.jpeg",
-            "extraInfo":"",
-            "link":"sam-serdah"
-        },
       {
             "name":"Arsh Saleem",
             "course":"Biomedical Engineering",
@@ -239,6 +232,13 @@ jsonData={
             "extraInfo":"SaPP",
             "link":"ali-shajari"  
 
+        },
+        {
+            "name":"Sam Serdah",
+            "course":"MASc – Data Science",
+            "imgsrc":"images/studentImages/Sam2.jpeg",
+            "extraInfo":"",
+            "link":"sam-serdah"
         }
     ],
 };
