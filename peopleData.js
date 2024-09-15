@@ -38,30 +38,23 @@ jsonData={
     ],
     "undergrads":[
         {
+            "name":"Mia Cornell",
+            "course":"Electrical Engineering",
+            "imgsrc":"images/studentImages/mia.jpg",
+            "extraInfo":"RA",
+            "link":"mia"   
+        },
+        {
             "name":"Esosa Ohangbon",
             "course":"Software Engineering",
             "imgsrc":"images/studentImages/esosa.png",
-            "extraInfo":"I-CUREUS",
+            "extraInfo":"RA",
             "link":"esosa-ohangbon"   
         },
 
 
     ],
     "grads":[
-        {
-            "name":"Darwin Jull",
-            "course":"MASc - Biomedical Engineering",
-            "imgsrc":"images/studentImages/Darwin1.jpeg",
-            "extraInfo":"",
-            "link":"darwin-jull"   
-        },
-        {
-            "name":"Matteo Sotelo",
-            "course":"MASc - Information technology",
-            "imgsrc":"images/studentImages/dummy.png",
-            "extraInfo":"",
-            "link":"matteo"   
-        },
         {
             "name":"Connor Haberl",
             "course":"PhD – Biomedical Engineering",
@@ -83,6 +76,20 @@ jsonData={
             "extraInfo":"",
             "link":"mahsa-sinaei"
         },
+        {
+            "name":"Darwin Jull",
+            "course":"MASc - Biomedical Engineering",
+            "imgsrc":"images/studentImages/Darwin1.jpeg",
+            "extraInfo":"",
+            "link":"darwin-jull2"   
+        },
+        {
+            "name":"Matteo Sotelo",
+            "course":"MASc - Information technology",
+            "imgsrc":"images/studentImages/Matteo.png",
+            "extraInfo":"",
+            "link":"matteo"   
+        },
 
         
     ],
@@ -103,7 +110,7 @@ jsonData={
             "course":"Master of computer science",
             "extraInfo":"Web Developer",
             "imgsrc":"images/studentImages/dummy.png",
-            "link":"abhishek-mayurbhai-patel"
+            "link":"daniil"
             
         },
     ],
@@ -250,6 +257,7 @@ document.getElementById("profData").innerHTML = `${jsonData.professors.map(funct
 </section>`
 }).join(' ')}`;
 
+
 document.getElementById("ugData").innerHTML = `${jsonData.undergrads.map(function(undergrad){
     if(undergrad.extraInfo==""){
         return `
@@ -369,26 +377,30 @@ const urlParams = new URLSearchParams(queryString);
 console.log(urlParams);
 const selection = urlParams.get('people')
 console.log(selection);
-if(selection=='professors'){
+if (selection == 'professors') {
     document.getElementById("professors").scrollIntoView({behavior: 'smooth'});
 }
-else if(selection=='undergrad'){
+else if (selection == 'undergrad') {
     document.getElementById("undergrad").scrollIntoView({behavior: 'smooth'});
 }
-else if(selection=='grad'){
+else if (selection == 'grad') {
     document.getElementById("grad").scrollIntoView({behavior: 'smooth'});
 }
-else if(selection=='alumni'){
+else if (selection == 'alumni') {
     document.getElementById("alumni").scrollIntoView({behavior: 'smooth'});
 }
-else if(selection=='postdoc'){
+else if (selection == 'postdoc') {
     document.getElementById("postdoc").scrollIntoView({behavior: 'smooth'});
 }
-else if(selection=='ra'){
+else if (selection == 'ra') {
     document.getElementById("ra").scrollIntoView({behavior: 'smooth'});
 }
-else if(selection=='past'){
+else if (selection == 'past') {
+    console.log('Scrolling to Past Contributors');
     document.getElementById("past").scrollIntoView({behavior: 'smooth'});
+}
+else {
+    console.log('No valid selection');
 }
 
 //function for navigating to a specific section on people tab

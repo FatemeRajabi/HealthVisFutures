@@ -8,6 +8,24 @@ imgsrc:img address
 
 */
 jsonData=`{
+"fateme":{ 
+        "name":"Fateme Rajabiyazdi, PEng, PhD",
+        "info":"Her research focuses on addressing real-world problems by designing effective technologies and information visualization tools. She graduated with a Ph.D. in Computer Science in the area of information visualization from the Interactions Lab at the University of Calgary in December 2018. During my Ph.D., she was awarded the Ward of 21st Century Health Services Research Scholarship and as the data visualization researcher, she collaborated in designing the first patient-centred care planning tool in Alberta. Before joining Carleton, she was a postdoctoral fellow at McGill University from January 2019; she was awarded the postdoctoral scholarship from Fonds de la Recherche du Quebec Santé (FRQS) 2020, where she was ranked 4th amongst all postdoctoral applicants in the province of Quebec.",
+        "imgsrc":"images/profImages/Fateme.jpg",
+        "degrees": [
+            "PhD, Computer Science, University of Calgary (2018)",
+            "MS, Computer Science, Australian National University (2012)",
+            "BEngg, Software Engineering, University of Tehran (2010)"
+        ],
+        "connectWithMe": {
+            "Email": "mailto:fatemerajabiyazdi@cunet.carleton.ca",
+            "LinkedIn": "https://www.linkedin.com/in/rajabiyazdi/",
+            "GitHub": "https://github.com/FatemeRajabi",
+            "ORCID": "https://orcid.org/0000-0002-8710-865X",
+            "Google Scholar": "https://scholar.google.com/citations?user=mvoc_5AAAAAJ&hl=en"
+        }
+    },
+
     "elaheh-khorasani":{ 
         "name":"Elaheh Khorasani",
         "info":"Elaheh joined the research team in June 2022 as a Postdoctoral Fellow under the supervision of Dr. Julio Fiore Jr. and me (co-supervisor).  She will be working in partnership with McGill University on developing a patient-reported outcome measure (PROM) to assess recovery after abdominal surgery based on Item analysis using Rasch measurement theory. She holds a Ph.D. in Pharmacoeconomics and an M.Sc. in Healthcare Management. She is interested in outcomes research, health economic evaluations, digital health, systematic reviews, and the analysis of large databases.",
@@ -82,9 +100,7 @@ jsonData=`{
                 "doi": "https://ieeexplore.ieee.org/abstract/document/10100493"
             }
         ],
-        "extended_abstracts":[
-
-        ],
+        "extended_abstracts":[],
         "external_awards":[
             "Best Paper Award - GI '24 (Selected from 37 accepted papers)",
             "Best Scientific Poster Award (Selected from 192 posters)"
@@ -177,9 +193,19 @@ jsonData=`{
         "info":"Darwin is an undergraduate engineering student in his fourth year of Biomedical and Electrical Engineering. He has joined the team as an I-CUREUS student for the Fall 2023 semester to aid in the analysis of barriers to virtual cardiac rehabilitation. Outside of the lab, Darwin works as a lead on the CU InSpace design team to design and manufacture rockets to compete at international competitions in the US and Canada. He is passionate about applying knowledge to create person-centered solutions.",
         "imgsrc":"images/studentImages/Darwin1.jpeg"
     },
+    "darwin-jull2":{ 
+        "name":"Darwin Jull",
+        "info":"Darwin is a M.A.Sc student studying Biomedical Engineering. He joined the lab in 2023 as an I-CUREUS student researcher, where he assisted with the analysis of barriers to cardiac rehabilitation programs.  Darwin is also a graduate of the B.Eng Biomedical and Electrical Engineering program at Carleton University. He is passionate about applying knowledge to create person-centered solutions.",
+        "imgsrc":"images/studentImages/Darwin1.jpeg"
+    },
     "matteo":{ 
         "name":"Matteo Sotelo",
-        "info":" ",
+        "info":"Matteo is a 1st-year graduate student pursuing a master's degree in Information Technology (Data Science, Analytics, and AI). He will be working on a data visualization project aimed at improving integration with the healthcare industry. Matteo has a background in business commerce and experience in commercial banking and venture capital. He is passionate about using technological advancements and learning about AI to fix inefficiencies in healthcare. His interests are running, working out, and lacrosse, with hopes to one day become an entrepreneur. ",
+        "imgsrc":"images/studentImages/Matteo.png"
+    },
+    "daniil":{ 
+        "name":"Daniil Kulik",
+        "info":"Daniil is a Master of computer science student from Carleton University. He is working on developing web interfaces. ",
         "imgsrc":"images/studentImages/dummy.png"
     },
     "ali-shajari":{ 
@@ -231,6 +257,16 @@ jsonData=`{
         "name":"Roshan Faisal Zaki",
         "info":"Roshan Faisal Zaki is a Master's student in Electrical and Computer Engineering, specializing in Software Engineering. With a rich portfolio of experiences, his journey includes an internship at the Indian Space Research Organisation (ISRO) and impactful data visualization work at Huawei Tech. He has contributed to significant projects like a neural robotic arm and the REVA Ventilator project during the COVID-19 pandemic. Balancing his academic pursuits with professional achievements, Roshan embodies a blend of humility, technical expertise, and a dedication to making a positive societal impact.",
         "imgsrc":"images/studentImages/Roshan.jpeg"
+    },
+    "esosa-ohangbon":{
+    "name":"Esosa Ohangbon",
+    "info":"Esosa Ohangbon is an undergradaute student in software Engineering. He is currently working on large display project.",
+    "imgsrc":"images/studentImages/esosa.png"
+    },
+    "mia":{
+    "name":"Mia Cornell",
+    "info":"Mia is a second year Electrical Engineering student at Carleton and has joined the lab during the fall semester of 2024. She is working in partnership with Élisabeth Bruyère Hospital to aid their current clinical study on patient bed sensors. Her role in the lab primarily focuses on data visualization techniques and practices. Outside of the lab she is involved with the IEEE Carleton Student Branch as Publications Director. Furthermore, she is an active member of many other engineering societies such as the Carleton Student Engineering Society.",
+    "imgsrc":"images/studentImages/mia.jpg"
     }
 
 }`;
@@ -251,175 +287,67 @@ description:[
 ]
 
 */
-profData=`{
-    "fateme":{
-        "name":"Fateme Rajabiyazdi, PEng, PhD",
-        "img":"images/profImages/Fateme.jpg",
-        "personalInfo":{
-            "designation":"Assistant Professor",
-            "degree":"B.Eng, M.Sc, Ph.D."
-        },
-        "description":[
-        { 
-            "line":"Her research focuses on addressing real-world problems by designing effective technologies and information visualization tools."
-        },
-        {
-            "line":"She graduated with a Ph.D. in Computer Science in the area of information visualization from the Interactions Lab at the University of Calgary in December 2018. During my Ph.D., she was awarded the Ward of 21st Century Health Services Research Scholarship and as the data visualization researcher, she collaborated in designing the first patient-centred care planning tool in Alberta."
-        },
-        {
-            "line":"Before joining Carleton, she was a postdoctoral fellow at McGill University from January 2019; she was awarded the postdoctoral scholarship from Fonds de la Recherche du Quebec Santé (FRQS) 2020, where she was ranked 4th amongst all postdoctoral applicants in the province of Quebec."
-        }
-        ]
-    },
-    "juan":{
-      
-    }
-
-}`
-//fetching the queryparameters from url
+// Fetching query parameters from the URL
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const selection = urlParams.get('people')
-const type = urlParams.get('type')
-var parsedData = JSON.parse(jsonData);
-var parsedProfData = JSON.parse(profData);
+const selection = urlParams.get('people');
+const type = urlParams.get('type'); // Both "prof" and "student" data can be unified
 
-if(type!='prof'){
-   
-    document.getElementById("about").innerHTML = `
+// Parsing data for both students and professors
+var parsedData = JSON.parse(jsonData); // Unified data source
+
+// Unified structure for both professor and student
+document.getElementById("about").innerHTML = `
     <div id='photo'>
-        <img style="width:85%;" src="${parsedData[selection].imgsrc}" alt="img">
+        <img style="width:85%;" src="${parsedData[selection].imgsrc || parsedData[selection].img}" alt="img">
     </div>
     <div id='connectWithMe'>
-    `
+    `;
 
-    const degrees = parsedData[selection].degrees;
-    if (degrees != null){
-    document.getElementById("description").innerHTML = `
-        <article>
-            <header>
-                <h2>${parsedData[selection].name}</h2>
-                ${degrees.map((degree, index) => `
-                    <p style="margin: 0;">${degree}</p>
-                    ${index === parsedData[selection].degrees.length - 1 ? '<br>' : ''}
-                `).join('')}
-                <p style="margin-top: 10px;">${parsedData[selection].info}</p>
-            </header>
-        </article>`
-    }
-    else {
-    document.getElementById("description").innerHTML = `
-        <article>
-            <header>
-                <h2>${parsedData[selection].name}</h2>
-                <p style="margin-top: 10px;">${parsedData[selection].info}</p>
-            </header>
-        </article>`
-    }
-}
-else{
-    document.getElementById("profData").innerHTML = `
+// Handling degrees or designations
+const degrees = parsedData[selection].degrees || parsedData[selection].personalInfo?.degree;
+document.getElementById("description").innerHTML = `
+    <article>
+        <header>
+            <h2>${parsedData[selection].name}</h2>
+            ${degrees ? `<p>${degrees}</p>` : ''}
+            <p style="margin-top: 10px;">${parsedData[selection].info || parsedData[selection].personalInfo?.designation}</p>
+        </header>
+    </article>`;
 
-    <div class="row gtr-200">
-		<div class="row square">
-			<div class="col-3 about">
-            <img style="width:85%;" src="${parsedProfData[selection].img}" alt="img">					
-			</div>
-			<div class="col-9">
-				<section id="roles">
-					<p></p>
-					<h2>
-                     ${parsedProfData[selection].name}
-					</h2>
-                    <h3>
-                     ${parsedProfData[selection].personalInfo.designation}
-                    </h3>
-                    <h3>
-                    Degrees: ${parsedProfData[selection].personalInfo.degree}
-                    </h3>
-				</section>
-                <section id="description">
-				${parsedProfData[selection].description.map(function(lines){
-                    return `
-                    <p>${lines.line}
-                    </p>`
-                }).join(' ')}
-                </section>
-									
-			</div>	
-								
-		</div>
-	</div>
-    `
-         }
-
-//function for navigating to particular people section
-function selectPeople(loc){
-        //setting path parameter as the choice selected in the dropdown
-        link='people.html?people='+loc;
-        window.location=link;
-        
-    }
-//function for navigating to main people tab
-function gotoPeople(){
-     //setting path parameter as the choice selected in the dropdown
-    link='people.html';
-    window.location=link;
-        
+// Connect with me section (common for both professors and students)
+const connectWithMeData = parsedData[selection].connectWithMe;
+if (connectWithMeData) {
+    const connectWithMeSection = document.createElement('section');
+    connectWithMeSection.id = "connectWithMe";
+    connectWithMeSection.innerHTML = `
+        <h3>Connect With Me</h3>
+        <ul>${Object.keys(connectWithMeData).map(key => 
+            `<li><a href="${connectWithMeData[key]}" target="_blank">${key}</a></li>`).join('')}
+        </ul>`;
+    document.getElementById("about").appendChild(connectWithMeSection);
+} else {
+    document.getElementById("connectWithMe").remove();
 }
 
+// Publications and Awards Section (unified for both)
 populate_pubs_awards(parsedData[selection]);
 
-function generateIEEEReference(publication, pubName) {
-    // Make the name bold in authors
-    const authorsWithBoldName = publication.authors.replace(pubName, `<strong>${pubName}</strong>`);
-
-    // Construct the volume and page parts only if they exist
-    const volumePart = publication.volume ? `vol. ${publication.volume}` : '';
-    const pagePart = publication.pages ? `pp. ${publication.pages}` : '';
-
-    // Combine volume and page parts, ensuring proper spacing
-    const volumeOrPagePart = volumePart && pagePart ? `${volumePart}, ${pagePart}` : volumePart || pagePart;
-
-    return `${authorsWithBoldName}, "${publication.title}," <em>${publication.journal}</em>, ${volumeOrPagePart} ${publication.month}, ${publication.year}. DOI: <a href="${publication.doi}" target="_blank">${publication.doi}</a>`;
+// Function to handle navigating to a specific person
+function selectPeople(loc){
+    // Setting path parameter as the choice selected in the dropdown
+    link = 'people.html?people=' + loc;
+    window.location = link;
 }
 
-
-
-function abbreviateAuthors(authors, pubName) {
-    const formattedAuthors = authors.replace(pubName, '<strong>'.concat(pubName,'</strong>'));
-    return formattedAuthors.split(", ").map(author => {
-        const nameParts = author.trim().split(" ");
-        if (nameParts.length > 1) {
-            const lastName = nameParts.pop();
-            const initials = nameParts.map(name => name.charAt(0).toUpperCase() + ".").join(" ");
-            return `${initials} ${lastName}`;
-        }
-        return author;
-    }).join(", ");
+// Function to navigate to main people tab
+function gotoPeople(){
+    link = 'people.html';
+    window.location = link;
 }
 
-function abbreviateMonth(fullMonth) {
-    const monthAbbreviations = {
-        January: "Jan.",
-        February: "Feb.",
-        March: "Mar.",
-        April: "Apr.",
-        May: "May",
-        June: "Jun.",
-        July: "Jul.",
-        August: "Aug.",
-        September: "Sep.",
-        October: "Oct.",
-        November: "Nov.",
-        December: "Dec."
-    };
-
-    return monthAbbreviations[fullMonth] || fullMonth;
-}
-
+// Function to populate publications and awards, showing headings conditionally
 function populate_pubs_awards(data) {
-
     const journal_publications = data.journal_publications;
     const conf_publications = data.conf_publications;
     const extended_abstracts = data.extended_abstracts;
@@ -428,19 +356,6 @@ function populate_pubs_awards(data) {
     const connectWithMeData = data.connectWithMe;
     const pubName = data.pubName;
 
-    if (!connectWithMeData){
-        document.getElementById("connectWithMe").remove();
-    }
-    else{
-        const connectWithMeSection = document.getElementById("connectWithMe");
-        const linksHTML = Object.keys(connectWithMeData).map(key => {
-                return `<li><a href="${connectWithMeData[key]}" target="_blank">${key}</a></li>`;
-            }).join('');
-        connectWithMeSection.innerHTML = `
-                <h3>Connect With Me</h3>
-                <ul>${linksHTML}</ul>
-            `;
-    }
     if (!journal_publications){
         document.getElementById("peer-pub-wrapper").remove();
     }
@@ -492,4 +407,47 @@ function populate_pubs_awards(data) {
             document.getElementById('int-awards').appendChild(awardItem);
         });
     }
+}
+
+
+// Function to generate IEEE references (as before)
+function generateIEEEReference(publication, pubName) {
+    const authorsWithBoldName = publication.authors.replace(pubName, `<strong>${pubName}</strong>`);
+    const volumePart = publication.volume ? `vol. ${publication.volume}` : '';
+    const pagePart = publication.pages ? `pp. ${publication.pages}` : '';
+    const volumeOrPagePart = volumePart && pagePart ? `${volumePart}, ${pagePart}` : volumePart || pagePart;
+    return `${authorsWithBoldName}, "${publication.title}," <em>${publication.journal}</em>, ${volumeOrPagePart} ${publication.month}, ${publication.year}. DOI: <a href="${publication.doi}" target="_blank">${publication.doi}</a>`;
+}
+
+// Function to abbreviate authors (as before)
+function abbreviateAuthors(authors, pubName) {
+    const formattedAuthors = authors.replace(pubName, '<strong>'.concat(pubName,'</strong>'));
+    return formattedAuthors.split(", ").map(author => {
+        const nameParts = author.trim().split(" ");
+        if (nameParts.length > 1) {
+            const lastName = nameParts.pop();
+            const initials = nameParts.map(name => name.charAt(0).toUpperCase() + ".").join(" ");
+            return `${initials} ${lastName}`;
+        }
+        return author;
+    }).join(", ");
+}
+
+// Function to abbreviate months (as before)
+function abbreviateMonth(fullMonth) {
+    const monthAbbreviations = {
+        January: "Jan.",
+        February: "Feb.",
+        March: "Mar.",
+        April: "Apr.",
+        May: "May",
+        June: "Jun.",
+        July: "Jul.",
+        August: "Aug.",
+        September: "Sep.",
+        October: "Oct.",
+        November: "Nov.",
+        December: "Dec."
+    };
+    return monthAbbreviations[fullMonth] || fullMonth;
 }

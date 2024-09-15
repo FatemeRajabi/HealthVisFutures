@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            padding: 20px;
+            background-color: #fff;
+            margin: auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .mapHeader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .mapHeader span {
+            font-size: 1.5em;
+            color: #333;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .news-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .news-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+            transition: background-color 0.3s;
+        }
+
+        .news-item:hover {
+            background-color: #f9f9f9;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-date {
+            font-weight: bold;
+        }
+
+        .news-content {
+            margin-top: 5px;
+        }
+
+        .news-content a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .news-content a:hover {
+            text-decoration: underline;
+        }
+
+        .expand-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+            text-align: center;
+        }
+
+        .expand-btn:hover {
+            background: #0056b3;
+        }
+
+        .hidden-news {
+            display: none;
+        }
+
+        .show-more {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="mapHeader">
+            <span>Latest News</span>
+        </div>
+        <ul class="news-list">
+            <li class="news-item">
+                <span class="news-date">August 15, 2024:</span>
+                <div class="news-content">
+                    <p>Congratulations to Darwin Jull for winning the Queen Elizabeth II Scholarship in Science and Technology for starting his Master in the lab.</p>
+                    <a href="https://carleton.ca/sce/2024/congratulations-darwin-jull-2024-queen-elizabeth-ii-scholarship-recipient/" target="_blank">Read more</a>
+                </div>
+            </li>
+            <li class="news-item">
+                <span class="news-date">August 15, 2024:</span>
+                <div class="news-content">
+                    <p>Congrats to Shri Harini Ramesh for her paper acceptance at the IEEE EduVis workshop.</p>
+                    <a href="https://ieeevis.org/year/2024/program/paper_w-eduvis-1008.html" target="_blank">Read more</a>
+                </div>
+            </li>
+            <li class="news-item">
+                <span class="news-date">July 30, 2024:</span>
+                <div class="news-content">
+                    <p>Fateme Rajabiyazdi has been honored with the New Faculty Excellence in Teaching Award.</p>
+                    <a href="https://carleton.ca/tls/2024/announcing-the-2024-carleton-university-teaching-award-recipients/" target="_blank">Read more</a>
+                </div>
+            </li>
+            <li class="news-item hidden-news">
+                <span class="news-date">May 30, 2024:</span>
+                <div class="news-content">
+                    <p>Congratulations to Shri Harini Ramesh for having 2 peer-reviewed full papers accepted at GI’24 and winning the Best Student Paper Award.</p>
+                </div>
+            </li>
+            <li class="news-item hidden-news">
+                <span class="news-date">April 24, 2024:</span>
+                <div class="news-content">
+                    <p>Congratulations to Connor Haberl for his work being published in the Seminars in Nuclear Medicine journal.</p>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0001299824000278" target="_blank">Read more</a>
+                </div>
+            </li>
+        </ul>
+        <button class="expand-btn" onclick="toggleNews()">Show More</button>
+    </section>
+    <script>
+        function toggleNews() {
+            const hiddenNewsItems = document.querySelectorAll('.hidden-news');
+            const expandBtn = document.querySelector('.expand-btn');
+            if (expandBtn.textContent === 'Show More') {
+                hiddenNewsItems.forEach(item => item.style.display = 'list-item');
+                expandBtn.textContent = 'Show Less';
+            } else {
+                hiddenNewsItems.forEach(item => item.style.display = 'none');
+                expandBtn.textContent = 'Show More';
+            }
+        }
+    </script>
+</body>
+</html>

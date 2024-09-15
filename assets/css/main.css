@@ -247,6 +247,7 @@ input, select, textarea {
 
 		}
 
+
 /* Row */
 
 	.row {
@@ -2097,9 +2098,10 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		.image.fit {
-		/*	display: block; */
-		}
+		/* Remove this if not used */
+/* .image.fit { 
+   display: block; 
+} */
 
 			.image.fit img {
 				display: block;
@@ -3289,7 +3291,7 @@ input, select, textarea {
 					margin-top: 1.25em;
 					font-size: 1em;
 				}
-
+	
 		/* Menu */
 
 			ul.menu li {
@@ -3883,7 +3885,9 @@ input, select, textarea {
 			color: white;
 			transform: rotateY(180deg);
 		  }  */
-
+		  #past {
+			margin-top: 50px;
+		}
 		  .overlay2 {
             /* position: relative;
 			display: flex;
