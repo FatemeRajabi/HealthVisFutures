@@ -7,7 +7,7 @@ info: students description
 imgsrc:img address
 
 */
-jsonData=`{
+jsonData = `{
 "fateme":{ 
         "name":"Fateme Rajabiyazdi, PEng, PhD",
         "info":"Her research focuses on addressing real-world problems by designing effective technologies and information visualization tools. She graduated with a Ph.D. in Computer Science in the area of information visualization from the Interactions Lab at the University of Calgary in December 2018. During my Ph.D., she was awarded the Ward of 21st Century Health Services Research Scholarship and as the data visualization researcher, she collaborated in designing the first patient-centred care planning tool in Alberta. Before joining Carleton, she was a postdoctoral fellow at McGill University from January 2019; she was awarded the postdoctoral scholarship from Fonds de la Recherche du Quebec Santé (FRQS) 2020, where she was ranked 4th amongst all postdoctoral applicants in the province of Quebec.",
@@ -31,11 +31,35 @@ jsonData=`{
         "info":"Elaheh joined the research team in June 2022 as a Postdoctoral Fellow under the supervision of Dr. Julio Fiore Jr. and me (co-supervisor).  She will be working in partnership with McGill University on developing a patient-reported outcome measure (PROM) to assess recovery after abdominal surgery based on Item analysis using Rasch measurement theory. She holds a Ph.D. in Pharmacoeconomics and an M.Sc. in Healthcare Management. She is interested in outcomes research, health economic evaluations, digital health, systematic reviews, and the analysis of large databases.",
         "imgsrc":"images/studentImages/Elaheh2.jpg"
     },
-
     "mahsa-sinaei":{ 
-        "name":"Mahsa Sinaei",
-        "info":"Mahsa joined the team in Sep 2022 as a PhD student. She is working on a medical data visualization project. She has a background in machine learning and has worked as a UI/UX designer.  Her research interests are Human-computer interaction, Health data visualization, and Physical data visualization. She is interested in conducting research on designing technologies for older adults and developing these technologies to meet the needs of older adults when caring for their health. She was selected as the recipient of the Tom Skinner Award in Computer and System Engineering on July 05, 2022.",
-        "imgsrc":"images/studentImages/Mahsa3.png"
+        "name":"Mahsa Sinaei Hamed",
+        "info":"Mahsa joined the research team in September 2022 as a PhD student in systems and computer engineering. She will focus on developing an interactive data visualization system to facilitate communication between older adults with multiple chronic conditions and their healthcare providers. Mahsa holds a master's degree in computer science from the University of Tabriz, Iran and has a background in machine learning. Her research interests include health data visualization and human-computer interaction.",
+        "imgsrc":"images/studentImages/Mahsa3.png",
+        "degrees": [
+            "MASc, Computer Science, University of Tabriz, Iran (2019)",
+            "BEngg, Computer Science, University of Tabriz, Iran (2015)"
+        ],
+        "connectWithMe": {
+            "Email": "mailto:mahsasinaeihamed@cmail.carleton.ca",
+            "LinkedIn": "https://www.linkedin.com/in/mahsasinaei/",
+            "GitHub": "https://github.com/MahsaSinaei",
+            "ORCID": "https://orcid.org/my-orcid?orcid=0009-0004-4424-9016",
+            "Google Scholar": "https://scholar.google.com/citations?user=z0HC7VgAAAAJ&hl=en"
+        },
+        "pubName":"Mahsa Sinaei Hamed",
+        "conf_publications":[
+            {
+                "title": "A Data Visualization Tool for Patients and Healthcare Providers to Communicate during Inpatient Stroke Rehabilitation",
+                "authors": "Mahsa Sinaei Hamed, Laura Reid, Alice Olorunnife, David Casciano, Fateme Rajabiyazdi",
+                "journal": "IEEE Sensors Applications Symposium (SAS)",
+                "month": "July",
+                "year" : "2023",
+                "doi": "10.1109/SAS58821.2023.10253972"
+            }
+        ],
+        "internal_awards":[
+            "Tom Skinner Award in Systems & Computer Engineering, Jan 2024"
+        ]
     },
         "shri-Harini":{ 
         "name":"Shri Harini Ramesh",
@@ -322,8 +346,8 @@ if (connectWithMeData) {
     connectWithMeSection.id = "connectWithMe";
     connectWithMeSection.innerHTML = `
         <h3>Connect With Me</h3>
-        <ul>${Object.keys(connectWithMeData).map(key => 
-            `<li><a href="${connectWithMeData[key]}" target="_blank">${key}</a></li>`).join('')}
+        <ul>${Object.keys(connectWithMeData).map(key =>
+        `<li><a href="${connectWithMeData[key]}" target="_blank">${key}</a></li>`).join('')}
         </ul>`;
     document.getElementById("about").appendChild(connectWithMeSection);
 } else {
@@ -334,14 +358,14 @@ if (connectWithMeData) {
 populate_pubs_awards(parsedData[selection]);
 
 // Function to handle navigating to a specific person
-function selectPeople(loc){
+function selectPeople(loc) {
     // Setting path parameter as the choice selected in the dropdown
     link = 'people.html?people=' + loc;
     window.location = link;
 }
 
 // Function to navigate to main people tab
-function gotoPeople(){
+function gotoPeople() {
     link = 'people.html';
     window.location = link;
 }
@@ -356,30 +380,30 @@ function populate_pubs_awards(data) {
     const connectWithMeData = data.connectWithMe;
     const pubName = data.pubName;
 
-    if (!journal_publications){
+    if (!journal_publications) {
         document.getElementById("peer-pub-wrapper").remove();
     }
-    else{
+    else {
         journal_publications.forEach(publication => {
             const publicationItem = document.createElement('li');
             publicationItem.innerHTML = generateIEEEReference(publication, pubName);
             document.getElementById('peer-publications').appendChild(publicationItem);
         });
     }
-    if (!conf_publications){
+    if (!conf_publications) {
         document.getElementById("conf-pub-wrapper").remove();
     }
-    else{
+    else {
         conf_publications.forEach(publication => {
             const publicationItem = document.createElement('li');
             publicationItem.innerHTML = generateIEEEReference(publication, pubName);
             document.getElementById('conf-publications').appendChild(publicationItem);
         });
     }
-    if (!extended_abstracts){
+    if (!extended_abstracts) {
         document.getElementById("ext-abst-wrapper").remove();
     }
-    else{
+    else {
         extended_abstracts.forEach(publication => {
             const publicationItem = document.createElement('li');
             publicationItem.innerHTML = generateIEEEReference(publication, pubName);
@@ -387,20 +411,20 @@ function populate_pubs_awards(data) {
         });
 
     }
-    if (!ext_awards){
+    if (!ext_awards) {
         document.getElementById("ext-award-wrapper").remove();
     }
-    else{
+    else {
         ext_awards.forEach(award => {
             const awardItem = document.createElement('li');
             awardItem.innerHTML = award;
             document.getElementById('ext-awards').appendChild(awardItem);
         });
     }
-    if (!int_awards){
+    if (!int_awards) {
         document.getElementById("int-award-wrapper").remove();
     }
-    else{
+    else {
         int_awards.forEach(award => {
             const awardItem = document.createElement('li');
             awardItem.innerHTML = award;
@@ -421,7 +445,7 @@ function generateIEEEReference(publication, pubName) {
 
 // Function to abbreviate authors (as before)
 function abbreviateAuthors(authors, pubName) {
-    const formattedAuthors = authors.replace(pubName, '<strong>'.concat(pubName,'</strong>'));
+    const formattedAuthors = authors.replace(pubName, '<strong>'.concat(pubName, '</strong>'));
     return formattedAuthors.split(", ").map(author => {
         const nameParts = author.trim().split(" ");
         if (nameParts.length > 1) {
