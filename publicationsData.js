@@ -1,5 +1,24 @@
 const publications = [
     // Year : 2024
+    
+    {
+        imgSrc: "images/research/hci/elephantLargeDisplay.png",
+        event: "PACM HCI'24",
+        award: "",
+        title: "The Elephant in the Room: Expert Experiences Designing, Developing and Evaluating Data Visualizations on Large Displays",
+        downloadLink: 'https://carleton.ca/rajabiyazdi/cu-files/iss-2024-challenges-of-designing-and-developing-vis-on-large-displays/',
+        abstract: 'Large displays can provide the necessary space and resolution for comprehensive explorations of data visualizations. However, designing and developing visualizations for such displays pose distinct challenges. Identifying these challenges is essential for data visualization designers and developers creating data visualizations on large displays. In this study, we aim to identify the challenges designers and developers encounter when creating data visualizations for large displays. We conducted semi-structured interviews with 13 experts experienced in creating data visualizations for large displays and, through affinity diagramming, categorized the challenges. We identified several challenges in designing, developing, and evaluating data visualizations on large displays, as well as building infrastructure for large displays. Design challenges included scaling visual encodings, limited design tools, and adopting design guidelines for large displays. In the development phase, developers faced difficulties working away from large displays and dealing with insufficient tools and resources. During the evaluation phase, researchers encountered issues with individuals’ unfamiliarity with large display technology, interaction interruptions by technical limitations such as cursor visibility issues, and limitations in feedback gathering. Infrastructure challenges involved environmental constraints, technical issues, and difficulties in relocating large display setups. We share the lessons learned from our study and provide future directions along with research project examples to address these challenges.',
+        authors: [
+            
+            { name: "Mahsa Sinaei Hamad", imgSrc: "images/studentImages/Mahsa3.png", url: "peopleDetails.html?type=stud&people=mahsa-sinaei" },
+            { name: "Pak Kwan", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Matthew Klich", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Jillian Aurisano", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+        ],
+        additionalDetails: "Proceedings of the ACM on Human-Computer Interaction 2024, Pages 1-18",
+        category:"human"
+    },
     {
         imgSrc: "images/research/ai/textvista.png",
         event: "GI '24",
@@ -9,9 +28,9 @@ const publications = [
         abstract: 'There is a vast amount of unstructured text data generated every day analyzing and making sense of these text-based datasets is a complex, cumbersome task. The existing visualization tools that analyze text data leveraging Natural Language Processing (NLP) techniques, are often tailored for structured text-based data. They also fail to support reading, a crucial analysis task to validate the output of NLP techniques. We designed and developed TextVista, an NLP-enriched visualization tool that supports analysts during their analysis of unstructured text with temporal references. Our tool combines techniques including clustering, sentiment analysis, and threat detection with three views that visualize high-level patterns in the data to encourage reading. We report on TextVistas iterative design process, which included a focus group to distill design requirements, a think-aloud interview study with data analysts to understand their impressions of the tool, and a diary study to assess its long-term usage. Through this process, we identified how TextVista supported the analysis of unstructured text with temporal references using NLP techniques and fostered methods to promote reading in situ. TextVista also encouraged serendipity when analyzing data via its question-focused overviews and flexible avenues to explore data.',
         authors: [
             { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
-            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/dummy.png", url: "peopleDetails.html?type=prof&people=shri-Harini" },
-            { name: "Beck Langstone", imgSrc: "images/studentImages/dummy.png", url: "peopleDetails.html?type=prof&people=beck-langstone" },
-            { name: "Daniil Kulik", imgSrc: "images/studentImages/dummy.png", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "peopleDetails.html?type=prof&people=shri-Harini" },
+            { name: "Beck Langstone", imgSrc: "images/studentImages/Beck2.jpg", url: "peopleDetails.html?type=prof&people=beck-langstone" },
+            { name: "Daniil Kulik", imgSrc: "images/studentImages/dummy.png", url: "peopleDetails.html?type=stud&people=daniil" },
             { name: "Justin Pontalba", imgSrc: "images/studentImages/dummy.png", url: "" }
         ],
         additionalDetails: "Proceedings of Graphics Interface 2024, Pages 1-14",

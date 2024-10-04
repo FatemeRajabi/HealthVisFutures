@@ -118,9 +118,6 @@
 							</div>
 						</div>
 						<section class="cuLogo">
-
-
-
 						</section>
 						<section style="padding: 10px;margin-top:0.5em;text-align: justify;" id="research_desc">
 						</section>
@@ -130,184 +127,242 @@
 		</section>
 		<!--information about lab ends-->
 		<!--funding sponsors starts-->
-<!-- News Section -->
-
 		<!-- News Section -->
+		<section class="style1" style="padding-top: 2em;">
+			<div class="container" style="padding: 10px;text-align: justify; align-items: center;">
+				<p style="margin-bottom: 0;">
+					Our research focuses on addressing real-world problems by designing effective technologies and
+					information visualization tools. In particular, our research focuses on increasing patient
+					engagement in their medical care, including supporting patients to track their health data,
+					improving patient-provider communication, and assisting patients in making decisions about their
+					health.
+				</p>
+
+			</div>
+		</section>
+		<!-- News Section -->
+		<section class="wrapper style1">
+			<div class="container" style="margin: auto;">
+				<div class="mapHeader"
+					style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+					<span style="display: flex; align-items: center; font-size: 1.5em; color: #333;">
+						<strong>Latest News</strong>
+					</span>
+				</div>
+				<div class="news-container" style="position: relative;">
+					<ul class="news-list" style="list-style-type: none; padding: 0; margin: 0;">
+
+						<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
+						<span style="font-weight: bold;">October 1, 2024:</span>
+						<span>Congratulations to Mahsa Sinaei for her journal acceptance at the ACM Interactive Surfaces and Spaces Conference </span>
+						<a href="https://carleton.ca/rajabiyazdi/cu-files/iss-2024-challenges-of-designing-and-developing-vis-on-large-displays/" target="_blank"
+							style="color: #007bff; text-decoration: none;">Read more</a>
+						</li>
+						<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
+							<span style="font-weight: bold;">August 15, 2024:</span>
+							<span>Congratulations to Darwin Jull for winning the Queen Elizabeth II Scholarship in
+								Science and Technology scholarships </span>
+							<a href="https://carleton.ca/sce/2024/congratulations-darwin-jull-2024-queen-elizabeth-ii-scholarship-recipient/"
+								target="_blank" style="color: #007bff; text-decoration: none;">Read more</a>
+						</li>
+						<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
+							<span style="font-weight: bold;">August 15, 2024:</span>
+							<span>Congrats to Shri Harini Ramesh for her paper acceptance at the IEEE EduVis
+								workshop </span>
+							<a href="https://ieeevis.org/year/2024/program/paper_w-eduvis-1008.html" target="_blank"
+								style="color: #007bff; text-decoration: none;">Read more</a>
+						</li>
+						<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
+							<span style="font-weight: bold;">July 30, 2024:</span>
+							<span>Fateme Rajabiyazdi has been honored with the New Faculty Excellence in Teaching
+								Award </span>
+							<a href="https://carleton.ca/tls/2024/announcing-the-2024-carleton-university-teaching-award-recipients/"
+								target="_blank" style="color: #007bff; text-decoration: none;">Read more</a>
+						</li>
+						<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
+							<span style="font-weight: bold;">May 30, 2024:</span>
+							<span> Congratulations to Shri Harini Ramesh for having 2 peer-reviewed full papers
+								accepted at GI’24 and winning the Best Student Paper Award </span>
+						</li>
+						<li class="extra-news" style="border-bottom: 1px solid #ddd; padding: 10px 0; display: none;">
+							<span style="font-weight: bold;">April 24, 2024:</span>
+							<span>Congratulations to Connor Haberl for his work being published in the Seminars in
+								Nuclear Medicine journal </span>
+							<a href="https://www.sciencedirect.com/science/article/pii/S0001299824000278"
+								target="_blank" style="color: #007bff; text-decoration: none;">Read more</a>
+						</li>
+						<!-- Add more news items here with class="extra-news" if needed -->
+					</ul>
+					<div id="toggleButton" style="text-align: center; margin-top: 15px; cursor: pointer;">
+						<span id="toggleText" style="color: #007bff; font-size: 1.2em;">Show More</span>
+						<i id="toggleIcon" class="fas fa-chevron-down" style="color: #007bff; margin-left: 5px;"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- JavaScript for Toggle Functionality -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const toggleButton = document.getElementById('toggleButton');
+				const extraNewsItems = document.querySelectorAll('.extra-news');
+				const toggleText = document.getElementById('toggleText');
+				const toggleIcon = document.getElementById('toggleIcon');
+				let isExpanded = false;
+
+				toggleButton.addEventListener('click', function () {
+					isExpanded = !isExpanded;
+					extraNewsItems.forEach(item => {
+						item.style.display = isExpanded ? 'block' : 'none';
+					});
+					toggleText.textContent = isExpanded ? 'Show Less' : 'Show More';
+					toggleIcon.className = isExpanded ? 'fas fa-chevron-up' : 'fas fa-chevron-down';
+				});
+			});
+		</script>
+
+		<!-- Optional: Add some basic responsive styling -->
+		<style>
+			@media (max-width: 600px) {
+				.mapHeader span {
+					font-size: 1.2em;
+				}
+
+				.news-list li {
+					padding: 8px 0;
+				}
+
+				#toggleText {
+					font-size: 1em;
+				}
+
+				#toggleIcon {
+					font-size: 1em;
+				}
+			}
+		</style>
+
+		<!-- News Section ends -->
+		<section class="wrapper style1" style="padding-top: 0;">
+			<div class="container" style=" margin: auto;">
+				<div class="mapHeader"
+					style="display: flex; align-items: center; justify-content: center; margin-bottom:0;">
+					<span style="display: flex; align-items: center; font-size: 1.5em; color: #333;">
+						<i style="font-size: 2em; color: #333; margin-right: 0.2em;"></i><strong>Funding</strong>
+					</span>
+				</div>
+
+				<br> We are grateful for funding from Carleton University, the Natural Sciences and Engineering
+				Research Council of Canada (NSERC), the National Research Council Canada, the Ontario Centres of
+				Excellence, Novacene AI, and the Canadian Foundation for Innovation.
+				</p>
+				<span>
+					<div class="row">
+						<div class="col-md-2 col-sm-12">
+							<a href="https://carleton.ca/" style="all: unset; cursor: pointer;" target="_blank"><img
+									class="img-responsive " src="images/fundingLogos/cuLogo.jpg"></a>
+						</div>
+						<div class="col-md-2 col-sm-12">
+							<a href="https://www.nserc-crsng.gc.ca/index_eng.asp" style="all: unset;cursor: pointer;"
+								target="_blank"><img class="img-responsive " src="images/fundingLogos/sponsor1.png"></a>
+						</div>
+						<div class="col-md-2 col-sm-12">
+							<a href="https://nrc.canada.ca/en" style="all: unset;cursor: pointer;" target="_blank"><img
+									class="img-responsive " src="images/fundingLogos/sponsor2.png"></a>
+						</div>
+						<div class="col-md-2 col-sm-12">
+							<a href="https://www.oc-innovation.ca/" style="all: unset;cursor: pointer;"
+								target="_blank"><img class="img-responsive " src="images/fundingLogos/sponsor3.png"></a>
+						</div>
+						<div class="col-md-2 col-sm-12">
+							<a href="https://novacene.ai/" style="all: unset;cursor: pointer;" target="_blank"><img
+									class="img-responsive " src="images/fundingLogos/sponsor4.png"></a>
+						</div>
+						<div class="col-md-2 col-sm-12">
+							<a href="https://www.innovation.ca/" style="all: unset;cursor: pointer;"
+								target="_blank"><img class="img-responsive " src="images/fundingLogos/sponsor5.png"></a>
+						</div>
+					</div>
+				</span>
+			</div>
+		</section>
+
 		<section class="wrapper style1">
 			<div class="container" style=" margin: auto;">
 				<div class="mapHeader"
 					style="display: flex; align-items: center; justify-content: center; margin-bottom:0;">
 					<span style="display: flex; align-items: center; font-size: 1.5em; color: #333;">
-						<i style="font-size: 2em; color: #333; margin-right: 0.2em;"></i><strong>Latest News</strong>
+						<i style="font-size: 2em; color: #333; margin-right: 0.2em;"></i><strong>Contact
+							Us</strong>
 					</span>
 				</div>
-				<section class="wrapper style1" style="padding-bottom: 0;">
+				<section class="wrapper style1">
 					<div class="container" style="margin: auto;">
-						<ul class="news-list" style="list-style-type: none; padding: 0;">
-							<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
-								<span style="font-weight: bold;">August 15, 2024:</span>
-								<span>Congratulations to Darwin Jull for winning the Queen Elizabeth II Scholarship in
-									Science and Technology for starting his Master in the lab</span>
-								<br>
-								<a href="https://carleton.ca/sce/2024/congratulations-darwin-jull-2024-queen-elizabeth-ii-scholarship-recipient/"
-									target="_blank" style="color: #007bff; text-decoration: none;">Read more</a>
-							</li>
-							<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
-								<span style="font-weight: bold;">August 15, 2024:</span>
-								<span>Congrats to Shri Harini Ramesh for her paper acceptance at the IEEE EduVis
-									workshop.</span>
-								<br>
-								<a href="https://ieeevis.org/year/2024/program/paper_w-eduvis-1008.html" target="_blank"
-									style="color: #007bff; text-decoration: none;">Read more</a>
-							</li>
-							<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
-								<span style="font-weight: bold;">July 30, 2024:</span>
-								<span>Fateme Rajabiyazdi has been honored with the New Faculty Excellence in Teaching
-									Award</span>
-								<br>
-								<a href="https://carleton.ca/tls/2024/announcing-the-2024-carleton-university-teaching-award-recipients/"
-									target="_blank" style="color: #007bff; text-decoration: none;">Read more</a>
-							</li>
-							<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
-								<span style="font-weight: bold;">May 30, 2024:</span>
-								<span> Congratulations to Shri Harini Ramesh for having 2 peer-reviewed full papers
-									accepted at GI’24 and winning the Best Student Paper Award. </span>
-								<br>
-							</li>
-							<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
-								<span style="font-weight: bold;">April 24, 2024:</span>
-								<span>Congratulations to Connor Haberl for his work being published in the Seminars in
-									Nuclear Medicine journal.</span>
-								<br>
-								<a href="https://www.sciencedirect.com/science/article/pii/S0001299824000278"
-									target="_blank" style="color: #007bff; text-decoration: none;">Read more</a>
-							</li>
-
-						</ul>
-					</div>
-				</section>
-				<!-- News Section ends -->
-				<section class="wrapper style1" style="padding-top: 0;">
-					<div class="container" style=" margin: auto;">
-						<div class="mapHeader"
-							style="display: flex; align-items: center; justify-content: center; margin-bottom:0;">
-							<span style="display: flex; align-items: center; font-size: 1.5em; color: #333;">
-								<i style="font-size: 2em; color: #333; margin-right: 0.2em;"></i><strong>Funding</strong>
-							</span>
-						</div>
-		
-						 	<br>  We are grateful for funding from Carleton University, the Natural Sciences and Engineering
-							Research Council of Canada (NSERC), the National Research Council Canada, the Ontario Centres of
-							Excellence, Novacene AI, and the Canadian Foundation for Innovation.
-						</p>
-						<span>
-							<div class="row">
-								<div class="col-md-2 col-sm-12">
-									<a href="https://carleton.ca/" style="all: unset; cursor: pointer;" target="_blank"><img
-											class="img-responsive " src="images/fundingLogos/cuLogo.jpg"></a>
-								</div>
-								<div class="col-md-2 col-sm-12">
-									<a href="https://www.nserc-crsng.gc.ca/index_eng.asp" style="all: unset;cursor: pointer;"
-										target="_blank"><img class="img-responsive " src="images/fundingLogos/sponsor1.png"></a>
-								</div>
-								<div class="col-md-2 col-sm-12">
-									<a href="https://nrc.canada.ca/en" style="all: unset;cursor: pointer;" target="_blank"><img
-											class="img-responsive " src="images/fundingLogos/sponsor2.png"></a>
-								</div>
-								<div class="col-md-2 col-sm-12">
-									<a href="https://www.oc-innovation.ca/" style="all: unset;cursor: pointer;"
-										target="_blank"><img class="img-responsive " src="images/fundingLogos/sponsor3.png"></a>
-								</div>
-								<div class="col-md-2 col-sm-12">
-									<a href="https://novacene.ai/" style="all: unset;cursor: pointer;" target="_blank"><img
-											class="img-responsive " src="images/fundingLogos/sponsor4.png"></a>
-								</div>
-								<div class="col-md-2 col-sm-12">
-									<a href="https://www.innovation.ca/" style="all: unset;cursor: pointer;"
-										target="_blank"><img class="img-responsive " src="images/fundingLogos/sponsor5.png"></a>
-								</div>
+						<div
+							style="background: #f8f9fa; padding: 0.5em; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); position: relative;">
+							<!-- Background Pattern or Image -->
+							<div
+								style="position: absolute; top: 40; left: 0; right: 0; bottom: 0; background: url('background-pattern.png') no-repeat center/cover; opacity: 0.1; z-index: 0;">
 							</div>
-						</span>
-					</div>
-				</section>
-		
-				<section class="wrapper style1" >
-					<div class="container" style=" margin: auto;">
-						<div class="mapHeader"
-							style="display: flex; align-items: center; justify-content: center; margin-bottom:0;">
-							<span style="display: flex; align-items: center; font-size: 1.5em; color: #333;">
-								<i style="font-size: 2em; color: #333; margin-right: 0.2em;"></i><strong>Contact
-									Us</strong>
-							</span>
-						</div>
-						<section class="wrapper style1">
-							<div class="container" style="margin: auto;">
+							<div style="z-index: 1; text-align: center; margin-bottom: 1em;">
+
 								<div
-									style="background: #f8f9fa; padding: 0.5em; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); position: relative;">
-									<!-- Background Pattern or Image -->
-									<div
-										style="position: absolute; top: 40; left: 0; right: 0; bottom: 0; background: url('background-pattern.png') no-repeat center/cover; opacity: 0.1; z-index: 0;">
-									</div>
-									<div style="z-index: 1; text-align: center; margin-bottom: 1em;">
-
-										<div
-											style="background-color: white; padding: 1em; border-radius: 8px; display: inline-block;">
-											<p style="margin: 0 0 1em; color: #555;">
-												<strong>Address:</strong> Room 7049, Minto Case Building, Carleton
-												University,
-												1125 Colonel By Dr, Ottawa, ON K1S 5B6
-											</p>
-											<p style="margin: 0;"><strong>Email:</strong> <a
-													href="mailto:healthvisfutures@sce.carleton.ca"
-													style="color: #007bff; text-decoration: none;">healthvisfutures@sce.carleton.ca</a>
-											</p>
-										</div>
-									</div>
-									<div
-										style="position: relative; padding-top: 25%; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-										<iframe
-											src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.1938010033105!2d-75.69898568478872!3d45.38526127910015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05d8bf2188ab%3A0x13180ef271726497!2sMinto%20CASE!5e0!3m2!1sen!2sca!4v1673371321907!5m2!1sen!2sca"
-											style="border:0; width: 100%; height: 100%; position: absolute; top: 0; left: 0;"
-											allowfullscreen="" loading="lazy"
-											referrerpolicy="no-referrer-when-downgrade"></iframe>
-									</div>
+									style="background-color: white; padding: 1em; border-radius: 8px; display: inline-block;">
+									<p style="margin: 0 0 1em; color: #555;">
+										<strong>Address:</strong> Room 7049, Minto Case Building, Carleton
+										University,
+										1125 Colonel By Dr, Ottawa, ON K1S 5B6
+									</p>
+									<p style="margin: 0;"><strong>Email:</strong> <a
+											href="mailto:healthvisfutures@sce.carleton.ca"
+											style="color: #007bff; text-decoration: none;">healthvisfutures@sce.carleton.ca</a>
+									</p>
 								</div>
 							</div>
-
-
-
-							<!-- social media accounts icons -->
-							<ul class="icons contactUsLinks">
-								<li><a href="https://twitter.com/HealthVisFuture" class="icon brands fa-twitter"><span
-											class="label">Twitter</span></a></li>
-								<!--ADDED github icon for future-->
-								<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
-								<li><a href="https://www.linkedin.com/in/healthvisfutures-lab/"
-										class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-
+							<div
+								style="position: relative; padding-top: 25%; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.1938010033105!2d-75.69898568478872!3d45.38526127910015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05d8bf2188ab%3A0x13180ef271726497!2sMinto%20CASE!5e0!3m2!1sen!2sca!4v1673371321907!5m2!1sen!2sca"
+									style="border:0; width: 100%; height: 100%; position: absolute; top: 0; left: 0;"
+									allowfullscreen="" loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
 					</div>
-				</section>
 
-				<!-- Scripts -->
-				<script src="homeData.js"></script>
-				<script type="text/javascript"
-					src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-				<script src="assets/js/jquery.min.js"></script>
-				<script src="assets/js/jquery.dropotron.min.js"></script>
-				<script src="assets/js/browser.min.js"></script>
-				<script src="assets/js/breakpoints.min.js"></script>
-				<script src="assets/js/util.js"></script>
-				<script src="assets/js/main.js"></script>
-				<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-					integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-					crossorigin="anonymous"></script>
-				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-					integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-					crossorigin="anonymous"></script>
-				<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-					integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-					crossorigin="anonymous"></script>
+
+
+					<!-- social media accounts icons -->
+					<ul class="icons contactUsLinks">
+						<li><a href="https://twitter.com/HealthVisFuture" class="icon brands fa-twitter"><span
+									class="label">Twitter</span></a></li>
+						<!--ADDED github icon for future-->
+						<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+						<li><a href="https://www.linkedin.com/in/healthvisfutures-lab/"
+								class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+					</ul>
+
+			</div>
+		</section>
+
+		<!-- Scripts -->
+		<script src="homeData.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"></script>
 
 </body>
 
