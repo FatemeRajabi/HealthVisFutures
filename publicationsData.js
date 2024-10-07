@@ -24,7 +24,7 @@ const publications = [
         event: "GI '24",
         award: "",
         title: "TextVista: NLP-Enriched Time-Series Text Data Visualizations",
-        downloadLink: 'https://openreview.net/forum?id=CX4uT5cauk',
+        downloadLink: 'https://doi.org/10.1145/3670947.3670971',
         abstract: 'There is a vast amount of unstructured text data generated every day analyzing and making sense of these text-based datasets is a complex, cumbersome task. The existing visualization tools that analyze text data leveraging Natural Language Processing (NLP) techniques, are often tailored for structured text-based data. They also fail to support reading, a crucial analysis task to validate the output of NLP techniques. We designed and developed TextVista, an NLP-enriched visualization tool that supports analysts during their analysis of unstructured text with temporal references. Our tool combines techniques including clustering, sentiment analysis, and threat detection with three views that visualize high-level patterns in the data to encourage reading. We report on TextVistas iterative design process, which included a focus group to distill design requirements, a think-aloud interview study with data analysts to understand their impressions of the tool, and a diary study to assess its long-term usage. Through this process, we identified how TextVista supported the analysis of unstructured text with temporal references using NLP techniques and fostered methods to promote reading in situ. TextVista also encouraged serendipity when analyzing data via its question-focused overviews and flexible avenues to explore data.',
         authors: [
             { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
@@ -41,7 +41,7 @@ const publications = [
         event: "GI '24",
         award: "Best Student Paper Award",
         title: "A Data Visualization Tool for Patients and Healthcare Providers to Communicate during Inpatient Stroke Rehabilitation",
-        downloadLink: 'https://openreview.net/pdf?id=HSPRA1VW9l',
+        downloadLink: 'https://doi.org/10.1145/3670947.3670978',
         abstract: 'Stroke is one of the leading causes of disability worldwide. The efficacy of stroke recovery is determined by various factors, including patient adherence to their rehabilitation program. Effective communication between healthcare providers and patients is crucial for promoting patients adherence to rehabilitation programs. Aiming to support patient-healthcare provider communication during inpatient stroke rehabilitation, we 1. conducted semi-structured interviews with healthcare providers with expertise in inpatient stroke recovery to extract design requirements for visualizing stroke recovery progress. Using these design requirements, we 2. designed a data visualization tool representing stroke recovery. We 3. sought feedback on the visualization designs from healthcare providers and patients and integrated their feedback into the designs. Informed by the results of our studies, we provided several considerations for designing future visualization tools for patients and providers to communicate during inpatient stroke rehabilitation.',
         authors: [
             { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "peopleDetails.html?type=stud&people=shri-Harini" },
