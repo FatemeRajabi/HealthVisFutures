@@ -137,7 +137,7 @@ jsonData = `{
     },
     "connor-haberl":{ 
         "name":"Connor Haberl",
-        "info":"Connor joined the research team in September 2021 as a graduate research assistant. He successfully completed his MASc in Biomedical Engineering in Aug 2023 and is now continuing his research as a PhD student. He works in partnership with the University of Ottawa Heart Institute developing multi-modal imaging software to support the therapy planning of non-invasive cardiac radioablation. Connor has an undergraduate degree in Engineering Physics from UBC and a background in transcatheter heart valve design. He enjoys working at the interface between new technologies and their application in the healthcare industry, where he must speak the language of both clinicians and engineers.",
+        "info":"Connor joined the research team in September 2021 as a graduate research assistant. He successfully completed his MASc in Biomedical Engineering in Aug 2023 and is now continuing his research as a PhD student. He works in partnership with the University of Ottawa Heart Institute developing multi-modal imaging software to support the therapy planning of non-invasive cardiac radioablation. Connor has an undergraduate degree in Engineering Physics from UBC and a background in transcatheter heart valve design. He enjoys working at the interface between new technologies and their application in the healthcare industry, where he must speak the language of both clinicians and engineers. Also really enjoys pizza.",
         "imgsrc":"images/studentImages/Connor.jpg",
         "degrees": [
             "MASc, Biomedical Engineering (Systems & Computer Engineering), Carleton University (2023)",
@@ -194,7 +194,7 @@ jsonData = `{
     },
     "beck-langstone":{ 
         "name":"Beck Langstone",
-        "info":"Beck joined the research team in September 2021 as a graduate research student. She will be working on a medical data visualization project. Beck has a background in Linguistics, and has worked in development in private and public sectors. Beck is starting her first year in Human-Computer Interaction, and is keenly interested in robotics, AI, and design.",
+        "info":"Beck joined the research team in September 2021 as a graduate research student. She will be working on a medical data visualization project. Beck has a background in Linguistics, and has worked in development in private and public sectors. Beck is starting her first year in Human-Computer Interaction, and is keenly interested in robotics, AI, and design. We miss her dearly.",
         "imgsrc":"images/studentImages/Beck.jpg"
     },
     "alicia-ouskine":{ 
