@@ -1,6 +1,39 @@
 const publications = [
+    // Year: 2025
+    {
+        imgSrc: "images/research/handm/CRjmir.png",
+        event: "JMIR'25",
+        award: "",
+        title: "Exploring Barriers to Patients’ Progression in the Cardiac Rehabilitation Journey From Health Care Providers’ Perspectives: Qualitative Study",
+        downloadLink: 'https://www.i-jmr.org/2025/1/e66164',
+        abstract: 'Cardiovascular diseases are one of the leading causes of mortality globally. Cardiac rehabilitation (CR) programs are crucial for patients recovering from cardiac events, as they help reduce the risk of recurrent events and support patient recovery. The patient’s journey in CR spans the stages before, during, and after the program. Patients have to progress through each stage of CR programs successfully to complete the entire CR journey and get the full benefits of CR programs, but numerous barriers within this journey can hinder patient progression. This study aims to explore the barriers to progression at all stages of the CR patient journey from the perspectives of health care providers involved in CR care. This qualitative study involved semistructured interviews with health care providers involved in CR care from July 2023 to January 2024. A purposive maximal variation sampling method was used to target providers with diverse demographics and specialties. Snowball sampling was used to recruit participants, leveraging the existing networks of participants. Each interview lasted between 30 and 45 minutes. Interviews were recorded, transcribed verbatim, and analyzed using an inductive thematic analysis approach. Data analysis was conducted from August 2023 to February 2024. Ten health care providers, comprising 7 females and 3 males, were interviewed. Their roles included physician, program director, nurse manager, clinical manager, nurse coordinator, nurse, physiotherapist, and kinesiologist. The analysis identified four overarching themes related to barriers to progression in the CR journey: (1) patients not being referred to CR programs, (2) patients not enrolling in CR programs, (3) patients dropping out of CR programs, and (4) patients’ lack of adherence to lifestyle changes post-CR programs. In light of the growing interest in technological interventions in CR programs, we proposed 4 potential technological solutions to address the barriers to progression identified in our analysis. These solutions aim to provide a foundation for future research to guide the development of effective technologies and enhance patient progression within the CR journey. ',
+        authors: [
+            
+            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "peopleDetails.html?type=prof&people=shri-Harini" },
+            { name: "Darwin Jull", imgSrc: "images/studentImages/Darwin1.jpeg", url: "peopleDetails.html?type=prof&people=darwin-jull2" },
+            { name: "Hélène Fournier ", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+        ],
+        additionalDetails: "Interactive Journal of Medical Research (i-jmr)",
+        category:"health"
+    }, 
+
     // Year : 2024
-    
+    {
+        imgSrc: "images/research/vis/DataVisCourse.png",
+        event: "EduVis'24",
+        award: "",
+        title: "Challenges and Opportunities of Teaching Data Visualization Together with Data Science",
+        downloadLink: 'https://ieeexplore.ieee.org/abstract/document/10747681',
+        abstract: 'With the increasing amount of data globally, analyzing and visualizing data are becoming essential skills across various professions. It is important to equip university students with these essential data skills. To learn, design, and develop data visualization, students need knowledge of programming and data science topics. Many university programs lack dedicated data science courses for undergraduate students, making it important to introduce these concepts through integrated courses. However, combining data science and data visualization into one course can be challenging due to the time constraints and the heavy load of learning. In this paper, we discuss the development of teaching data science and data visualization together in one course and share the results of the post-course evaluation survey. From the survey’s results, we identified four challenges, including difficulty in learning multiple tools and diverse data science topics, varying proficiency levels with tools and libraries, and selecting and cleaning datasets. We also distilled five opportunities for developing a successful data science and visualization course. These opportunities include clarifying the course structure, emphasizing visualization literacy early in the course, updating the course content according to student needs, using large real-world datasets, learning from industry professionals, and promoting collaboration among students.',
+        authors: [
+            
+            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "peopleDetails.html?type=prof&people=shri-Harini" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+        ],
+        additionalDetails: "Proceedings of the 2024 IEEE VIS Workshop on Visualization Education, Literacy, and Activities (EduVIS)",
+        category:"data"
+    },
     {
         imgSrc: "images/research/hci/elephantLargeDisplay.png",
         event: "PACM HCI'24",

@@ -69,13 +69,6 @@ jsonData={
             "extraInfo":"",
             "link":"shri-Harini"
         },
-        {   
-            "name":"Mahsa Sinaei",
-            "course":"PhD – Systems and Computer Engineering",
-            "imgsrc":"images/studentImages/Mahsa3.png",
-            "extraInfo":"",
-            "link":"mahsa-sinaei"
-        },
         {
             "name":"Darwin Jull",
             "course":"MASc - Biomedical Engineering",
@@ -115,6 +108,13 @@ jsonData={
         },
     ],
     "alumni":[
+        {   
+            "name":"Mahsa Sinaei",
+            "course":"MASc – Systems and Computer Engineering",
+            "imgsrc":"images/studentImages/Mahsa3.png",
+            "extraInfo":"",
+            "link":"mahsa-sinaei"
+        },
         {
             "name":"Roshan Faisal Zaki",
             "course":"Masters in Electrical and Computer Engineering",

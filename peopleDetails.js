@@ -78,6 +78,15 @@ jsonData = `{
         },
         "pubName":"Shri Harini Ramesh",
         "journal_publications":[
+        {
+                "title": "Exploring Barriers to Patients’ Progression in the Cardiac Rehabilitation Journey From Health Care Providers’ Perspectives: Qualitative Study",
+                "authors": "Shri Harini Ramesh;  Darwin Jull;  Hélène Fournier;  Fateme Rajabiyazdi",
+                "journal": "Interactive Journal of Medical Research",
+                "volume": "14",
+                "month": "February",
+                "year" : "2025",
+                "doi": "https://www.i-jmr.org/2025/1/e66164"
+            },
             {
                 "title": "Automated Implementation of the Edinburgh Visual Gait Score (EVGS) Using OpenPose and Handheld Smartphone Video",
                 "authors": "Shri Harini Ramesh and Lemaire, Edward D. and Tu, Amy and Cheung, Kevin and Baddour, Noura",
@@ -89,13 +98,21 @@ jsonData = `{
             }
             ],
         "conf_publications":[
+        {
+                "title": "Challenges and Opportunities of Teaching Data Visualization Together with Data Science",
+                "authors": "Shri Harini Ramesh, Fateme Rajabiyazdi",
+                "journal": "IEEE VIS Workshop on Visualization Education, Literacy, and Activities (EduVIS)",
+                "month": "October",
+                "year" : "2024",
+                "doi": "https://ieeexplore.ieee.org/abstract/document/10747681"
+            },
             {
                 "title": "A Data Visualization Tool for Patients and Healthcare Providers to Communicate during Inpatient Stroke Rehabilitation",
                 "authors": "Shri Harini Ramesh, Alicia Ouskine, Elahe Khorasani, Mona Ebrahimipour, Hillel Finestone, Adrian DC Chan, Fateme Rajabiyazdi",
                 "journal": "Graphics Interface",
                 "month": "June",
                 "year" : "2024",
-                "doi": "https://openreview.net/pdf?id=HSPRA1VW9l"
+                "doi": "https://dl.acm.org/doi/abs/10.1145/3670947.3670978"
             },
             {
                 "title": "TextVista: NLP-Enriched Time-Series Text Data Visualizations",
@@ -124,13 +141,14 @@ jsonData = `{
                 "doi": "https://ieeexplore.ieee.org/abstract/document/10100493"
             }
         ],
-        "extended_abstracts":[],
+    
         "external_awards":[
             "Best Paper Award - GI '24 (Selected from 37 accepted papers)",
             "Best Scientific Poster Award (Selected from 192 posters)"
         ],
         "internal_awards":[
-            "Bhargave Family Scholarship, Jan 2024",
+            "Bhargava Family Scholarship, Jan 2024 and Jan 2025",
+            "Vanier Graduate Scholarship, Nominated by the department",
             "Allan Buchanan Scholarship, May 2023",
             "International Doctoral Excellence Award (IDE), 2023 - 2025"
         ]
