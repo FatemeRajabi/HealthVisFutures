@@ -148,7 +148,7 @@ jsonData = `{
         ],
         "internal_awards":[
             "Bhargava Family Scholarship, Jan 2024 and Jan 2025",
-            "Vanier Graduate Scholarship, Nominated by the department",
+            "Vanier Graduate Scholarship, Nominated by the Department",
             "Allan Buchanan Scholarship, May 2023",
             "International Doctoral Excellence Award (IDE), 2023 - 2025"
         ]
