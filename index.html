@@ -57,7 +57,7 @@
 		</div>
 		<!-- Header ends-->
 		<!-- Banner -->
-		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="4000"
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="10000"
 			data-pause="false">
 			<div class="carousel-inner">
 				<!-- <div class="overpic">	
@@ -150,66 +150,15 @@
 					</span>
 				</div>
 				<div class="news-container" style="position: relative;">
-					<ul class="news-list" style="list-style-type: none; padding: 0; margin: 0;">
+					<ul id="newsList" class="news-list" style="list-style-type:none; padding:0; margin:0;"></ul>
 
-						<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
-							<span style="font-weight: bold;">October 1, 2024:</span>
-							<span>Congratulations to Darwin Jull for receiving Adrian D.C. Chan Award for Volunteer and Community Service </span>
-							<a href="https://carleton.ca/engineering-design/story/how-volunteering-shapes-carletons-engineering-community/"
-								target="_blank" style="color: #007bff; text-decoration: none;">Read more</a>
-						</li>
-						<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
-							<span style="font-weight: bold;">October 1, 2024:</span>
-							<span>Congratulations to Shri Harini Ramesh and Darwin Jull! Their journal paper "Exploring Barriers to Patients’ Progression in the Cardiac Rehabilitation Journey from Healthcare Providers’ Perspectives: Qualitative Study" has been accepted by the Interactive Journal of Medical Research with a 25% acceptance rate </span>
-							<a href="https://www.i-jmr.org/2025/1/e66164"
-								target="_blank" style="color: #007bff; text-decoration: none;">Read more</a>
-						</li>
-						
-						<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
-							<span style="font-weight: bold;">October 1, 2024:</span>
-							<span>Congratulations to Mahsa Sinaei for her journal acceptance at the ACM Interactive
-								Surfaces and Spaces Conference </span>
-							<a href="https://carleton.ca/rajabiyazdi/cu-files/iss-2024-challenges-of-designing-and-developing-vis-on-large-displays/"
-								target="_blank" style="color: #007bff; text-decoration: none;">Read more</a>
-						</li>
-						<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
-							<span style="font-weight: bold;">August 15, 2024:</span>
-							<span>Congratulations to Darwin Jull for winning the Queen Elizabeth II Scholarship in
-								Science and Technology scholarships </span>
-							<a href="https://carleton.ca/sce/2024/congratulations-darwin-jull-2024-queen-elizabeth-ii-scholarship-recipient/"
-								target="_blank" style="color: #007bff; text-decoration: none;">Read more</a>
-						</li>
-						<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
-							<span style="font-weight: bold;">August 15, 2024:</span>
-							<span>Congrats to Shri Harini Ramesh for her paper acceptance at the IEEE EduVis
-								workshop </span>
-							<a href="https://ieeevis.org/year/2024/program/paper_w-eduvis-1008.html" target="_blank"
-								style="color: #007bff; text-decoration: none;">Read more</a>
-						</li>
-						<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
-							<span style="font-weight: bold;">July 30, 2024:</span>
-							<span>Fateme Rajabiyazdi has been honored with the New Faculty Excellence in Teaching
-								Award </span>
-							<a href="https://carleton.ca/tls/2024/announcing-the-2024-carleton-university-teaching-award-recipients/"
-								target="_blank" style="color: #007bff; text-decoration: none;">Read more</a>
-						</li>
-						<li style="border-bottom: 1px solid #ddd; padding: 10px 0;">
-							<span style="font-weight: bold;">May 30, 2024:</span>
-							<span> Congratulations to Shri Harini Ramesh for having 2 peer-reviewed full papers
-								accepted at GI’24 and winning the Best Student Paper Award </span>
-						</li>
-						<li class="extra-news" style="border-bottom: 1px solid #ddd; padding: 10px 0; display: none;">
-							<span style="font-weight: bold;">April 24, 2024:</span>
-							<span>Congratulations to Connor Haberl for his work being published in the Seminars in
-								Nuclear Medicine journal </span>
-							<a href="https://www.sciencedirect.com/science/article/pii/S0001299824000278"
-								target="_blank" style="color: #007bff; text-decoration: none;">Read more</a>
-						</li>
-						<!-- Add more news items here with class="extra-news" if needed -->
-					</ul>
-					<div id="toggleButton" style="text-align: center; margin-top: 15px; cursor: pointer;">
-						<span id="toggleText" style="color: #007bff; font-size: 1.2em;">Show More</span>
-						<i id="toggleIcon" class="fas fa-chevron-down" style="color: #007bff; margin-left: 5px;"></i>
+					<div id="toggleButton" style="text-align:center; margin-top:15px; cursor:pointer;">
+						<button id="toggleBtn" aria-expanded="false" aria-controls="newsList" type="button"
+							class="btn btn-link">
+							<span id="toggleText">Show More</span>
+							<i id="toggleIcon" class="fas fa-chevron-down" aria-hidden="true"
+								style="margin-left:5px;"></i>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -266,7 +215,8 @@
 					</span>
 				</div>
 
-				<br> We are grateful for funding from University of Calgary, Carleton University, the Natural Sciences and Engineering
+				<br> We are grateful for funding from University of Calgary, Carleton University, the Natural Sciences
+				and Engineering
 				Research Council of Canada (NSERC), the National Research Council Canada, the Ontario Centres of
 				Excellence, Novacene AI, and the Canadian Foundation for Innovation.
 				</p>
@@ -323,7 +273,7 @@
 								<div
 									style="background-color: white; padding: 1em; border-radius: 8px; display: inline-block;">
 									<p style="margin: 0 0 1em; color: #555;">
-										<strong>Address:</strong> University of Calgary
+										<strong>Address:</strong> University of Calgary, 612 Campus Pl NW, Calgary, AB T2L 2A3
 									</p>
 									<p style="margin: 0;"><strong>Email:</strong> <a
 											href="mailto:fateme.rajabiyazdi@ucalgary.ca"
@@ -331,14 +281,14 @@
 									</p>
 								</div>
 							</div>
-							<!--<div
+							<div
 								style="position: relative; padding-top: 25%; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
 								<iframe
-									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.1938010033105!2d-75.69898568478872!3d45.38526127910015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05d8bf2188ab%3A0x13180ef271726497!2sMinto%20CASE!5e0!3m2!1sen!2sca!4v1673371321907!5m2!1sen!2sca"
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.545813852668!2d-114.13055182340548!3d51.07993377171932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f0c0791861d%3A0x58abe6a360cf5b55!2sMath%20Sciences%20Building!5e0!3m2!1sen!2sca!4v1761407333691!5m2!1sen!2sca"
 									style="border:0; width: 100%; height: 100%; position: absolute; top: 0; left: 0;"
 									allowfullscreen="" loading="lazy"
 									referrerpolicy="no-referrer-when-downgrade"></iframe>
-							</div>-->
+							</div>
 						</div>
 					</div>
 
@@ -348,9 +298,8 @@
 					<!-- <ul class="icons contactUsLinks">
 						<li><a href="https://twitter.com/HealthVisFuture" class="icon brands fa-twitter"><span
 									class="label">Twitter</span></a></li>
-						<!--ADDED github icon for future-->
-						<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>-->
-						<!-- <li><a href="https://www.linkedin.com/in/healthvisfutures-lab/"
+						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/healthvisfutures-lab/"
 								class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 					</ul> -->
 
@@ -375,6 +324,9 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"></script>
+		<!-- include scripts (put before closing </body>) -->
+		<script src="news-data.js"></script>
+		<script src="news-renderer.js"></script>
 
 </body>
 

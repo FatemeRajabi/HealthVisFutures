@@ -25,225 +25,227 @@ link-link name for every person
 
 
  */
-jsonData={
-    "professors":[
+jsonData = {
+    "professors": [
         {
-            "name":"Prof. Fateme Rajabiyazdi",
-            "designation":"Assistant Professor",
-            "degree":"B.Eng, M.Sc, Ph.D.",
-            "imgsrc":"images/profImages/Fateme.jpg",
-            "link":"fateme"        
+            "name": "Prof. Fateme Rajabiyazdi",
+            "designation": "Assistant Professor",
+            "degree": "B.Eng, M.Sc, Ph.D.",
+            "imgsrc": "images/profImages/Fateme.jpg",
+            "link": "fateme"
         },
 
     ],
-    "undergrads":[
+    "undergrads": [
         {
-            "name":"Mia Cornell",
-            "course":"Electrical Engineering",
-            "imgsrc":"images/studentImages/mia.jpg",
-            "extraInfo":"RA",
-            "link":"mia"   
-        },
-        {
-            "name":"Esosa Ohangbon",
-            "course":"Software Engineering",
-            "imgsrc":"images/studentImages/esosa.png",
-            "extraInfo":"RA",
-            "link":"esosa-ohangbon"   
+            "name": "Kosiso Igbokwe",
+            "course": "Computer Science",
+            "imgsrc": "images/studentImages/Kosiso.jpg",
+            "extraInfo": "",
+            "link": "kosiso-igbokwe"
         },
 
 
     ],
-    "grads":[
+    "grads": [
         {
-            "name":"Connor Haberl",
-            "course":"PhD – Biomedical Engineering",
-            "imgsrc":"images/studentImages/Connor.jpg",
-            "extraInfo":"",
-            "link":"connor-haberl"
+            "name": "Shri Harini Ramesh",
+            "course": "PhD – Biomedical Engineering",
+            "imgsrc": "images/studentImages/Shri2.jpg",
+            "extraInfo": "",
+            "link": "shri-Harini"
         },
         {
-            "name":"Shri Harini Ramesh",
-            "course":"PhD – Biomedical Engineering",
-            "imgsrc":"images/studentImages/Shri2.jpg",
-            "extraInfo":"",
-            "link":"shri-Harini"
+            "name": "Darwin Jull",
+            "course": "MASc - Biomedical Engineering",
+            "imgsrc": "images/studentImages/Darwin1.jpeg",
+            "extraInfo": "",
+            "link": "darwin-jull2"
         },
         {
-            "name":"Darwin Jull",
-            "course":"MASc - Biomedical Engineering",
-            "imgsrc":"images/studentImages/Darwin1.jpeg",
-            "extraInfo":"",
-            "link":"darwin-jull2"   
-        },
-        {
-            "name":"Matteo Sotelo",
-            "course":"MASc - Information technology",
-            "imgsrc":"images/studentImages/Matteo.png",
-            "extraInfo":"",
-            "link":"matteo"   
+            "name": "Matteo Sotelo",
+            "course": "MASc - Information technology",
+            "imgsrc": "images/studentImages/Matteo.png",
+            "extraInfo": "",
+            "link": "matteo"
         },
 
-        
-    ],
-    "postdocs":[
-        {
-            "name":"Dr. Elahe Khorasani",
-            "info":"Co-supervised with Dr. Julio Fiore",
-            "university":"McGill University",
-            "imgsrc":"images/studentImages/Elaheh2.jpg",
-            "link":"elaheh-khorasani"
-            
-        },
 
     ],
-    "ras":[
-        {
-            "name":"Daniil Kulik",
-            "course":"Master of computer science",
-            "extraInfo":"Web Developer",
-            "imgsrc":"images/studentImages/dummy.png",
-            "link":"daniil"
-            
-        },
+    "postdocs": [
+
+
     ],
-    "alumni":[
-        {   
-            "name":"Mahsa Sinaei",
-            "course":"MASc – Systems and Computer Engineering",
-            "imgsrc":"images/studentImages/Mahsa3.png",
-            "extraInfo":"",
-            "link":"mahsa-sinaei"
-        },
-        {
-            "name":"Roshan Faisal Zaki",
-            "course":"Masters in Electrical and Computer Engineering",
-            "imgsrc":"images/studentImages/Roshan.jpeg",
-            "extraInfo":"",
-            "link":"roshan"
-        },
-        {
-            "name":"Mariana Perez Rodriguez",
-            "course":"Master of Design",
-            "imgsrc":"images/studentImages/Mariana.jpg",
-            "extraInfo":"",
-            "link":"mariana-perez-rodriguez"
-        },
-        
-        {
-            "name":"Darwin Jull",
-            "course":"Biomedical Engineering",
-            "imgsrc":"images/studentImages/Darwin1.jpeg",
-            "extraInfo":"I-CUREUS",
-            "link":"darwin-jull"   
-        },
+    "ras": [
 
-        {
-            "name":"Connor Haberl",
-            "course":"MASc – Biomedical Engineering",
-            "imgsrc":"images/studentImages/Connor.jpg",
-            "extraInfo":"",
-            "link":"connor-haberl"
-        },
-        {
-        "name":"Abhishek Ahuja",
-        "course":"Software Engineering",
-        "imgsrc":"images/studentImages/AbhishekAhuja.jpg",
-        "extraInfo":"",
-        "link":"abishekahuja"
-        },
-
-        {
-            "name":"Beck Langstone",
-            "course":"MASc – Human-Computer Interaction",
-            "imgsrc":"images/studentImages/Beck2.jpg",
-            "extraInfo":"",
-            "link":"beck-langstone"
-        },
-        {
-            "name":"Alicia Ouskine",
-            "course":"MASc – Human-Computer Interaction",
-            "imgsrc":"images/studentImages/Alicia.jpg",
-            "extraInfo":"",
-            "link":"alicia-ouskine"
-        },
-    
-        {
-            "name":"Alaa Alsatari",
-            "course":"Neuroscience and Mental Health",
-            "imgsrc":"images/studentImages/Alaa2.png",
-            "extraInfo":"I-CUREUS",
-            "link":"alaa-alsatari"
-            
-        },
-        {
-            "name":"Paddy Greene",
-            "course":"Biomedical Engineering",
-            "imgsrc":"images/studentImages/Paddy2.jpg",
-            "extraInfo":"USRA",
-            "link":"paddy-greene"
-        },
-        {
-            "name":"Erin Lui-Hing",
-            "course":"Biomedical Engineering",
-            "imgsrc":"images/studentImages/Erin.jpeg",
-            "extraInfo":"I-CUREUS",
-            "link":"erin-lui-hing"
-        },
-      {
-            "name":"Arsh Saleem",
-            "course":"Biomedical Engineering",
-            "extraInfo":"Co-Op",
-            "imgsrc":"images/studentImages/Arsh.jpg",
-            "link":"arsh"
-            
-        },
-        {
-            "name":"Rahel Gunaratne",
-            "course":"Software Engineering",
-            "extraInfo":"I-CUREUS",
-            "imgsrc":"images/studentImages/Rahel.jpg",
-            "link":"rahel"
-            
-        },
-        
     ],
-    "past":[
+    "alumni": [
         {
-            "name":"Abhishek Mayurbhai Patel",
-            "course":"Master of Engineering",
-            "extraInfo":"Web Developer",
-            "imgsrc":"images/studentImages/Abhishek2.png",
-            "link":"abhishek-mayurbhai-patel"
-            
-        },
-        {
-            "name":"Sanhita Paluskar",
-            "course":"Master of Engineering",
-            "extraInfo":"Software Engineer",
-            "imgsrc":"images/studentImages/Sanhita.png",
-            "link":"sanhita"
-            
-        },
-        {
-            "name":"Ali Shajari",
-            "course":"Bachelor of Arts",
-            "imgsrc":"images/studentImages/Ali.jpg",
-            "extraInfo":"SaPP",
-            "link":"ali-shajari"  
+            "name": "Dr. Elahe Khorasani",
+            "info": "Co-supervised with Dr. Julio Fiore",
+            "university": "McGill University",
+            "imgsrc": "images/studentImages/Elaheh2.jpg",
+            "link": "elaheh-khorasani"
 
         },
         {
-            "name":"Sam Serdah",
-            "course":"MASc – Data Science",
-            "imgsrc":"images/studentImages/Sam2.jpeg",
-            "extraInfo":"",
-            "link":"sam-serdah"
+            "name": "Mia Cornell",
+            "course": "Electrical Engineering",
+            "imgsrc": "images/studentImages/mia.jpg",
+            "extraInfo": "RA",
+            "link": "mia"
+        },
+        {
+            "name": "Esosa Ohangbon",
+            "course": "Software Engineering",
+            "imgsrc": "images/studentImages/esosa.png",
+            "extraInfo": "RA",
+            "link": "esosa-ohangbon"
+        },
+        {
+            "name": "Mahsa Sinaei",
+            "course": "MASc – Systems and Computer Engineering",
+            "imgsrc": "images/studentImages/Mahsa3.png",
+            "extraInfo": "",
+            "link": "mahsa-sinaei"
+        },
+        {
+            "name": "Roshan Faisal Zaki",
+            "course": "Masters in Electrical and Computer Engineering",
+            "imgsrc": "images/studentImages/Roshan.jpeg",
+            "extraInfo": "",
+            "link": "roshan"
+        },
+        {
+            "name": "Mariana Perez Rodriguez",
+            "course": "Master of Design",
+            "imgsrc": "images/studentImages/Mariana.jpg",
+            "extraInfo": "",
+            "link": "mariana-perez-rodriguez"
+        },
+
+        {
+            "name": "Darwin Jull",
+            "course": "Biomedical Engineering",
+            "imgsrc": "images/studentImages/Darwin1.jpeg",
+            "extraInfo": "I-CUREUS",
+            "link": "darwin-jull"
+        },
+
+        {
+            "name": "Connor Haberl",
+            "course": "MASc – Biomedical Engineering",
+            "imgsrc": "images/studentImages/Connor.jpg",
+            "extraInfo": "",
+            "link": "connor-haberl"
+        },
+        {
+            "name": "Abhishek Ahuja",
+            "course": "Software Engineering",
+            "imgsrc": "images/studentImages/AbhishekAhuja.jpg",
+            "extraInfo": "",
+            "link": "abishekahuja"
+        },
+
+        {
+            "name": "Beck Langstone",
+            "course": "MASc – Human-Computer Interaction",
+            "imgsrc": "images/studentImages/Beck2.jpg",
+            "extraInfo": "",
+            "link": "beck-langstone"
+        },
+        {
+            "name": "Alicia Ouskine",
+            "course": "MASc – Human-Computer Interaction",
+            "imgsrc": "images/studentImages/Alicia.jpg",
+            "extraInfo": "",
+            "link": "alicia-ouskine"
+        },
+
+        {
+            "name": "Alaa Alsatari",
+            "course": "Neuroscience and Mental Health",
+            "imgsrc": "images/studentImages/Alaa2.png",
+            "extraInfo": "I-CUREUS",
+            "link": "alaa-alsatari"
+
+        },
+        {
+            "name": "Paddy Greene",
+            "course": "Biomedical Engineering",
+            "imgsrc": "images/studentImages/Paddy2.jpg",
+            "extraInfo": "USRA",
+            "link": "paddy-greene"
+        },
+        {
+            "name": "Erin Lui-Hing",
+            "course": "Biomedical Engineering",
+            "imgsrc": "images/studentImages/Erin.jpeg",
+            "extraInfo": "I-CUREUS",
+            "link": "erin-lui-hing"
+        },
+        {
+            "name": "Arsh Saleem",
+            "course": "Biomedical Engineering",
+            "extraInfo": "Co-Op",
+            "imgsrc": "images/studentImages/Arsh.jpg",
+            "link": "arsh"
+
+        },
+        {
+            "name": "Rahel Gunaratne",
+            "course": "Software Engineering",
+            "extraInfo": "I-CUREUS",
+            "imgsrc": "images/studentImages/Rahel.jpg",
+            "link": "rahel"
+
+        },
+
+    ],
+    "past": [
+        {
+            "name": "Daniil Kulik",
+            "course": "Master of computer science",
+            "extraInfo": "Web Developer",
+            "imgsrc": "images/studentImages/dummy.png",
+            "link": "daniil"
+
+        },
+        {
+            "name": "Abhishek Mayurbhai Patel",
+            "course": "Master of Engineering",
+            "extraInfo": "Web Developer",
+            "imgsrc": "images/studentImages/Abhishek2.png",
+            "link": "abhishek-mayurbhai-patel"
+
+        },
+        {
+            "name": "Sanhita Paluskar",
+            "course": "Master of Engineering",
+            "extraInfo": "Software Engineer",
+            "imgsrc": "images/studentImages/Sanhita.png",
+            "link": "sanhita"
+
+        },
+        {
+            "name": "Ali Shajari",
+            "course": "Bachelor of Arts",
+            "imgsrc": "images/studentImages/Ali.jpg",
+            "extraInfo": "SaPP",
+            "link": "ali-shajari"
+
+        },
+        {
+            "name": "Sam Serdah",
+            "course": "MASc – Data Science",
+            "imgsrc": "images/studentImages/Sam2.jpeg",
+            "extraInfo": "",
+            "link": "sam-serdah"
         }
     ],
 };
 
-document.getElementById("profData").innerHTML = `${jsonData.professors.map(function(prof){
+document.getElementById("profData").innerHTML = `${jsonData.professors.map(function (prof) {
     return `
     <section class="col-6 col-12-narrower peopleData">
     <div class="box post">
@@ -258,8 +260,8 @@ document.getElementById("profData").innerHTML = `${jsonData.professors.map(funct
 }).join(' ')}`;
 
 
-document.getElementById("ugData").innerHTML = `${jsonData.undergrads.map(function(undergrad){
-    if(undergrad.extraInfo==""){
+document.getElementById("ugData").innerHTML = `${jsonData.undergrads.map(function (undergrad) {
+    if (undergrad.extraInfo == "") {
         return `
         <section class="col-6 col-12-narrower peopleData">
         <div class="box post">
@@ -271,7 +273,7 @@ document.getElementById("ugData").innerHTML = `${jsonData.undergrads.map(functio
         </div>
     </section>`
     }
-    else{
+    else {
         return `
         <section class="col-6 col-12-narrower peopleData">
         <div class="box post">
@@ -284,11 +286,11 @@ document.getElementById("ugData").innerHTML = `${jsonData.undergrads.map(functio
         </div>
     </section>`
     }
-   
+
 }).join(' ')}`;
 
-document.getElementById("gradData").innerHTML = `${jsonData.grads.map(function(grad){
-    if(grad.extraInfo==""){
+document.getElementById("gradData").innerHTML = `${jsonData.grads.map(function (grad) {
+    if (grad.extraInfo == "") {
         return `
         <section class="col-6 col-12-narrower peopleData">
         <div class="box post">
@@ -300,7 +302,7 @@ document.getElementById("gradData").innerHTML = `${jsonData.grads.map(function(g
         </div>
     </section>`
     }
-    else{
+    else {
         return `
         <section class="col-6 col-12-narrower peopleData">
         <div class="box post">
@@ -313,10 +315,10 @@ document.getElementById("gradData").innerHTML = `${jsonData.grads.map(function(g
         </div>
     </section>`
     }
-   
+
 }).join(' ')}`;
 
-document.getElementById("alumniData").innerHTML = `${jsonData.alumni.map(function(alumni){
+document.getElementById("alumniData").innerHTML = `${jsonData.alumni.map(function (alumni) {
     return `
     <section class="col-6 col-12-narrower peopleData">
     <div class="box post">
@@ -329,7 +331,7 @@ document.getElementById("alumniData").innerHTML = `${jsonData.alumni.map(functio
 </section>`
 }).join(' ')}`;
 
-document.getElementById("postdocData").innerHTML = `${jsonData.postdocs.map(function(postdoc){
+document.getElementById("postdocData").innerHTML = `${jsonData.postdocs.map(function (postdoc) {
     return `
     <section class="col-6 col-12-narrower peopleData">
     <div class="box post">
@@ -344,7 +346,7 @@ document.getElementById("postdocData").innerHTML = `${jsonData.postdocs.map(func
 }).join(' ')}`;
 
 
-document.getElementById("raData").innerHTML = `${jsonData.ras.map(function(ra){
+document.getElementById("raData").innerHTML = `${jsonData.ras.map(function (ra) {
     return `
     <section class="col-6 col-12-narrower peopleData">
     <div class="box post">
@@ -356,7 +358,7 @@ document.getElementById("raData").innerHTML = `${jsonData.ras.map(function(ra){
     </div>
 </section>`
 }).join(' ')}`;
-document.getElementById("pastData").innerHTML = `${jsonData.past.map(function(past){
+document.getElementById("pastData").innerHTML = `${jsonData.past.map(function (past) {
     return `
     <section class="col-6 col-12-narrower peopleData">
     <div class="box post">
@@ -378,35 +380,35 @@ console.log(urlParams);
 const selection = urlParams.get('people')
 console.log(selection);
 if (selection == 'professors') {
-    document.getElementById("professors").scrollIntoView({behavior: 'smooth'});
+    document.getElementById("professors").scrollIntoView({ behavior: 'smooth' });
 }
 else if (selection == 'undergrad') {
-    document.getElementById("undergrad").scrollIntoView({behavior: 'smooth'});
+    document.getElementById("undergrad").scrollIntoView({ behavior: 'smooth' });
 }
 else if (selection == 'grad') {
-    document.getElementById("grad").scrollIntoView({behavior: 'smooth'});
+    document.getElementById("grad").scrollIntoView({ behavior: 'smooth' });
 }
 else if (selection == 'alumni') {
-    document.getElementById("alumni").scrollIntoView({behavior: 'smooth'});
+    document.getElementById("alumni").scrollIntoView({ behavior: 'smooth' });
 }
 else if (selection == 'postdoc') {
-    document.getElementById("postdoc").scrollIntoView({behavior: 'smooth'});
+    document.getElementById("postdoc").scrollIntoView({ behavior: 'smooth' });
 }
 else if (selection == 'ra') {
-    document.getElementById("ra").scrollIntoView({behavior: 'smooth'});
+    document.getElementById("ra").scrollIntoView({ behavior: 'smooth' });
 }
 else if (selection == 'past') {
     console.log('Scrolling to Past Contributors');
-    document.getElementById("past").scrollIntoView({behavior: 'smooth'});
+    document.getElementById("past").scrollIntoView({ behavior: 'smooth' });
 }
 else {
     console.log('No valid selection');
 }
 
 //function for navigating to a specific section on people tab
-function selectPeople(loc){
+function selectPeople(loc) {
     //setting path parameter as the choice selected in the dropdown
-    link='people.html?people='+loc;
-    window.location=link;
-    
+    link = 'people.html?people=' + loc;
+    window.location = link;
+
 }

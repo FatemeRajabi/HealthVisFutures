@@ -18,7 +18,7 @@ jsonData = `{
             "BEngg, Software Engineering, University of Tehran (2010)"
         ],
         "connectWithMe": {
-            "Email": "mailto:fatemerajabiyazdi@cunet.carleton.ca",
+            "Email": "mailto:fateme.rajabiyazdi@ucalgary.ca",
             "LinkedIn": "https://www.linkedin.com/in/rajabiyazdi/",
             "GitHub": "https://github.com/FatemeRajabi",
             "ORCID": "https://orcid.org/0000-0002-8710-865X",
@@ -239,6 +239,11 @@ jsonData = `{
         "name":"Darwin Jull",
         "info":"Darwin is a M.A.Sc student studying Biomedical Engineering. He joined the lab in 2023 as an I-CUREUS student researcher, where he assisted with the analysis of barriers to cardiac rehabilitation programs.  Darwin is also a graduate of the B.Eng Biomedical and Electrical Engineering program at Carleton University. He is passionate about applying knowledge to create person-centered solutions.",
         "imgsrc":"images/studentImages/Darwin1.jpeg"
+    },
+    "kosiso-igbokwe":{ 
+        "name":"Kosiso Igbokwe",
+        "info":"Kosiso Igbokwe is an undergraduate student in Computer Science. He is currently working on a research project focused on time-series visualization for health data.",
+        "imgsrc":"images/studentImages/Kosiso.jpg"
     },
     "matteo":{ 
         "name":"Matteo Sotelo",

@@ -1,5 +1,135 @@
 const publications = [
     // Year: 2025
+        {
+        imgSrc: "images/research/handm/aging_25.png",
+        event: "J. Ageing Longev'25",
+        award: "",
+        title: "Digital Planning-Based Technologies to Support Memory-Related Functioning in Older Adults with Mild Cognitive Impairment: A Systematic Scoping Study",
+        downloadLink: 'https://www.mdpi.com/2673-9259/5/4/42',
+        abstract: 'Background: Mild cognitive impairment (MCI) is a precursor to dementia, with a prevalence of over 15% among community dwellers, with significant economic and social implications. Despite preserved autonomy in daily living, individuals with MCI face challenges in handling everyday technology and memory-related tasks, necessitating digital interventions, such as digital planning-based technologies to support cognitive functioning. Objective: The aim of this study is to identify and summarize available research literature on available digital planning-based technologies to support memory-related functioning in older adults with MCI. Specifically, this study seeks to (1) document the types and functions of these technologies, (2) report their effectiveness, and (3) identify gaps in the current evidence. Methods: A comprehensive literature search of four databases (Medline, Embase, APA PsycINFO, and CINAHL) was conducted in accordance with Arksey and O’Malley’s scoping review methodological framework from inception to February 6, 2024, without restrictions. Inclusion criteria focused on peer-reviewed studies involving adults aged 50 or older with diagnosed cognitive impairment, specifically using digital planning-based technologies for memory support. Results: From 1854 sources, 8 studies were included. Five categories of digital planning-based technologies were identified: (1) reminders and alarms, (2) electronic calendars, (3) digital memory notebooks, (4) digital visual mapping, and (5) smart-home integration. Several studies reported improved task performance, memory recall, and executive function, with digital memory notebooks and visual mapping software showing greatest impact on functional independence. While interventions were generally well-received, usability challenges and low adherence were common, often linked to technological familiarity and motivation. Conclusions: Digital planning-based technologies show promise in supporting memory-related functioning in older adults with MCI. While studies report positive outcomes, more research is needed to refine these tools, evaluate long-term effects, and ensure integration into daily life. Expanding the evidence base will be key to improving accessibility and effectiveness for this population.',
+        authors: [
+            
+            { name: "Aswen Sriranganathan", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Shaylene Kathiravelu", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Tracy Li", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Lindsay Sikora", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Shekinah McClymont", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Dona Locke", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Melanie Chandler", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Anne Shandera-Ochsner", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Adrian Chan", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Octavio Santos", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Chantal Trudel", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Atul Jaiswal", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Neil Thomas", imgSrc: "images/studentImages/dummy.png", url: "" }
+        ],
+        additionalDetails: "Journal of Ageing and Longevity",
+        category:"health"
+    }, 
+        {
+        imgSrc: "images/research/hci/patrika.png",
+        event: "CHI'25",
+        award: "Honorable Mention Award, top 5% of the submissions",
+        title: "AI-Enabled Conversational Journaling for Advancing Parkinson's Disease Symptom Tracking",
+        downloadLink: 'https://dl.acm.org/doi/10.1145/3706598.3714280',
+        abstract: 'Journaling plays a crucial role in managing chronic conditions by allowing patients to document symptoms and medication intake, providing essential data for long-term care. While valuable, traditional journaling methods often rely on static, self-directed entries, lacking interactive feedback and real-time guidance. This gap can result in incomplete or imprecise information, limiting its usefulness for effective treatment. To address this gap, we introduce Patrika, an AI-enabled prototype designed specifically for people with Parkinson’s disease (PwPD). The system incorporates cooperative conversation principles, clinical interview simulations, and personalization to create a more effective and user-friendly journaling experience. Through two user studies with PwPD and iterative refinement of Patrika, we demonstrate conversational journaling’s significant potential in patient engagement and collecting clinically valuable information. Our results showed that generating probing questions Patrika turned journaling into a bi-directional interaction. Additionally, we offer insights for designing journaling systems for healthcare and future directions for promoting sustained journaling.',
+        authors: [
+            
+            { name: "Mashrur Rashik", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Shilpa Sweth", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Nishtha Agrawal", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Saiyyam Kochar", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Kara Smith", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Vidya Setlur", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Narges Mahyar", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Ali Sarvghad", imgSrc: "images/studentImages/dummy.png", url: "" }
+        ],
+        additionalDetails: "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+        category:"human"
+    },     
+    {
+        imgSrc: "images/research/handm/colon_25.png",
+        event: "Colon & Rectum'25",
+        award: "",
+        title: "Lack of Regular Access to Primary Care Physician Associated With Increased Emergency Department Visits Related to Survivorship Needs Among Rectal Cancer Survivors",
+        downloadLink: 'https://journals.lww.com/dcrjournal/abstract/2024/12000/lack_of_regular_access_to_primary_care_physician.10.aspx',
+        abstract: 'With advances in rectal cancer management and improved prognosis, there is a growing number of rectal cancer survivors with unique needs. We hypothesized that a significant proportion of our rectal cancer survivors lack regular access to a primary care physician. Our study aimed to examine the association between access to a primary care physician and survivorship-related emergency department visits. Retrospective cohort study of rectal cancer survivors who have finished all treatment. Patients with rectal cancer who underwent proctectomy and completed treatment from 2005 to 2021. In total, 432 rectal cancer survivors were included. The median age was 72 (interquartile range, 63–82) years, 190 (44.0%) were women, and the median Charlson Comorbidity Index was 5 (interquartile range, 4–6). There were 153 individuals (35.4%) not registered with a primary care physician. Sixty individuals visited the emergency department due to survivorship-related concerns. Using Cox proportional hazards analysis, lack of registration to primary care physicians was associated with a higher probability of having survivorship-related emergency department visits.',
+        authors: [
+            
+            { name: "Jeongyoon Moon", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Ebram M. Salama", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Anna Wang", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Myl`ene Arsenault", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Nathalie Leon", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Carmen G. Loiselle", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Marylise Boutros", imgSrc: "images/studentImages/dummy.png", url: "" }
+        ],
+        additionalDetails: "Diseases of the Colon & Rectum",
+        category:"health"
+    },  
+    {
+        imgSrc: "images/research/handm/colorectal_25.jpg",
+        event: "Colorectal and Proctological Surgery'25",
+        award: "",
+        title: "The use of patient-generated health data in the management of low anterior resection syndrome: a qualitative study",
+        downloadLink: 'https://www.frontiersin.org/journals/surgery/articles/10.3389/fsurg.2024.1506688/full',
+        abstract: 'The cornerstone of low anterior resection syndrome (LARS) treatment is self-management, which requires patient engagement. Colorectal surgeons and nurses may use patient-generated health data (PGHD) to help guide patients in their use of self-management strategies for LARS. However, the perspectives of LARS experts on the use of PGHD remain largely unexplored. The objective of this study was to explore the perspectives and experiences of LARS experts regarding the use of PGHD in the management of LARS. We utilized purposive snowball sampling to identify international LARS experts, including surgeons, nurses, and LARS researchers with knowledge and expertise in LARS. We conducted individual semi-structured interviews with these experts between August 2022 and February 2024. We performed thematic analysis using the framework method to identify domains and associated themes. Our sample included 16 LARS experts from five countries. Thematic analysis identified four domains and associated themes. The domains included: data collection practices, data review practices, perceived usefulness, and future directions. Within the data collection practices domain, we found that most experts asked LARS patients to collect some form of PGHD, including bowel diaries, patient-reported outcome measures, or both. Within the data review practices domain, we found that both surgeons and nurses reviewed PGHD. Most participants described finding it difficult to interpret the data and identified time constraints, legibility, and completeness as the most common barriers to reviewing data in clinic. In terms of perceived usefulness, data collection was felt to help clinicians understand symptoms and their impact and assist patients with self-management. The future directions domain revealed that most experts felt that a clinical tool in the form of an online app or website to support data collection and enhance data visualization would be useful. Finally, some participants saw promise in leveraging PGHD to inform the creation of automated treatment algorithms for LARS management.',
+        authors: [
+            
+            { name: "Olivia Monton", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Allister Smith", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Sarah Sabboobeh", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Marie Demian", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Julie Cornish", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Steven D. Wexner", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Peter Christensen", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Amandeep Ghuman", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Liliana G. Bordeianou", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Celia Keane", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Syed Husain", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Alessandra Gasior", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Marylise Boutros", imgSrc: "images/studentImages/dummy.png", url: "" }
+        ],
+        additionalDetails: "Sec. Colorectal and Proctological Surgery",
+        category:"health"
+    },
+    {
+        imgSrc: "images/research/hci/Mariana.png",
+        event: "HCII'25",
+        award: "",
+        title: "Enhancing Clinician-Patient Communication: The Use of Large Interactive Displays in Clinical Consultations",
+        downloadLink: 'https://link.springer.com/chapter/10.1007/978-3-031-93822-1_7',
+        abstract: 'This study investigated the potential of large interactive displays to enhance patient-clinician communication and engagement during clinical consultations. Despite the increasing use of technology in healthcare, traditional desktop computer screens often hinder interaction and shared decision-making. We conducted a mixed-methods study involving 18 participants to compare a large interactive display to a PC display and printouts in simulated consultations. Participants engaged in tasks involving fictional health data visualizations related to sleep, physical activity, and sedentary behaviour. Quantitative data gathered through post-interaction questionnaires using validated scales revealed no statistically significant differences between the mediums in terms of patient understanding, activation, decision-making, or satisfaction. However, qualitative data, collected through semi-structured exit interviews and analyzed using a grounded theory approach, indicated a preference for the large interactive display. Participants found the large display to enhance visibility, promote a face-to-face layout that facilitated communication, and offered greater control over their health information, fostering engagement and a sense of empowerment. While the study’s small sample size and simulated setting limit generalizability, the findings suggest that large interactive displays, when designed with a focus on usability and user preferences, hold promise for improving patient-clinician communication and supporting shared decision-making in clinical settings. Feedback from clinicians emphasized tailoring role-specific functionalities, improving time progression representation, and enhancing usability through personalized assistance, visual clarity, and accessible help resources. Future research should explore optimal interface designs, EHR integration, and the use of voice commands to further enhance the effectiveness of this technology.',
+        authors: [
+
+            { name: "Mariana Perez Rodriguez", imgSrc: "images/studentImages/Mariana.jpg", url: "peopleDetails.html?type=prof&people=mariana-perez-rodriguez" },
+            { name: "Juan Jiménez Garcia", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Babak Rashidi", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+        ],
+        additionalDetails: "Human Interface and the Management of Information",
+        category:"human"
+    },
+        {
+        imgSrc: "images/research/vis/Progressive.png",
+        event: "VISWorkshop'25",
+        award: "",
+        title: "Practical Challenges of Progressive Data Science in Healthcare",
+        downloadLink: 'https://arxiv.org/abs/2409.10537',
+        abstract: 'The healthcare system collects extensive data, encompassing patient administrative information, clinical measurements, and home-monitored health metrics. To support informed decision-making in patient care and treatment management, it is essential to review and analyze these diverse data sources. Data visualization is a promising solution to navigate healthcare datasets, uncover hidden patterns, and derive actionable insights. However, the process of creating interactive data visualization can be rather challenging due to the size and complexity of these datasets. Progressive data science offers a potential solution, enabling interaction with intermediate results during data exploration. In this paper, we reflect on our experiences with three health data visualization projects employing a progressive data science approach. We explore the practical implications and challenges faced at various stages, including data selection, pre-processing, data mining, transformation, and interpretation and evaluation. We highlighted unique challenges and opportunities for three projects, including visualizing surgical outcomes, tracking patient bed transfers, and integrating patient-generated data visualizations into the healthcare setting. We identified the following challenges: inconsistent data collection practices, the complexity of adapting to varying data completeness levels, and the need to modify designs for real-world deployment. Our findings underscore the need for careful consideration of using a progressive data science approach when designing visualizations for healthcare settings.',
+        authors: [
+
+            { name: "Faisal Zaki Roshan,", imgSrc: "images/studentImages/Roshan.jpeg", url: "peopleDetails.html?type=prof&people=roshan" },
+            { name: "Abhishek Ahuja", imgSrc: "images/studentImages/AbhishekAhuja.jpg", url: "peopleDetails.html?type=prof&people=abishekahuja" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+        ],
+        additionalDetails: "IEEE VIS: Visualization & Visual Analytics Conference, Progressive Data Analysis and Visualization Workshop 2024",
+        category:"data"
+    },
     {
         imgSrc: "images/research/handm/CRjmir.png",
         event: "JMIR'25",

@@ -57,7 +57,7 @@
 		</div>
 		<!-- Header ends-->
 		<!-- Banner -->
-		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="4000"
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="10000"
 			data-pause="false">
 			<div class="carousel-inner">
 				<!-- <div class="overpic">	
@@ -141,208 +141,68 @@
 			</div>
 		</section>
 		<!-- News Section -->
-<!-- Latest News Section -->
-<!-- Latest News Section -->
-<section class="wrapper style1 section-bg-light">
-    <div class="container">
-        <!-- News Header -->
-        <div class="mapHeader text-center mb-4">
-            <span style="font-size: 1.5em; color: #333;">
-                <strong>Latest News</strong>
-            </span>
-        </div>
-        <!-- News List and Toggle Button Wrapper -->
-        <div class="news-container position-relative">
-            <ul class="news-list list-unstyled">
-                <!-- Visible News Items -->
-                <li class="news-item">
-                    <span style="font-weight: bold;">October 1, 2024:</span>
-                    <span>Congratulations to Mahsa Sinaei for her journal acceptance at the ACM Interactive Surfaces and Spaces Conference.</span>
-                    <a href="https://carleton.ca/rajabiyazdi/cu-files/iss-2024-challenges-of-designing-and-developing-vis-on-large-displays/" target="_blank" class="text-primary">Read more</a>
-                </li>
-                <li class="news-item">
-                    <span style="font-weight: bold;">August 15, 2024:</span>
-                    <span>Congratulations to Darwin Jull for winning the Queen Elizabeth II Scholarship in Science and Technology for starting his Master in the lab</span>
-                    <a href="https://carleton.ca/sce/2024/congratulations-darwin-jull-2024-queen-elizabeth-ii-scholarship-recipient/" target="_blank" class="text-primary">Read more</a>
-                </li>
-                <li class="news-item">
-                    <span style="font-weight: bold;">August 15, 2024:</span>
-                    <span>Congrats to Shri Harini Ramesh for her paper acceptance at the IEEE EduVis workshop.</span>
-                    <a href="https://ieeevis.org/year/2024/program/paper_w-eduvis-1008.html" target="_blank" class="text-primary">Read more</a>
-                </li>
-                <li class="news-item">
-                    <span style="font-weight: bold;">July 30, 2024:</span>
-                    <span>Fateme Rajabiyazdi has been honored with the New Faculty Excellence in Teaching Award</span>
-                    <a href="https://carleton.ca/tls/2024/announcing-the-2024-carleton-university-teaching-award-recipients/" target="_blank" class="text-primary">Read more</a>
-                </li>
-                <li class="news-item last-news">
-                    <span style="font-weight: bold;">May 30, 2024:</span>
-                    <span>Congratulations to Shri Harini Ramesh for having 2 peer-reviewed full papers accepted at GI’24 and winning the Best Student Paper Award.</span>
-                </li>
-                <!-- Hidden News Items -->
-                <li class="news-item extra-news d-none">
-                    <span style="font-weight: bold;">April 24, 2024:</span>
-                    <span>Congratulations to Connor Haberl for his work being published in the Seminars in Nuclear Medicine journal.</span>
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0001299824000278" target="_blank" class="text-primary">Read more</a>
-                </li>
-                <!-- Add more news items here with class="extra-news" if needed -->
-            </ul>
-            <!-- Show More Button Overlaid on Last Visible News Item -->
-            <div id="toggleButton" class="show-more-button text-center">
-                <span id="toggleText" class="text-white">Show More</span>
-                <i id="toggleIcon" class="fas fa-chevron-down text-white ml-2"></i>
-            </div>
-        </div>
-    </div>
-</section>
+		<section class="wrapper style1">
+			<div class="container" style="margin: auto;">
+				<div class="mapHeader"
+					style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+					<span style="display: flex; align-items: center; font-size: 1.5em; color: #333;">
+						<strong>Latest News</strong>
+					</span>
+				</div>
+				<div class="news-container" style="position: relative;">
+					<ul id="newsList" class="news-list" style="list-style-type:none; padding:0; margin:0;"></ul>
 
+					<div id="toggleButton" style="text-align:center; margin-top:15px; cursor:pointer;">
+						<button id="toggleBtn" aria-expanded="false" aria-controls="newsList" type="button"
+							class="btn btn-link">
+							<span id="toggleText">Show More</span>
+							<i id="toggleIcon" class="fas fa-chevron-down" aria-hidden="true"
+								style="margin-left:5px;"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
 
+		<!-- JavaScript for Toggle Functionality -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const toggleButton = document.getElementById('toggleButton');
+				const extraNewsItems = document.querySelectorAll('.extra-news');
+				const toggleText = document.getElementById('toggleText');
+				const toggleIcon = document.getElementById('toggleIcon');
+				let isExpanded = false;
 
-
-<!-- Toggle Button Script for Latest News -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const toggleButton = document.getElementById('toggleButton');
-        const extraNewsItems = document.querySelectorAll('.extra-news');
-        const toggleText = document.getElementById('toggleText');
-        const toggleIcon = document.getElementById('toggleIcon');
-        let isExpanded = false;
-
-        toggleButton.addEventListener('click', function () {
-            isExpanded = !isExpanded;
-            extraNewsItems.forEach(item => {
-                item.classList.toggle('d-none', !isExpanded);
-            });
-
-            if (isExpanded) {
-                toggleText.textContent = 'Show Less';
-                toggleIcon.classList.remove('fa-chevron-down');
-                toggleIcon.classList.add('fa-chevron-up');
-                // Remove the grey overlay
-                const lastNewsItem = document.querySelector('.news-item.last-news');
-                if (lastNewsItem) {
-                    lastNewsItem.style.opacity = '1';
-                    lastNewsItem.style.pointerEvents = 'none'; // Prevent interaction
-                }
-            } else {
-                toggleText.textContent = 'Show More';
-                toggleIcon.classList.remove('fa-chevron-up');
-                toggleIcon.classList.add('fa-chevron-down');
-                // Re-apply the grey overlay
-                const lastNewsItem = document.querySelector('.news-item.last-news');
-                if (lastNewsItem) {
-                    lastNewsItem.style.opacity = '0.6';
-                    lastNewsItem.style.pointerEvents = 'auto'; // Re-enable interaction
-                }
-            }
-        });
-    });
-</script>
-
+				toggleButton.addEventListener('click', function () {
+					isExpanded = !isExpanded;
+					extraNewsItems.forEach(item => {
+						item.style.display = isExpanded ? 'block' : 'none';
+					});
+					toggleText.textContent = isExpanded ? 'Show Less' : 'Show More';
+					toggleIcon.className = isExpanded ? 'fas fa-chevron-up' : 'fas fa-chevron-down';
+				});
+			});
+		</script>
 
 		<!-- Optional: Add some basic responsive styling -->
 		<style>
-/* Latest News Section Background */
-.wrapper.style1.section-bg-light {
-    background-color: #f8f9fa;
-    padding: 60px 0;
-    position: relative;
-}
+			@media (max-width: 600px) {
+				.mapHeader span {
+					font-size: 1.2em;
+				}
 
-/* Grey out the last visible news item */
-.news-item.last-news {
-    position: relative;
-    opacity: 0.6; /* Grey out effect */
-    transition: opacity 0.3s;
-}
+				.news-list li {
+					padding: 8px 0;
+				}
 
-/* Overlay for the last news item (optional for better visibility) */
-.news-item.last-news::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent overlay */
-    border-radius: 5px;
-}
+				#toggleText {
+					font-size: 1em;
+				}
 
-/* Show More Button Styling */
-.show-more-button {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #007bff; /* Blue background */
-    color: #ffffff; /* White text */
-    padding: 10px 20px;
-    border-radius: 25px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    z-index: 2; /* Ensure it's above the overlay */
-    transition: background-color 0.3s;
-}
-
-.show-more-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
-
-/* Transition for Grey Out Effect */
-.news-item {
-    transition: opacity 0.3s;
-}
-
-/* Sponsor Logos Hover Effect */
-.sponsor-logo {
-    transition: transform 0.3s, opacity 0.3s;
-}
-
-.sponsor-logo:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
-
-/* Contact Us Section Icons */
-.contact-section .fab {
-    transition: color 0.3s, transform 0.3s;
-}
-
-.contact-section .fab:hover {
-    color: #0056b3;
-    transform: scale(1.1);
-}
-
-/* Responsive Adjustments */
-@media (max-width: 600px) {
-    .mapHeader span {
-        font-size: 1.2em;
-    }
-
-    .news-list li {
-        padding: 8px 0;
-    }
-
-    #toggleText {
-        font-size: 1em;
-    }
-
-    #toggleIcon {
-        font-size: 1em;
-    }
-
-    .carousel-item img.imgStyle {
-        height: 300px;
-        object-fit: cover;
-    }
-
-    /* Adjust Show More Button for Mobile */
-    .show-more-button {
-        padding: 8px 16px;
-    }
-}
-
+				#toggleIcon {
+					font-size: 1em;
+				}
+			}
 		</style>
 
 		<!-- News Section ends -->
@@ -355,15 +215,16 @@
 					</span>
 				</div>
 
-				<br> We are grateful for funding from Carleton University, the Natural Sciences and Engineering
+				<br> We are grateful for funding from University of Calgary, Carleton University, the Natural Sciences
+				and Engineering
 				Research Council of Canada (NSERC), the National Research Council Canada, the Ontario Centres of
 				Excellence, Novacene AI, and the Canadian Foundation for Innovation.
 				</p>
 				<span>
 					<div class="row">
 						<div class="col-md-2 col-sm-12">
-							<a href="https://carleton.ca/" style="all: unset; cursor: pointer;" target="_blank"><img
-									class="img-responsive " src="images/fundingLogos/cuLogo.jpg"></a>
+							<a href="https://ucalgary.ca/" style="all: unset; cursor: pointer;" target="_blank"><img
+									class="img-responsive " src="images/fundingLogos/ucalgary-Horizon.png"></a>
 						</div>
 						<div class="col-md-2 col-sm-12">
 							<a href="https://www.nserc-crsng.gc.ca/index_eng.asp" style="all: unset;cursor: pointer;"
@@ -412,38 +273,36 @@
 								<div
 									style="background-color: white; padding: 1em; border-radius: 8px; display: inline-block;">
 									<p style="margin: 0 0 1em; color: #555;">
-										<strong>Address:</strong> Room 7049, Minto Case Building, Carleton
-										University,
-										1125 Colonel By Dr, Ottawa, ON K1S 5B6
+										<strong>Address:</strong> University of Calgary
 									</p>
 									<p style="margin: 0;"><strong>Email:</strong> <a
-											href="mailto:healthvisfutures@sce.carleton.ca"
-											style="color: #007bff; text-decoration: none;">healthvisfutures@sce.carleton.ca</a>
+											href="mailto:fateme.rajabiyazdi@ucalgary.ca"
+											style="color: #007bff; text-decoration: none;">fateme.rajabiyazdi@ucalgary.ca</a>
 									</p>
 								</div>
 							</div>
-							<div
+							<!--<div
 								style="position: relative; padding-top: 25%; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
 								<iframe
 									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2802.1938010033105!2d-75.69898568478872!3d45.38526127910015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05d8bf2188ab%3A0x13180ef271726497!2sMinto%20CASE!5e0!3m2!1sen!2sca!4v1673371321907!5m2!1sen!2sca"
 									style="border:0; width: 100%; height: 100%; position: absolute; top: 0; left: 0;"
 									allowfullscreen="" loading="lazy"
 									referrerpolicy="no-referrer-when-downgrade"></iframe>
-							</div>
+							</div>-->
 						</div>
 					</div>
 
 
 
 					<!-- social media accounts icons -->
-					<ul class="icons contactUsLinks">
+					<!-- <ul class="icons contactUsLinks">
 						<li><a href="https://twitter.com/HealthVisFuture" class="icon brands fa-twitter"><span
 									class="label">Twitter</span></a></li>
 						<!--ADDED github icon for future-->
-						<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
-						<li><a href="https://www.linkedin.com/in/healthvisfutures-lab/"
+					<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>-->
+					<!-- <li><a href="https://www.linkedin.com/in/healthvisfutures-lab/"
 								class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-					</ul>
+					</ul> -->
 
 			</div>
 		</section>
@@ -466,6 +325,9 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"></script>
+		<!-- include scripts (put before closing </body>) -->
+		<script src="news-data.js"></script>
+		<script src="news-renderer.js"></script>
 
 </body>
 
