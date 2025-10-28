@@ -82,22 +82,23 @@ jsonData = {
     "alumni": [
         {
             "name": "Dr. Elahe Khorasani",
-            "info": "Co-supervised with Dr. Julio Fiore",
-            "university": "McGill University",
+            // "info": "Co-supervised with Dr. Julio Fiore",
+            // "university": "McGill University",
+            "course": "Post-doc, Co-supervised with Dr. Julio Fiore",
             "imgsrc": "images/studentImages/Elaheh2.jpg",
             "link": "elaheh-khorasani"
 
         },
         {
             "name": "Mia Cornell",
-            "course": "Electrical Engineering",
+            "course": "Undergrad - Electrical Engineering",
             "imgsrc": "images/studentImages/mia.jpg",
             "extraInfo": "RA",
             "link": "mia"
         },
         {
             "name": "Esosa Ohangbon",
-            "course": "Software Engineering",
+            "course": "Undergrad - Software Engineering",
             "imgsrc": "images/studentImages/esosa.png",
             "extraInfo": "RA",
             "link": "esosa-ohangbon"
@@ -126,7 +127,7 @@ jsonData = {
 
         {
             "name": "Darwin Jull",
-            "course": "Biomedical Engineering",
+            "course": "Undergrad - Biomedical Engineering",
             "imgsrc": "images/studentImages/Darwin1.jpeg",
             "extraInfo": "I-CUREUS",
             "link": "darwin-jull"
@@ -331,33 +332,33 @@ document.getElementById("alumniData").innerHTML = `${jsonData.alumni.map(functio
 </section>`
 }).join(' ')}`;
 
-document.getElementById("postdocData").innerHTML = `${jsonData.postdocs.map(function (postdoc) {
-    return `
-    <section class="col-6 col-12-narrower peopleData">
-    <div class="box post">
-        <img class="image left" src="${postdoc.imgsrc}" alt="" />
-        <div class="inner">
-        <a href="peopleDetails.html?type=${'stud'}&people=${postdoc.link}"><h3>${postdoc.name}</h3></a>
-            <p style="margin: 0">${postdoc.info}</p>
-            <p style="margin: 0">(${postdoc.university})</p>
-        </div>
-    </div>
-</section>`
-}).join(' ')}`;
+// document.getElementById("postdocData").innerHTML = `${jsonData.postdocs.map(function (postdoc) {
+//     return `
+//     <section class="col-6 col-12-narrower peopleData">
+//     <div class="box post">
+//         <img class="image left" src="${postdoc.imgsrc}" alt="" />
+//         <div class="inner">
+//         <a href="peopleDetails.html?type=${'stud'}&people=${postdoc.link}"><h3>${postdoc.name}</h3></a>
+//             <p style="margin: 0">${postdoc.info}</p>
+//             <p style="margin: 0">(${postdoc.university})</p>
+//         </div>
+//     </div>
+// </section>`
+// }).join(' ')}`;
 
 
-document.getElementById("raData").innerHTML = `${jsonData.ras.map(function (ra) {
-    return `
-    <section class="col-6 col-12-narrower peopleData">
-    <div class="box post">
-        <img class="image left" src="${ra.imgsrc}" alt="" />
-        <div class="inner">
-            <a href="peopleDetails.html?type=${'stud'}&people=${ra.link}"><h3>${ra.name}</h3></a>
-            <p style="margin: 0">${ra.course}</p>
-        </div>
-    </div>
-</section>`
-}).join(' ')}`;
+// document.getElementById("raData").innerHTML = `${jsonData.ras.map(function (ra) {
+//     return `
+//     <section class="col-6 col-12-narrower peopleData">
+//     <div class="box post">
+//         <img class="image left" src="${ra.imgsrc}" alt="" />
+//         <div class="inner">
+//             <a href="peopleDetails.html?type=${'stud'}&people=${ra.link}"><h3>${ra.name}</h3></a>
+//             <p style="margin: 0">${ra.course}</p>
+//         </div>
+//     </div>
+// </section>`
+// }).join(' ')}`;
 document.getElementById("pastData").innerHTML = `${jsonData.past.map(function (past) {
     return `
     <section class="col-6 col-12-narrower peopleData">
