@@ -5,7 +5,7 @@ const newsItems = [
     {
         date: "2026-01-17",
         title: "A postdoctoral position is open in our lab.",
-        link: "https://github.com/FatemeRajabi/HealthVisFutures/blob/main/assets/Files-Job/Fateme-Postdoc-RFAA.pdf",
+        link: "assets/Files-Job/Postdoctoral-posting.pdf",
         external: true,       // set true if you add an external link
         note: "Job posting."
     },
