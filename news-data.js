@@ -3,6 +3,13 @@
 */
 const newsItems = [
     {
+        date: "2026-01-17",
+        title: "A postdoctoral position is open in our lab.",
+        link: null,
+        external: true,       // set true if you add an external link
+        note: "Job posting."
+    },
+    {
         date: "2025-06-06",
         title: "Dr. Fateme Rajabiyazdi honored with the CHCCS/SCDHM Graphics Interface Early Career Researcher Award",
         link: "https://carleton.ca/sce/2025/fateme-rajabiyazdi-honoured-with-early-career-researcher-award/",
