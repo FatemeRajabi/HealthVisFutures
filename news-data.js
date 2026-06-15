@@ -3,11 +3,32 @@
 */
 const newsItems = [
     {
+        date: "2026-03-15",
+        title: "Shri Harini Ramesh received an Honorable Mention Award (top 5% of submissions) at CHI 2026 for the paper \"Metacognitive Demands and Strategies While Using Off-The-Shelf AI Conversational Agents for Health Information Seeking\"",
+        link: "https://doi.org/10.1145/3772318.3791647",
+        external: true,
+        note: "Honorable Mention Award at CHI 2026."
+    },
+    {
+        date: "2026-02-15",
+        title: "Paper accepted at EuroVis 2026: \"Input Visualizations to Track Health Data by Older Adults with Multiple Chronic Conditions\"",
+        link: "https://doi.org/10.1111/cgf.70479",
+        external: true,
+        note: "Published in Computer Graphics Forum."
+    },
+    {
         date: "2026-01-17",
         title: "A postdoctoral position is open in our lab.",
         link: "assets/Files-Job/Postdoctoral-posting.pdf",
-        external: true,       // set true if you add an external link
+        external: true,
         note: "Job posting."
+    },
+    {
+        date: "2026-01-15",
+        title: "Paper accepted at CHI 2026: \"Metacognitive Demands and Strategies While Using Off-The-Shelf AI Conversational Agents for Health Information Seeking\"",
+        link: "https://doi.org/10.1145/3772318.3791647",
+        external: true,
+        note: "Accepted at the 2026 CHI Conference on Human Factors in Computing Systems."
     },
     {
         date: "2025-06-06",

@@ -2757,6 +2757,7 @@ button.small,
 	border: 0;
 	display: block;
 	padding: 1.5em 0.5em 1.35em 0.5em;
+	cursor: pointer;
 }
 
 #nav>ul>li:first-child {
@@ -2830,6 +2831,7 @@ button.small,
 	color: #c0c0c0;
 	text-decoration: none;
 	border: 0;
+	cursor: pointer;
 }
 
 .dropotron>li.active>a,
@@ -4189,9 +4191,20 @@ body.is-touch .tiles .article .content {
 			background-color: #bbb;
 			color: black;
 		  }
-		  
+
 		  .flip-card-back {
 			background-color: #2980b9;
 			color: white;
 			transform: rotateY(180deg);
 		  } */
+
+/* Offset scroll targets so sticky nav doesn't cover them */
+#professors,
+#postdoc,
+#grad,
+#undergrad,
+#ra,
+#alumni,
+#past {
+	scroll-margin-top: 85px;
+}

@@ -4,7 +4,53 @@
     <title>People:HealthVisFuture</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        .publication_row {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: box-shadow 0.2s;
+        }
+        .publication_row:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .publication_event {
+            padding: 4px 10px;
+            background-color: #a29f9f;
+            color: white;
+            border-radius: 10px;
+            margin-right: 8px;
+            font-size: 0.85em;
+        }
+        .publication_award {
+            padding: 4px 10px;
+            color: #17a2b8;
+            border: 2px solid #17a2b8;
+            border-radius: 10px;
+            font-size: 0.85em;
+        }
+        .pub-authors {
+            font-size: 13px;
+            color: gray;
+            margin: 6px 0;
+        }
+        .square {
+            border-radius: 50%;
+            width: 22px !important;
+            height: 22px !important;
+            object-fit: cover;
+            vertical-align: middle;
+            margin-right: 2px;
+        }
+        .pub-img {
+            width: 100%;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+        .imgZoom { transition: transform 0.2s; }
+        .imgZoom:hover { transform: scale(1.05); }
+    </style>
 </head>
 <body class="is-preload">
     <div id="page-wrapper">
@@ -27,7 +73,7 @@
 								<a onclick="selectPeople('professors')">Faculty</a>
 							</li>
 							<li>
-								<a onclick="selectPeople('postdoc')">Postdoctoral Students</a>
+								<a onclick="selectPeople('postdoc')">Postdoctoral Researcher</a>
 							</li>
 							<li>
 								<a onclick="selectPeople('grad')">Graduate Students</a>
@@ -104,6 +150,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="publicationsData.js"></script>
     <script src="peopleDetails.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>

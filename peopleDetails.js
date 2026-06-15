@@ -26,6 +26,48 @@ jsonData = `{
         }
     },
 
+    "hareem-arif": {
+        "name": "Hareem Arif",
+        "info": "Hareem is an undergraduate Computer Science student at the University of Calgary (graduating April 2026). She is VP Volunteers at Robogals UCalgary, where she organizes and presents STEM workshops for elementary and middle school students. She has experience as an IT Analyst intern at Energy Safety Canada and has contributed to website development projects using HTML, CSS, and JavaScript. Her interests span software development, community engagement, and making STEM education more accessible.",
+        "imgsrc": "images/studentImages/dummy.png"
+    },
+    "grace-ilori": {
+        "name": "Grace Ilori",
+        "info": "Grace is a fourth-year undergraduate Computer Science student with an interest in Human-Computer Interaction and Healthcare. She joined the research team in January 2026 and is currently working on developing and testing visualizations for kidney failure and mortality risk prediction.",
+        "imgsrc": "images/studentImages/Grace.png",
+        "connectWithMe": {
+            "LinkedIn": "https://www.linkedin.com/in/grace-ilori/"
+        }
+    },
+    "essa-dietzhoff": {
+        "name": "Essa Dietzhoff",
+        "info": "",
+        "imgsrc": "images/studentImages/dummy.png"
+    },
+    "muhammad-ahmad": {
+        "name": "Muhammad Ahmad",
+        "info": "Muhammad is an undergraduate Computer Science Honours student at the University of Calgary. He joined the research team in 2026 as a Data Research Intern, supported by the Alberta Innovates Summer Research Studentship ($7,500). He is working on designing and researching an interactive web-based data dashboard to support patient profiling for individuals with Alzheimer's disease, dementia, or mild cognitive decline — focusing on capturing personal preferences and lifestyle factors not typically recorded in clinical medical records. His work also involves developing visual data stories and doctor-facing dashboard summaries to improve health communication and support shared decision-making. Beyond the lab, Muhammad is involved with CalgaryToSpace (RF Communications), UCalgary Baja (Software), and BMERIT (Biomedical Engineering Research and Innovation Team).",
+        "imgsrc": "images/studentImages/Muhammed.png",
+        "connectWithMe": {
+            "Email": "mailto:muham.ahmad@ucalgary.ca",
+            "LinkedIn": "https://www.linkedin.com/in/ahmadmuhammadofficial/",
+            "GitHub": "https://github.com/MA-Hamodi",
+            "Google Scholar": "https://scholar.google.com/citations?hl=en&user=fnW3VSsAAAAJ"
+        }
+    },
+    "foroozan-daneshzand": {
+        "name": "Foroozan Daneshzand",
+        "info": "Foroozan joined the research team in 2026 as a Postdoctoral Researcher. Her work focuses on designing and evaluating interactive health technologies. Drawing on mixed-methods research and co-design, she explores how interactive technologies can better support people in understanding health data, communicating during patient-clinician interactions, and making informed decisions across clinical and everyday health contexts. Her research interests include human-computer interaction, health communication, patient- and clinician-facing technologies, information visualization, and data physicalization.",
+        "imgsrc": "images/studentImages/Foroozan.png",
+        "degrees": [
+            "PhD, Interactive Arts and Technology, Simon Fraser University, Canada (2025)"
+        ],
+        "connectWithMe": {
+            "Email": "mailto:foroozan.daneshzand@ucalgary.ca",
+            "LinkedIn": "https://ca.linkedin.com/in/foroozan-daneshzand-phd-86bb25109",
+            "Google Scholar": "https://scholar.google.com/citations?user=UAIAkHoAAAAJ&hl=en"
+        }
+    },
     "elaheh-khorasani":{ 
         "name":"Elaheh Khorasani",
         "info":"Elaheh joined the research team in June 2022 as a Postdoctoral Fellow under the supervision of Dr. Julio Fiore Jr. and me (co-supervisor).  She will be working in partnership with McGill University on developing a patient-reported outcome measure (PROM) to assess recovery after abdominal surgery based on Item analysis using Rasch measurement theory. She holds a Ph.D. in Pharmacoeconomics and an M.Sc. in Healthcare Management. She is interested in outcomes research, health economic evaluations, digital health, systematic reviews, and the analysis of large databases.",
@@ -79,6 +121,15 @@ jsonData = `{
         "pubName":"Shri Harini Ramesh",
         "journal_publications":[
         {
+                "title": "Input Visualizations to Track Health Data by Older Adults with Multiple Chronic Conditions",
+                "authors": "Shri Harini Ramesh, Foroozan Daneshzand, Matteo Sotelo, Mahsa Sinaei, Fateme Rajabiyazdi",
+                "journal": "Computer Graphics Forum",
+                "volume": "",
+                "month": "",
+                "year" : "2025",
+                "doi": "https://doi.org/10.1111/cgf.70479"
+            },
+            {
                 "title": "Exploring Barriers to Patients’ Progression in the Cardiac Rehabilitation Journey From Health Care Providers’ Perspectives: Qualitative Study",
                 "authors": "Shri Harini Ramesh;  Darwin Jull;  Hélène Fournier;  Fateme Rajabiyazdi",
                 "journal": "Interactive Journal of Medical Research",
@@ -99,6 +150,14 @@ jsonData = `{
             ],
         "conf_publications":[
         {
+                "title": "Metacognitive Demands and Strategies While Using Off-The-Shelf AI Conversational Agents for Health Information Seeking",
+                "authors": "Shri Harini Ramesh, Foroozan Daneshzand, Babak Rashidi, Shriti Raj, Hariharan Subramonyam, Fateme Rajabiyazdi",
+                "journal": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+                "month": "",
+                "year" : "2026",
+                "doi": "https://doi.org/10.1145/3772318.3791647"
+            },
+            {
                 "title": "Challenges and Opportunities of Teaching Data Visualization Together with Data Science",
                 "authors": "Shri Harini Ramesh, Fateme Rajabiyazdi",
                 "journal": "IEEE VIS Workshop on Visualization Education, Literacy, and Activities (EduVIS)",
@@ -395,63 +454,109 @@ function gotoPeople() {
 
 // Function to populate publications and awards, showing headings conditionally
 function populate_pubs_awards(data) {
-    const journal_publications = data.journal_publications;
-    const conf_publications = data.conf_publications;
-    const extended_abstracts = data.extended_abstracts;
     const int_awards = data.internal_awards;
     const ext_awards = data.external_awards;
-    const connectWithMeData = data.connectWithMe;
     const pubName = data.pubName;
 
-    if (!journal_publications) {
-        document.getElementById("peer-pub-wrapper").remove();
-    }
-    else {
-        journal_publications.forEach(publication => {
-            const publicationItem = document.createElement('li');
-            publicationItem.innerHTML = generateIEEEReference(publication, pubName);
-            document.getElementById('peer-publications').appendChild(publicationItem);
-        });
-    }
-    if (!conf_publications) {
-        document.getElementById("conf-pub-wrapper").remove();
-    }
-    else {
-        conf_publications.forEach(publication => {
-            const publicationItem = document.createElement('li');
-            publicationItem.innerHTML = generateIEEEReference(publication, pubName);
-            document.getElementById('conf-publications').appendChild(publicationItem);
-        });
-    }
-    if (!extended_abstracts) {
-        document.getElementById("ext-abst-wrapper").remove();
-    }
-    else {
-        extended_abstracts.forEach(publication => {
-            const publicationItem = document.createElement('li');
-            publicationItem.innerHTML = generateIEEEReference(publication, pubName);
-            document.getElementById('extended-abstracts').appendChild(publicationItem);
-        });
+    // If publicationsData.js is loaded, find publications where this person's profile URL is listed
+    if (typeof publications !== 'undefined' && selection) {
+        const personPubs = publications.filter(pub =>
+            pub.authors.some(a => a.url && a.url.includes('people=' + selection))
+        );
 
+        document.getElementById("peer-pub-wrapper").remove();
+        document.getElementById("conf-pub-wrapper").remove();
+        document.getElementById("ext-abst-wrapper").remove();
+
+        if (personPubs.length > 0) {
+            const section = document.createElement('div');
+            section.id = 'pub-cards-wrapper';
+            section.innerHTML = '<h2>Publications</h2>';
+
+            personPubs.forEach(pub => {
+                const awardHtml = pub.award
+                    ? `<span class="publication_award"><b><i class="fas fa-award"></i> ${pub.award}</b></span>`
+                    : '';
+                const card = document.createElement('div');
+                card.className = 'width100 publication_row';
+                card.innerHTML = `
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="pub-img imgZoom" src="${pub.imgSrc}" alt="">
+                        </div>
+                        <div class="col-md-9">
+                            <div style="margin-bottom:8px;">
+                                <span class="publication_event"><b>${pub.event}</b></span>
+                                ${awardHtml}
+                            </div>
+                            <h3 style="margin:0 0 6px;">${pub.title}</h3>
+                            <div class="pub-authors">
+                                ${pub.authors.map(a =>
+                                    `<span><img class="square" src="${a.imgSrc}" alt=""> ${a.name}</span>`
+                                ).join(' &nbsp;')}
+                            </div>
+                            <p style="font-style:italic; margin:4px 0 0;">${pub.additionalDetails || ''}</p>
+                        </div>
+                    </div>`;
+                card.addEventListener('click', () => window.open(pub.downloadLink, '_blank'));
+                section.appendChild(card);
+            });
+
+            document.getElementById("ext-award-wrapper").parentNode
+                .insertBefore(section, document.getElementById("ext-award-wrapper"));
+        }
+    } else {
+        // Fall back to text-based IEEE reference rendering
+        const journal_publications = data.journal_publications;
+        const conf_publications = data.conf_publications;
+        const extended_abstracts = data.extended_abstracts;
+
+        if (!journal_publications) {
+            document.getElementById("peer-pub-wrapper").remove();
+        } else {
+            journal_publications.forEach(pub => {
+                const item = document.createElement('li');
+                item.innerHTML = generateIEEEReference(pub, pubName);
+                document.getElementById('peer-publications').appendChild(item);
+            });
+        }
+        if (!conf_publications) {
+            document.getElementById("conf-pub-wrapper").remove();
+        } else {
+            conf_publications.forEach(pub => {
+                const item = document.createElement('li');
+                item.innerHTML = generateIEEEReference(pub, pubName);
+                document.getElementById('conf-publications').appendChild(item);
+            });
+        }
+        if (!extended_abstracts) {
+            document.getElementById("ext-abst-wrapper").remove();
+        } else {
+            extended_abstracts.forEach(pub => {
+                const item = document.createElement('li');
+                item.innerHTML = generateIEEEReference(pub, pubName);
+                document.getElementById('extended-abstracts').appendChild(item);
+            });
+        }
     }
+
+    // Awards always render as text
     if (!ext_awards) {
         document.getElementById("ext-award-wrapper").remove();
-    }
-    else {
+    } else {
         ext_awards.forEach(award => {
-            const awardItem = document.createElement('li');
-            awardItem.innerHTML = award;
-            document.getElementById('ext-awards').appendChild(awardItem);
+            const item = document.createElement('li');
+            item.innerHTML = award;
+            document.getElementById('ext-awards').appendChild(item);
         });
     }
     if (!int_awards) {
         document.getElementById("int-award-wrapper").remove();
-    }
-    else {
+    } else {
         int_awards.forEach(award => {
-            const awardItem = document.createElement('li');
-            awardItem.innerHTML = award;
-            document.getElementById('int-awards').appendChild(awardItem);
+            const item = document.createElement('li');
+            item.innerHTML = award;
+            document.getElementById('int-awards').appendChild(item);
         });
     }
 }

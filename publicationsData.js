@@ -1,4 +1,41 @@
 const publications = [
+    // Year: 2026
+    {
+        imgSrc: "images/research/ai/metacog.png",
+        event: "CHI'26",
+        award: "Honorable Mention Award, top 5% of the submissions",
+        title: "Metacognitive Demands and Strategies While Using Off-The-Shelf AI Conversational Agents for Health Information Seeking",
+        downloadLink: "https://doi.org/10.1145/3772318.3791647",
+        abstract: "As Artificial Intelligence (AI) conversational agents become widespread, people are increasingly using them for health information seeking. The use of off-the-shelf conversational agents for health information seeking could place high metacognitive demands (the need for extensive monitoring and control of one's own thought process) on individuals, which could compromise their experience of seeking health information. However, currently, the specific demands that arise while using conversational agents for health information seeking, and the strategies people use to cope with those demands, remain unknown. To address these gaps, we conducted a think-aloud study with 15 participants as they sought health information using our off-the-shelf AI conversational agent. We identified the metacognitive demands such systems impose, the strategies people adopt in response, and propose considerations for designing beyond off-the-shelf interfaces to reduce these demands and support better user experiences and affordances in health information seeking.",
+        authors: [
+            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "peopleDetails.html?type=stud&people=shri-Harini" },
+            { name: "Foroozan Daneshzand", imgSrc: "images/studentImages/Foroozan.png", url: "peopleDetails.html?type=stud&people=foroozan-daneshzand" },
+            { name: "Babak Rashidi", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Shriti Raj", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Hariharan Subramonyam", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+        ],
+        additionalDetails: "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+        category: ["ai", "health"]
+    },
+    {
+        imgSrc: "images/research/vis/inputVis.png",
+        event: "EuroVis'26",
+        award: "",
+        title: "Input Visualizations to Track Health Data by Older Adults with Multiple Chronic Conditions",
+        downloadLink: "https://doi.org/10.1111/cgf.70479",
+        abstract: "Older adults living with multiple chronic conditions (MCC) can considerably benefit from collecting and reflecting on their health data. Many older adults collect their health data using various approaches, such as digital tools or handwritten notebooks. However, in these approaches, the act of collecting data does not itself yield insights; sensemaking and reflection happen only if individuals later review their accumulated records. The daily process of data collection thus offers limited opportunity for individuals to actively engage with their data or find the process personally meaningful and enjoyable. Personal data input visualizations using physical tokens offer a promising solution that can help individuals recognize evolving patterns while collecting data and discover meaningful insights in a more serendipitous and engaging manner. Yet, there is a limited understanding of whether and how older adults living with MCC might adopt physical input visualizations to collect data and reflect on their health, and how the tangible, expressive, and personalizable nature of this process supports their sensemaking and reflection. In this paper, we present the results of our interview and diary studies in which older adults living with MCC inputted health data using physical tokens over two weeks. Our findings highlight the diverse and unique needs of older adults for tracking personal health data, illustrating how they adapt strategies and personalize physical input visualizations to align with their individual needs. We demonstrate how older adults integrated input visualizations into daily routines and leveraged tangible markers to reflect on patterns and behaviors, while enjoying the process of tracking and focusing on personal expression and meaningful reflection. Finally, we provide design considerations for supporting older adults with MCC when inputting health data through physical tokens.",
+        authors: [
+            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "peopleDetails.html?type=stud&people=shri-Harini" },
+            { name: "Foroozan Daneshzand", imgSrc: "images/studentImages/Foroozan.png", url: "peopleDetails.html?type=stud&people=foroozan-daneshzand" },
+            { name: "Matteo Sotelo", imgSrc: "images/studentImages/Matteo.png", url: "peopleDetails.html?type=stud&people=matteo" },
+            { name: "Mahsa Sinaei", imgSrc: "images/studentImages/Mahsa3.png", url: "peopleDetails.html?type=stud&people=mahsa-sinaei" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+        ],
+        additionalDetails: "Computer Graphics Forum",
+        category: ["data", "health"]
+    },
+
     // Year: 2025
         {
         imgSrc: "images/research/handm/aging_25.png",

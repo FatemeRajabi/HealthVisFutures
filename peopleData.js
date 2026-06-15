@@ -38,14 +38,33 @@ jsonData = {
     ],
     "undergrads": [
         {
-            "name": "Kosiso Igbokwe",
+            "name": "Hareem Arif",
             "course": "Computer Science",
-            "imgsrc": "images/studentImages/Kosiso.jpg",
+            "imgsrc": "images/studentImages/dummy.png",
             "extraInfo": "",
-            "link": "kosiso-igbokwe"
+            "link": "hareem-arif"
         },
-
-
+        {
+            "name": "Grace Ilori",
+            "course": "Computer Science",
+            "imgsrc": "images/studentImages/Grace.png",
+            "extraInfo": "",
+            "link": "grace-ilori"
+        },
+        {
+            "name": "Essa Dietzhoff",
+            "course": "Computer Science",
+            "imgsrc": "images/studentImages/dummy.png",
+            "extraInfo": "",
+            "link": "essa-dietzhoff"
+        },
+        {
+            "name": "Muhammad Ahmad",
+            "course": "Computer Science",
+            "imgsrc": "images/studentImages/Muhammed.png",
+            "extraInfo": "",
+            "link": "muhammad-ahmad"
+        },
     ],
     "grads": [
         {
@@ -62,24 +81,36 @@ jsonData = {
             "extraInfo": "",
             "link": "darwin-jull2"
         },
-        {
-            "name": "Matteo Sotelo",
-            "course": "MASc - Information technology",
-            "imgsrc": "images/studentImages/Matteo.png",
-            "extraInfo": "",
-            "link": "matteo"
-        },
 
 
     ],
     "postdocs": [
-
-
+        {
+            "name": "Foroozan Daneshzand",
+            "course": "Postdoctoral Researcher",
+            "imgsrc": "images/studentImages/Foroozan.png",
+            "extraInfo": "",
+            "link": "foroozan-daneshzand"
+        },
     ],
     "ras": [
 
     ],
     "alumni": [
+        {
+            "name": "Matteo Sotelo",
+            "course": "MASc - Information Technology",
+            "imgsrc": "images/studentImages/Matteo.png",
+            "extraInfo": "",
+            "link": "matteo"
+        },
+        {
+            "name": "Kosiso Igbokwe",
+            "course": "Undergrad - Computer Science",
+            "imgsrc": "images/studentImages/Kosiso.jpg",
+            "extraInfo": "",
+            "link": "kosiso-igbokwe"
+        },
         {
             "name": "Dr. Elahe Khorasani",
             // "info": "Co-supervised with Dr. Julio Fiore",
@@ -332,19 +363,32 @@ document.getElementById("alumniData").innerHTML = `${jsonData.alumni.map(functio
 </section>`
 }).join(' ')}`;
 
-// document.getElementById("postdocData").innerHTML = `${jsonData.postdocs.map(function (postdoc) {
-//     return `
-//     <section class="col-6 col-12-narrower peopleData">
-//     <div class="box post">
-//         <img class="image left" src="${postdoc.imgsrc}" alt="" />
-//         <div class="inner">
-//         <a href="peopleDetails.html?type=${'stud'}&people=${postdoc.link}"><h3>${postdoc.name}</h3></a>
-//             <p style="margin: 0">${postdoc.info}</p>
-//             <p style="margin: 0">(${postdoc.university})</p>
-//         </div>
-//     </div>
-// </section>`
-// }).join(' ')}`;
+document.getElementById("postdocData").innerHTML = `${jsonData.postdocs.map(function (postdoc) {
+    if (postdoc.extraInfo == "") {
+        return `
+        <section class="col-6 col-12-narrower peopleData">
+        <div class="box post">
+            <img class="image left" src="${postdoc.imgsrc}" alt="" />
+            <div class="inner">
+            <a href="peopleDetails.html?type=${'stud'}&people=${postdoc.link}"><h3>${postdoc.name}</h3></a>
+                <p style="margin: 0">${postdoc.course}</p>
+            </div>
+        </div>
+    </section>`
+    } else {
+        return `
+        <section class="col-6 col-12-narrower peopleData">
+        <div class="box post">
+            <img class="image left" src="${postdoc.imgsrc}" alt="" />
+            <div class="inner">
+            <a href="peopleDetails.html?type=${'stud'}&people=${postdoc.link}"><h3>${postdoc.name}</h3></a>
+                <p style="margin: 0">${postdoc.extraInfo}</p>
+                <p style="margin: 0">${postdoc.course}</p>
+            </div>
+        </div>
+    </section>`
+    }
+}).join(' ')}`;
 
 
 // document.getElementById("raData").innerHTML = `${jsonData.ras.map(function (ra) {
@@ -375,36 +419,28 @@ document.getElementById("pastData").innerHTML = `${jsonData.past.map(function (p
 
 
 const queryString = window.location.search;
-console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
-console.log(urlParams);
-const selection = urlParams.get('people')
-console.log(selection);
-if (selection == 'professors') {
-    document.getElementById("professors").scrollIntoView({ behavior: 'smooth' });
-}
-else if (selection == 'undergrad') {
-    document.getElementById("undergrad").scrollIntoView({ behavior: 'smooth' });
-}
-else if (selection == 'grad') {
-    document.getElementById("grad").scrollIntoView({ behavior: 'smooth' });
-}
-else if (selection == 'alumni') {
-    document.getElementById("alumni").scrollIntoView({ behavior: 'smooth' });
-}
-else if (selection == 'postdoc') {
-    document.getElementById("postdoc").scrollIntoView({ behavior: 'smooth' });
-}
-else if (selection == 'ra') {
-    document.getElementById("ra").scrollIntoView({ behavior: 'smooth' });
-}
-else if (selection == 'past') {
-    console.log('Scrolling to Past Contributors');
-    document.getElementById("past").scrollIntoView({ behavior: 'smooth' });
-}
-else {
-    console.log('No valid selection');
-}
+const selection = urlParams.get('people');
+
+// Wait for page load + preload animation (main.js removes is-preload after 100ms on load)
+window.addEventListener('load', function () {
+    setTimeout(function () {
+        const sectionMap = {
+            'professors': 'professors',
+            'postdoc': 'postdoc',
+            'grad': 'grad',
+            'undergrad': 'undergrad',
+            'alumni': 'alumni',
+            'ra': 'ra',
+            'past': 'past'
+        };
+        const targetId = sectionMap[selection];
+        if (targetId) {
+            const el = document.getElementById(targetId);
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, 150);
+});
 
 //function for navigating to a specific section on people tab
 function selectPeople(loc) {
