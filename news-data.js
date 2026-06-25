@@ -3,6 +3,20 @@
 */
 const newsItems = [
     {
+        date: "2026-06-24",
+        title: "Shri Harini Ramesh awarded the Lloyd and Florence Cooper Doctoral Scholarship in Mind-Body Connection in Health.",
+        link: null,
+        external: false,
+        note: "Doctoral scholarship recognizing research in mind-body connection and health."
+    },
+    {
+        date: "2026-07-08",
+        title: "Darwin Jull will be presenting his research at the ACM Interactive Health 2026 conference in Porto.",
+        link: null,
+        external: false,
+        note: "Conference presentation in Porto, Portugal."
+    },
+    {
         date: "2026-03-15",
         title: "Shri Harini Ramesh received an Honorable Mention Award (top 5% of submissions) at CHI 2026 for the paper \"Metacognitive Demands and Strategies While Using Off-The-Shelf AI Conversational Agents for Health Information Seeking\"",
         link: "https://doi.org/10.1145/3772318.3791647",

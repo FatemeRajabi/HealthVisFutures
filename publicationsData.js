@@ -1,24 +1,6 @@
 const publications = [
     // Year: 2026
     {
-        imgSrc: "images/research/ai/metacog.png",
-        event: "CHI'26",
-        award: "Honorable Mention Award, top 5% of the submissions",
-        title: "Metacognitive Demands and Strategies While Using Off-The-Shelf AI Conversational Agents for Health Information Seeking",
-        downloadLink: "https://doi.org/10.1145/3772318.3791647",
-        abstract: "As Artificial Intelligence (AI) conversational agents become widespread, people are increasingly using them for health information seeking. The use of off-the-shelf conversational agents for health information seeking could place high metacognitive demands (the need for extensive monitoring and control of one's own thought process) on individuals, which could compromise their experience of seeking health information. However, currently, the specific demands that arise while using conversational agents for health information seeking, and the strategies people use to cope with those demands, remain unknown. To address these gaps, we conducted a think-aloud study with 15 participants as they sought health information using our off-the-shelf AI conversational agent. We identified the metacognitive demands such systems impose, the strategies people adopt in response, and propose considerations for designing beyond off-the-shelf interfaces to reduce these demands and support better user experiences and affordances in health information seeking.",
-        authors: [
-            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "peopleDetails.html?type=stud&people=shri-Harini" },
-            { name: "Foroozan Daneshzand", imgSrc: "images/studentImages/Foroozan.png", url: "peopleDetails.html?type=stud&people=foroozan-daneshzand" },
-            { name: "Babak Rashidi", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Shriti Raj", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Hariharan Subramonyam", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
-        ],
-        additionalDetails: "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
-        category: ["ai", "health"]
-    },
-    {
         imgSrc: "images/research/vis/inputVis.png",
         event: "EuroVis'26",
         award: "",
@@ -26,17 +8,174 @@ const publications = [
         downloadLink: "https://doi.org/10.1111/cgf.70479",
         abstract: "Older adults living with multiple chronic conditions (MCC) can considerably benefit from collecting and reflecting on their health data. Many older adults collect their health data using various approaches, such as digital tools or handwritten notebooks. However, in these approaches, the act of collecting data does not itself yield insights; sensemaking and reflection happen only if individuals later review their accumulated records. The daily process of data collection thus offers limited opportunity for individuals to actively engage with their data or find the process personally meaningful and enjoyable. Personal data input visualizations using physical tokens offer a promising solution that can help individuals recognize evolving patterns while collecting data and discover meaningful insights in a more serendipitous and engaging manner. Yet, there is a limited understanding of whether and how older adults living with MCC might adopt physical input visualizations to collect data and reflect on their health, and how the tangible, expressive, and personalizable nature of this process supports their sensemaking and reflection. In this paper, we present the results of our interview and diary studies in which older adults living with MCC inputted health data using physical tokens over two weeks. Our findings highlight the diverse and unique needs of older adults for tracking personal health data, illustrating how they adapt strategies and personalize physical input visualizations to align with their individual needs. We demonstrate how older adults integrated input visualizations into daily routines and leveraged tangible markers to reflect on patterns and behaviors, while enjoying the process of tracking and focusing on personal expression and meaningful reflection. Finally, we provide design considerations for supporting older adults with MCC when inputting health data through physical tokens.",
         authors: [
-            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "peopleDetails.html?type=stud&people=shri-Harini" },
-            { name: "Foroozan Daneshzand", imgSrc: "images/studentImages/Foroozan.png", url: "peopleDetails.html?type=stud&people=foroozan-daneshzand" },
-            { name: "Matteo Sotelo", imgSrc: "images/studentImages/Matteo.png", url: "peopleDetails.html?type=stud&people=matteo" },
-            { name: "Mahsa Sinaei", imgSrc: "images/studentImages/Mahsa3.png", url: "peopleDetails.html?type=stud&people=mahsa-sinaei" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "person.html?key=shri-Harini" },
+            { name: "Foroozan Daneshzand", imgSrc: "images/studentImages/Foroozan.png", url: "person.html?key=foroozan-daneshzand" },
+            { name: "Matteo Sotelo", imgSrc: "images/studentImages/Matteo.png", url: "person.html?key=matteo" },
+            { name: "Mahsa Sinaei", imgSrc: "images/studentImages/Mahsa3.png", url: "person.html?key=mahsa-sinaei" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" }
         ],
         additionalDetails: "Computer Graphics Forum",
         category: ["data", "health"]
     },
+    {
+        imgSrc: "images/research/ai/metacog.png",
+        event: "CHI'26",
+        award: "Honorable Mention Award, top 5% of the submissions",
+        title: "Metacognitive Demands and Strategies While Using Off-The-Shelf AI Conversational Agents for Health Information Seeking",
+        downloadLink: "https://doi.org/10.1145/3772318.3791647",
+        abstract: "As Artificial Intelligence (AI) conversational agents become widespread, people are increasingly using them for health information seeking. The use of off-the-shelf conversational agents for health information seeking could place high metacognitive demands (the need for extensive monitoring and control of one's own thought process) on individuals, which could compromise their experience of seeking health information. However, currently, the specific demands that arise while using conversational agents for health information seeking, and the strategies people use to cope with those demands, remain unknown. To address these gaps, we conducted a think-aloud study with 15 participants as they sought health information using our off-the-shelf AI conversational agent. We identified the metacognitive demands such systems impose, the strategies people adopt in response, and propose considerations for designing beyond off-the-shelf interfaces to reduce these demands and support better user experiences and affordances in health information seeking.",
+        authors: [
+            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "person.html?key=shri-Harini" },
+            { name: "Foroozan Daneshzand", imgSrc: "images/studentImages/Foroozan.png", url: "person.html?key=foroozan-daneshzand" },
+            { name: "Babak Rashidi", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Shriti Raj", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Hariharan Subramonyam", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" }
+        ],
+        additionalDetails: "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+        category: ["ai", "health"]
+    },
+    {
+        imgSrc: "images/research/hci/patient engagement.png",
+        event: "CHI'26 Workshop",
+        award: "",
+        title: "Challenges in Working Towards Patient Engagement in Developing Technology Prototypes",
+        downloadLink: "https://doi.org/10.48550/arXiv.2605.20205",
+        abstract: "Creating supportive technologies for people living with multiple chronic conditions is extremely challenging. These patients are often faced with substantial visible and invisible treatment work as well as their everyday responsibilities, including coordinating across providers, tracking information, and repeating communication in emotionally charged contexts. In the Cumulative Complexity Model (CuCoM), the balance between patient workload and patient capacity shapes what patients can realistically take on, including whether a digital tool can be adopted and sustained. In this paper, we report engagement lessons from implementing MyCareCompass, a patient-facing digital health intervention (DHI) intended to support day-to-day self-management for people living with multiple chronic conditions. We define engagement as patient uptake and sustained use during a two-month pilot study of our platform, drawing on usage analytics and follow-up feedback, and distill three implementation lessons for designing for engagement in complex chronic care.",
+        authors: [
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
+            { name: "Julie Babione", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Doreen M. Rabi", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Foroozan Daneshzand", imgSrc: "images/studentImages/Foroozan.png", url: "person.html?key=foroozan-daneshzand" },
+            { name: "Sheelagh Carpendale", imgSrc: "images/studentImages/dummy.png", url: "" }
+        ],
+        additionalDetails: "Accepted to the CHI 2026 Workshop on Engagement in Digital Health Interventions; arXiv:2605.20205",
+        category: ["human", "health"]
+    },
+    {
+        imgSrc: "images/research/vis/kolam.png",
+        event: "CHI'26 Workshop",
+        award: "",
+        title: "Pulli Kolam: A Traditional South Indian Craft Practice for Representing Data",
+        downloadLink: "https://doi.org/10.48550/arXiv.2603.02343",
+        abstract: "This paper introduces Pulli Kolam, a traditional South Indian craft, as a medium for physical data representation. Grounded in its cultural meaning and embodied practice, Pulli Kolam follows structured geometric rules while allowing creative variation. We identify five mapping strategies within Kolam (dots, patterns, fills, lines, and color) that can be used for representing data physically without disrupting traditional practice. Through an illustrative scenario of daily well-being tracking, we demonstrate how data representation can be embedded within routine craft practice. We conclude by outlining potential material adaptations that extend Kolam beyond its ephemeral form while maintaining its embodied and ritual qualities.",
+        authors: [
+            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "person.html?key=shri-Harini" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" }
+        ],
+        additionalDetails: "Accepted to the CHI 2026 Workshop Craft-Based Data Physicalization: Opportunities and Challenges; arXiv:2603.02343",
+        category: ["data", "human"]
+    },
+    {
+        imgSrc: "images/research/handm/post-discharge opiod.png",
+        event: "Am. J. Surgery'26",
+        award: "",
+        title: "General surgeons' perspectives on post-discharge opioid prescribing: A qualitative study",
+        downloadLink: "https://doi.org/10.1016/j.amjsurg.2025.116756",
+        abstract: "Understanding surgeons' perspectives on post-discharge opioid prescribing is crucial for optimizing pain management while mitigating opioid-related harms. This qualitative study involved semi-structured interviews with 30 general surgeons in the USA and Canada. Interviews were audio-recorded, transcribed verbatim, and continued until thematic saturation. Data were analyzed using inductive thematic analysis. Three themes were derived: motives for relying on opioids, motives for opioid minimization, and strategies for tailoring analgesia. Reliance on opioids was motivated by prescribing culture, convenience, patients' expectations, apprehension towards non-opioid analgesics, and limited pain management expertise. Motivations for opioid-minimization included cultural shift, non-opioids' effectiveness, policy, and emerging research. Strategies for tailoring prescribing included addressing patient expectations and post-discharge follow-up. Barriers to evidence-based prescribing, including tradition, convenience, and lacking expertise, should be addressed to optimize analgesia and mitigate opioid-related harms.",
+        authors: [
+            { name: "Makena Pook", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Tahereh Najafi Ghezeljeh", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Hiba Elhaj", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
+            { name: "Saba Balvardi", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Stephanie Wong", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Marylise Boutros", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Gerald M. Fried", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Lawrence Lee", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Liane S. Feldman", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Julio F. Fiore", imgSrc: "images/studentImages/dummy.png", url: "" }
+        ],
+        additionalDetails: "The American Journal of Surgery, Volume 252, 116756",
+        category: "health"
+    },
+    {
+        imgSrc: "images/research/handm/resection syndrome.png",
+        event: "Colon & Rectum'26",
+        award: "",
+        title: "Exploring Self-Management Strategies: A Qualitative Analysis of Lives Affected by Low Anterior Resection Syndrome Through an Online Peer Support Forum in a Multicenter Randomized Controlled Trial",
+        downloadLink: "https://doi.org/10.1097/DCR.0000000000004088",
+        abstract: "Low anterior resection syndrome describes chronic debilitating bowel dysfunction after rectal cancer surgery and is associated with poor quality of life. Conservative self-management strategies are the first-line treatment for low anterior resection syndrome. This study explored the lived experience of using self-management for low anterior resection syndrome among rectal cancer survivors who have actively participated in the app. We conducted a qualitative analysis of text data generated by participants through an online informational and peer support app, which was successfully tested through a multicenter randomized controlled trial. Forum posts were generated by study participants, peer mentors, and health care providers. Data analyzed from the app included forum posts, chat night transcripts, and video comments. Using an affinity diagram approach, 2 reviewers independently identified and organized themes from the compiled texts. In total, there were 45 participants and 2,363 app logins for 6 months. Of the 786 posts exchanged through the app, 112 (14.2%) were made by health care providers, and the rest by participants and peer mentors. Thematic analysis revealed 7 themes and 27 subthemes, which included diet (use and benefit of food diaries, trigger foods and probiotics, fiber supplements, and personalized dietary guide with the help of a nutritionist); coping strategies (sense of humor, finding peace with acceptance of a new normal and managing expectations and recognition of the toll low anterior resection syndrome can have on mental health); transanal irrigation (initial reluctance to try it, learning to perform transanal irrigation from peers online, leading to significant improvement in bowel function); and benefits of peer support (sharing of knowledge and sense of community found through peer support are empowering and provide hope). This qualitative analysis highlighted the lived experiences and unmet needs of rectal cancer survivors pursuing self-management strategies for low anterior resection syndrome.",
+        authors: [
+            { name: "Jeongyoon Moon", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Haroon Munir", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Sarah Sabboobeh", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Marie Demian", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Olivia Monton", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Allister Smith", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Carl J. Brown", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Sami A. Chadi", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Erin D. Kennedy", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Sender Liberman", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Carol-Ann Vasilevsky", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
+            { name: "Marylise Boutros", imgSrc: "images/studentImages/dummy.png", url: "" }
+        ],
+        additionalDetails: "Diseases of the Colon & Rectum, 69(4):617-631, April 2026",
+        category: "health"
+    },
+    {
+        imgSrc: "images/research/handm/opioid colorectal.png",
+        event: "World J. Surgery'26",
+        award: "",
+        title: "Post-Discharge Opioid Prescribing After Elective Colorectal Resection: An International Survey",
+        downloadLink: "https://doi.org/10.1002/wjs.70245",
+        abstract: "Excessive opioid prescribing after colorectal surgery can lead to adverse events and contribute to the opioid crisis. Understanding international prescribing patterns is essential for guiding practice and future research. The Analgesia After Colorectal Surgery (ACORE) survey aimed to characterize international opioid prescribing practices after elective colorectal resection. This international cross-sectional survey followed established methodological guidelines. Eligible participants were colorectal, gastrointestinal, and general surgeons, as well as surgery trainees. Recruitment followed snowball sampling via international surgical societies' mailing lists, social media, and personal networks. The primary outcome of interest was post-discharge opioid prescribing after open and MIS elective colorectal resection. Secondary outcomes included prescription quantity in morphine milligram equivalents (MMEs). Data were analyzed using descriptive statistics and logistic regression with Bayesian model averaging. Among 817 participants, 88% were surgeons, 12% were trainees, 62% practiced in academic hospitals, and 67% had over 5 years in practice. Overall, 57% of the participants reported prescribing opioids at discharge (55% after open and 54% after minimally invasive procedures). Opioids were commonly prescribed by surgeons practicing in Australia and New Zealand (100%), Northern America (92%), Northern Europe (68%), and South-eastern Asia (71%). In contrast, they were less frequently prescribed in Eastern Europe (11%), Eastern Asia (22%), Latin America and the Caribbean (26%), Southern Europe (19%), and Northern Africa (0%). The median quantity of opioids prescribed at discharge varied widely (30–200 MMEs). In regression analysis accounting for surgeon and practice characteristics, region of practice was the only factor independently associated with opioid prescribing. The extensive global variation in opioid prescribing underscores clinical equipoise and challenges the assumption that post-discharge opioids are universally necessary for patients undergoing colorectal resection.",
+        authors: [
+            { name: "Ghadeer Olleik", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Hiba Elhaj", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Samin Shirzadi", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Francesca Fermi", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Maxime Lapointe-Gagner", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Sender Liberman", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Mohsen Alhashemi", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Tahereh Najafi Ghezeljeh", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
+            { name: "Nawar Touma", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Pepa Kaneva", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Agnihotram V. Ramanakumar", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Badma Bashankaev", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Alexandra Sidorova", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Stephen J. Chapman", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Chuan-Gang Fu", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Lucia Oliveira", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Sofia Valanci", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Audrius Dulskas", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Steven Wexner", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Lawrence Lee", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Liane S. Feldman", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Marylise Boutros", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Julio F. Fiore Jr.", imgSrc: "images/studentImages/dummy.png", url: "" }
+        ],
+        additionalDetails: "World Journal of Surgery, Volume 50, Issue 3, pp. 558–568",
+        category: "health"
+    },
 
     // Year: 2025
+    {
+        imgSrc: "images/research/handm/dementia.png",
+        event: "Alzheimer's Dement.'25",
+        award: "",
+        title: "Electronic Memory Support System (eMSS): An Innovative Digital Calendar and Training Program for Older Adults with Mild Cognitive Impairment",
+        downloadLink: "https://doi.org/10.1002/alz70858_107207",
+        abstract: "Individuals with mild cognitive impairment (MCI) experience challenges in maintaining independence in their instrumental activities of daily living (IADLs). The memory support system (MSS) is a paper-based planner intervention to train individuals with MCI to complete personal goals and IADLs independently. As more individuals use electronic calendar systems, the MSS will need to adapt. This project aimed to develop and test an electronic prototype of the MSS (eMSS). Drawing on the MSS, an eMSS prototype intended for phone/tablet use was developed in Axure, allowing participants to interact with the planner and its sections (calendar, notes, to do list). The prototype was evaluated with MSS trainers and individuals with MCI and their partners using a computer or tablet over a virtual platform. Participants were asked to go through fictional planning scenarios which were assessed using cognitive task analysis (CTA). The scenarios were designed to evaluate overall ease of use, and specifics such as navigation between pages/sections and developing schedules and task lists. During sessions, participants were encouraged to think aloud, providing insight into their eMSS experience. To date, CTA has been conducted with 6 MSS trainers, and 2 patient/partner dyads that completed the MSS training program. Early results provide insight on strengths, challenges and opportunities to optimize the eMSS. Participants could identify and use key features (e.g., menus) and found the symbols and language consistent. However, participants did not notice some features (e.g., interactive arrows to navigate across dates) and requested more cueing or interactive prompts. Participants would prefer to see all information entered on individual pages (which is possible with the MSS) to support better situation awareness. To respond to the everyday planning needs of individuals with MCI in a digital age, an eMSS was developed, drawing on a clinically trialed hardcopy version (MSS). Positive feedback from MSS trainers and patients with MCI and their partners suggests promise for the overall design. Improvements for the next iteration include designing cues to help users know actions have been completed or when to attend to important information, as well as providing more fulsome information on pages to support awareness of daily tasks.",
+        authors: [
+            { name: "Neil W. Thomas", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Shekinah McClymont", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fjolla Berbatovci", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Meg Schwellnus", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
+            { name: "Octavio A. Santos", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Adrian Chan", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Dona E. Locke", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Melanie Chandler", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Anne Shandera-Ochsner", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Atul Jaiswal", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Chantal Trudel", imgSrc: "images/studentImages/dummy.png", url: "" }
+        ],
+        additionalDetails: "Alzheimer's & Dementia, Volume 21, Issue S4, e107207",
+        category: "health"
+    },
         {
         imgSrc: "images/research/handm/aging_25.png",
         event: "J. Ageing Longev'25",
@@ -55,7 +194,7 @@ const publications = [
             { name: "Melanie Chandler", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Anne Shandera-Ochsner", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Adrian Chan", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Octavio Santos", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Chantal Trudel", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Atul Jaiswal", imgSrc: "images/studentImages/dummy.png", url: "" },
@@ -78,14 +217,14 @@ const publications = [
             { name: "Nishtha Agrawal", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Saiyyam Kochar", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Kara Smith", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Vidya Setlur", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Narges Mahyar", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Ali Sarvghad", imgSrc: "images/studentImages/dummy.png", url: "" }
         ],
         additionalDetails: "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
-        category:"human"
-    },     
+        category: ["human", "ai", "health"]
+    },
     {
         imgSrc: "images/research/handm/colon_25.png",
         event: "Colon & Rectum'25",
@@ -101,7 +240,7 @@ const publications = [
             { name: "Myl`ene Arsenault", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Nathalie Leon", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Carmen G. Loiselle", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Marylise Boutros", imgSrc: "images/studentImages/dummy.png", url: "" }
         ],
         additionalDetails: "Diseases of the Colon & Rectum",
@@ -128,7 +267,7 @@ const publications = [
             { name: "Celia Keane", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Syed Husain", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Alessandra Gasior", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Marylise Boutros", imgSrc: "images/studentImages/dummy.png", url: "" }
         ],
         additionalDetails: "Sec. Colorectal and Proctological Surgery",
@@ -143,10 +282,10 @@ const publications = [
         abstract: 'This study investigated the potential of large interactive displays to enhance patient-clinician communication and engagement during clinical consultations. Despite the increasing use of technology in healthcare, traditional desktop computer screens often hinder interaction and shared decision-making. We conducted a mixed-methods study involving 18 participants to compare a large interactive display to a PC display and printouts in simulated consultations. Participants engaged in tasks involving fictional health data visualizations related to sleep, physical activity, and sedentary behaviour. Quantitative data gathered through post-interaction questionnaires using validated scales revealed no statistically significant differences between the mediums in terms of patient understanding, activation, decision-making, or satisfaction. However, qualitative data, collected through semi-structured exit interviews and analyzed using a grounded theory approach, indicated a preference for the large interactive display. Participants found the large display to enhance visibility, promote a face-to-face layout that facilitated communication, and offered greater control over their health information, fostering engagement and a sense of empowerment. While the study’s small sample size and simulated setting limit generalizability, the findings suggest that large interactive displays, when designed with a focus on usability and user preferences, hold promise for improving patient-clinician communication and supporting shared decision-making in clinical settings. Feedback from clinicians emphasized tailoring role-specific functionalities, improving time progression representation, and enhancing usability through personalized assistance, visual clarity, and accessible help resources. Future research should explore optimal interface designs, EHR integration, and the use of voice commands to further enhance the effectiveness of this technology.',
         authors: [
 
-            { name: "Mariana Perez Rodriguez", imgSrc: "images/studentImages/Mariana.jpg", url: "peopleDetails.html?type=prof&people=mariana-perez-rodriguez" },
+            { name: "Mariana Perez Rodriguez", imgSrc: "images/studentImages/Mariana.jpg", url: "person.html?key=mariana-perez-rodriguez" },
             { name: "Juan Jiménez Garcia", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Babak Rashidi", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" }
         ],
         additionalDetails: "Human Interface and the Management of Information",
         category:"human"
@@ -160,9 +299,9 @@ const publications = [
         abstract: 'The healthcare system collects extensive data, encompassing patient administrative information, clinical measurements, and home-monitored health metrics. To support informed decision-making in patient care and treatment management, it is essential to review and analyze these diverse data sources. Data visualization is a promising solution to navigate healthcare datasets, uncover hidden patterns, and derive actionable insights. However, the process of creating interactive data visualization can be rather challenging due to the size and complexity of these datasets. Progressive data science offers a potential solution, enabling interaction with intermediate results during data exploration. In this paper, we reflect on our experiences with three health data visualization projects employing a progressive data science approach. We explore the practical implications and challenges faced at various stages, including data selection, pre-processing, data mining, transformation, and interpretation and evaluation. We highlighted unique challenges and opportunities for three projects, including visualizing surgical outcomes, tracking patient bed transfers, and integrating patient-generated data visualizations into the healthcare setting. We identified the following challenges: inconsistent data collection practices, the complexity of adapting to varying data completeness levels, and the need to modify designs for real-world deployment. Our findings underscore the need for careful consideration of using a progressive data science approach when designing visualizations for healthcare settings.',
         authors: [
 
-            { name: "Faisal Zaki Roshan,", imgSrc: "images/studentImages/Roshan.jpeg", url: "peopleDetails.html?type=prof&people=roshan" },
-            { name: "Abhishek Ahuja", imgSrc: "images/studentImages/AbhishekAhuja.jpg", url: "peopleDetails.html?type=prof&people=abishekahuja" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+            { name: "Faisal Zaki Roshan,", imgSrc: "images/studentImages/Roshan.jpeg", url: "person.html?key=roshan" },
+            { name: "Abhishek Ahuja", imgSrc: "images/studentImages/AbhishekAhuja.jpg", url: "person.html?key=abishekahuja" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" }
         ],
         additionalDetails: "IEEE VIS: Visualization & Visual Analytics Conference, Progressive Data Analysis and Visualization Workshop 2024",
         category:"data"
@@ -176,10 +315,10 @@ const publications = [
         abstract: 'Cardiovascular diseases are one of the leading causes of mortality globally. Cardiac rehabilitation (CR) programs are crucial for patients recovering from cardiac events, as they help reduce the risk of recurrent events and support patient recovery. The patient’s journey in CR spans the stages before, during, and after the program. Patients have to progress through each stage of CR programs successfully to complete the entire CR journey and get the full benefits of CR programs, but numerous barriers within this journey can hinder patient progression. This study aims to explore the barriers to progression at all stages of the CR patient journey from the perspectives of health care providers involved in CR care. This qualitative study involved semistructured interviews with health care providers involved in CR care from July 2023 to January 2024. A purposive maximal variation sampling method was used to target providers with diverse demographics and specialties. Snowball sampling was used to recruit participants, leveraging the existing networks of participants. Each interview lasted between 30 and 45 minutes. Interviews were recorded, transcribed verbatim, and analyzed using an inductive thematic analysis approach. Data analysis was conducted from August 2023 to February 2024. Ten health care providers, comprising 7 females and 3 males, were interviewed. Their roles included physician, program director, nurse manager, clinical manager, nurse coordinator, nurse, physiotherapist, and kinesiologist. The analysis identified four overarching themes related to barriers to progression in the CR journey: (1) patients not being referred to CR programs, (2) patients not enrolling in CR programs, (3) patients dropping out of CR programs, and (4) patients’ lack of adherence to lifestyle changes post-CR programs. In light of the growing interest in technological interventions in CR programs, we proposed 4 potential technological solutions to address the barriers to progression identified in our analysis. These solutions aim to provide a foundation for future research to guide the development of effective technologies and enhance patient progression within the CR journey. ',
         authors: [
             
-            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "peopleDetails.html?type=prof&people=shri-Harini" },
-            { name: "Darwin Jull", imgSrc: "images/studentImages/Darwin1.jpeg", url: "peopleDetails.html?type=prof&people=darwin-jull2" },
+            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "person.html?key=shri-Harini" },
+            { name: "Darwin Jull", imgSrc: "images/studentImages/Darwin1.jpeg", url: "person.html?key=darwin-jull2" },
             { name: "Hélène Fournier ", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" }
         ],
         additionalDetails: "Interactive Journal of Medical Research (i-jmr)",
         category:"health"
@@ -195,8 +334,8 @@ const publications = [
         abstract: 'With the increasing amount of data globally, analyzing and visualizing data are becoming essential skills across various professions. It is important to equip university students with these essential data skills. To learn, design, and develop data visualization, students need knowledge of programming and data science topics. Many university programs lack dedicated data science courses for undergraduate students, making it important to introduce these concepts through integrated courses. However, combining data science and data visualization into one course can be challenging due to the time constraints and the heavy load of learning. In this paper, we discuss the development of teaching data science and data visualization together in one course and share the results of the post-course evaluation survey. From the survey’s results, we identified four challenges, including difficulty in learning multiple tools and diverse data science topics, varying proficiency levels with tools and libraries, and selecting and cleaning datasets. We also distilled five opportunities for developing a successful data science and visualization course. These opportunities include clarifying the course structure, emphasizing visualization literacy early in the course, updating the course content according to student needs, using large real-world datasets, learning from industry professionals, and promoting collaboration among students.',
         authors: [
             
-            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "peopleDetails.html?type=prof&people=shri-Harini" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "person.html?key=shri-Harini" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" }
         ],
         additionalDetails: "Proceedings of the 2024 IEEE VIS Workshop on Visualization Education, Literacy, and Activities (EduVIS)",
         category:"data"
@@ -210,11 +349,11 @@ const publications = [
         abstract: 'Large displays can provide the necessary space and resolution for comprehensive explorations of data visualizations. However, designing and developing visualizations for such displays pose distinct challenges. Identifying these challenges is essential for data visualization designers and developers creating data visualizations on large displays. In this study, we aim to identify the challenges designers and developers encounter when creating data visualizations for large displays. We conducted semi-structured interviews with 13 experts experienced in creating data visualizations for large displays and, through affinity diagramming, categorized the challenges. We identified several challenges in designing, developing, and evaluating data visualizations on large displays, as well as building infrastructure for large displays. Design challenges included scaling visual encodings, limited design tools, and adopting design guidelines for large displays. In the development phase, developers faced difficulties working away from large displays and dealing with insufficient tools and resources. During the evaluation phase, researchers encountered issues with individuals’ unfamiliarity with large display technology, interaction interruptions by technical limitations such as cursor visibility issues, and limitations in feedback gathering. Infrastructure challenges involved environmental constraints, technical issues, and difficulties in relocating large display setups. We share the lessons learned from our study and provide future directions along with research project examples to address these challenges.',
         authors: [
             
-            { name: "Mahsa Sinaei Hamad", imgSrc: "images/studentImages/Mahsa3.png", url: "peopleDetails.html?type=stud&people=mahsa-sinaei" },
+            { name: "Mahsa Sinaei Hamad", imgSrc: "images/studentImages/Mahsa3.png", url: "person.html?key=mahsa-sinaei" },
             { name: "Pak Kwan", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Matthew Klich", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Jillian Aurisano", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" }
         ],
         additionalDetails: "Proceedings of the ACM on Human-Computer Interaction 2024, Pages 1-18",
         category:"human"
@@ -227,10 +366,10 @@ const publications = [
         downloadLink: 'https://doi.org/10.1145/3670947.3670971',
         abstract: 'There is a vast amount of unstructured text data generated every day analyzing and making sense of these text-based datasets is a complex, cumbersome task. The existing visualization tools that analyze text data leveraging Natural Language Processing (NLP) techniques, are often tailored for structured text-based data. They also fail to support reading, a crucial analysis task to validate the output of NLP techniques. We designed and developed TextVista, an NLP-enriched visualization tool that supports analysts during their analysis of unstructured text with temporal references. Our tool combines techniques including clustering, sentiment analysis, and threat detection with three views that visualize high-level patterns in the data to encourage reading. We report on TextVistas iterative design process, which included a focus group to distill design requirements, a think-aloud interview study with data analysts to understand their impressions of the tool, and a diary study to assess its long-term usage. Through this process, we identified how TextVista supported the analysis of unstructured text with temporal references using NLP techniques and fostered methods to promote reading in situ. TextVista also encouraged serendipity when analyzing data via its question-focused overviews and flexible avenues to explore data.',
         authors: [
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
-            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "peopleDetails.html?type=prof&people=shri-Harini" },
-            { name: "Beck Langstone", imgSrc: "images/studentImages/Beck2.jpg", url: "peopleDetails.html?type=prof&people=beck-langstone" },
-            { name: "Daniil Kulik", imgSrc: "images/studentImages/dummy.png", url: "peopleDetails.html?type=stud&people=daniil" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
+            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "person.html?key=shri-Harini" },
+            { name: "Beck Langstone", imgSrc: "images/studentImages/Beck2.jpg", url: "person.html?key=beck-langstone" },
+            { name: "Daniil Kulik", imgSrc: "images/studentImages/dummy.png", url: "person.html?key=daniil" },
             { name: "Justin Pontalba", imgSrc: "images/studentImages/dummy.png", url: "" }
         ],
         additionalDetails: "Proceedings of Graphics Interface 2024, Pages 1-14",
@@ -244,13 +383,13 @@ const publications = [
         downloadLink: 'https://doi.org/10.1145/3670947.3670978',
         abstract: 'Stroke is one of the leading causes of disability worldwide. The efficacy of stroke recovery is determined by various factors, including patient adherence to their rehabilitation program. Effective communication between healthcare providers and patients is crucial for promoting patients adherence to rehabilitation programs. Aiming to support patient-healthcare provider communication during inpatient stroke rehabilitation, we 1. conducted semi-structured interviews with healthcare providers with expertise in inpatient stroke recovery to extract design requirements for visualizing stroke recovery progress. Using these design requirements, we 2. designed a data visualization tool representing stroke recovery. We 3. sought feedback on the visualization designs from healthcare providers and patients and integrated their feedback into the designs. Informed by the results of our studies, we provided several considerations for designing future visualization tools for patients and providers to communicate during inpatient stroke rehabilitation.',
         authors: [
-            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "peopleDetails.html?type=stud&people=shri-Harini" },
-            { name: " Alicia Ouskine", imgSrc: "images/studentImages/Alicia.jpg", url: "peopleDetails.html?type=stud&people=alicia-ouskine" },
-            { name: " Elahe Khorasani", imgSrc: "images/studentImages/Elaheh2.jpg", url: "peopleDetails.html?type=stud&people=elaheh-khorasani" },
+            { name: "Shri Harini Ramesh", imgSrc: "images/studentImages/Shri2.jpg", url: "person.html?key=shri-Harini" },
+            { name: " Alicia Ouskine", imgSrc: "images/studentImages/Alicia.jpg", url: "person.html?key=alicia-ouskine" },
+            { name: " Elahe Khorasani", imgSrc: "images/studentImages/Elaheh2.jpg", url: "person.html?key=elaheh-khorasani" },
             { name: "Mona Ebrahimipour", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Hillel Finestone", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: " Adrian D. C. Chan", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" }
         ],
         additionalDetails: "Proceedings of Graphic Interface 2024, Pages 1-14",
         category: "data"
@@ -270,7 +409,7 @@ const publications = [
             { name: "Jeongyoon Moon", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Sarah Sabboobeh", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Carol-Ann Vasilevsky", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Marylise Boutros", imgSrc: "images/studentImages/dummy.png", url: "" },
 
         ],
@@ -287,7 +426,7 @@ const publications = [
         authors: [
             { name: "Benjamin Bach", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Mandy Keck", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Tatiana Losev", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Isabel Meirelles", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Jason Dykes", imgSrc: "images/studentImages/dummy.png", url: "" },
@@ -321,14 +460,14 @@ const publications = [
         abstract: 'Non-invasive cardiac radioablation is an emerging therapy for the treatment of ventricular tachycardia (VT). Electrophysiologic, anatomic and molecular imaging studies are used to localize the breakout region of the VT, but current therapy planning is tedious and prone to error due to a lack of data integration. In this work we present the design and development of a software platform and workflow to facilitate precision-targeted therapy planning, including affine non-rigid multimodality image registration and 2D-3D-4D visualization across modalities. Registration accuracy was measured using Dice Similarity and Hausdorff Distance of total left ventricle tissue volumes, which were 0.914 ± 0.013 and 2.65mm ± 0.34mm, respectively (average ± standard deviation). Electrocardiographic maps of VT parameters were registered temporally to surface electrode data to recreate familiar ECG tracings. 2D polar maps, 3D slice-views, and 4D cine-renderings were used for hybrid fusion displays of molecular and electroanatomic images. Segmentations of the cardiac-gated contrast CT blood-pool and molecular images of perfusion and glucose metabolism were used to identify regions of fibrotic scar tissue and hibernating myocardium in the 3D scene. Ablation targets were painted onto the 2D polar map, 3D slice or 4D-cine views, and exported as DICOM for import to radiotherapy planning software. We anticipate that the combination of accurate multimodality image registration and visualizations will enable more reliable therapy planning, expedite treatment and may improve understanding of the underlying pathophysiology of these lethal arrhythmias.',
         title: "A 4D visualization tool for treatment planning of non-invasive radioablation in patients with ventricular tachycardia",
         authors: [
-            { name: "Connor Haberl", imgSrc: "images/studentImages/Connor.jpg", url: "peopleDetails.html?type=stud&people=connor-haberl" },
+            { name: "Connor Haberl", imgSrc: "images/studentImages/Connor.jpg", url: "person.html?key=connor-haberl" },
             { name: "Andrew M. Crean", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Katie Lekx-Toniolo", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Elsayed Ali", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Pablo B. Nery", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Girish M. Nair", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Graham Cook", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Calum Redpath", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Robert deKemp", imgSrc: "images/studentImages/dummy.png", url: "" }
 
@@ -346,7 +485,7 @@ const publications = [
         authors: [
             { name: "Irina Kondratova", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Helene Fournier ", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
         ],
         additionalDetails: "Human Aspects of IT for the Aged Population. HCII 2023. Lecture Notes in Computer Science, vol 14043. Springer, Cham. ",
         category:"health"
@@ -359,11 +498,11 @@ const publications = [
         downloadLink: 'https://ieeexplore.ieee.org/document/10253972',
         abstract: 'High blood pressure is one of the major causes of cardiovascular diseases, renal failure, and even sudden death. To avoid developing these health issues, it is important to consistently monitor blood pressure levels. Monitoring blood pressure levels regularly allows people to observe changes in their blood pressure measurements and contact their healthcare providers for guidance if needed. The aim of this paper is designing and developing a mobile application that can assist individuals to better understand the changes in their blood pressure levels by introducing a novel approach to visualizing blood pressure data and managing missing data. Employing a user-centered design approach, we designed and developed an app. To complete this study, we conducted a literature review to identify key design requirements for such apps and then, designed our low-fidelity prototype based on these design requirements. Next, we consulted with two experts to obtain their feedback on the content, presentation, and usability of our initial low-fidelity prototype. Based on these experts feedback we designed our mid-fidelity and high-fidelity prototype. Eventually, we conducted a user evaluation study to evaluate our high-fidelity prototype. The results demonstrated this app provides a clear visual representation of blood pressure measurements over time.',
         authors: [
-            { name: "Mahsa Sinaei Hamed", imgSrc: "images/studentImages/Mahsa3.png", url: "peopleDetails.html?type=stud&people=mahsa-sinaei" },
+            { name: "Mahsa Sinaei Hamed", imgSrc: "images/studentImages/Mahsa3.png", url: "person.html?key=mahsa-sinaei" },
             { name: "Laura Reid", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Alice Olorunnife", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "David Casciano", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" }
 
         ],
         additionalDetails: "2023 IEEE Sensors Applications Symposium (SAS), Ottawa, ON, Canada, 2023, pp. 1-6",
@@ -382,7 +521,7 @@ const publications = [
             { name: "Maxime Lapointe-Gagner", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Philip Nguyen-Powanda,", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Hiba Elhaj", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: " Pepa Kaneva", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Lawrence Lee", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Liane S. Feldman", imgSrc: "images/studentImages/dummy.png", url: "" },
@@ -405,7 +544,7 @@ const publications = [
             { name: "Demian Marie", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Garfinkle Richard", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Vasilevsky Carol-Ann", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Boutros Marylise", imgSrc: "images/studentImages/dummy.png", url: "" }
 
         ],
@@ -423,7 +562,7 @@ const publications = [
             { name: "Uyen Do", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Makena Pook", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Tahereh Najafi", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Charbel El-Kefraoui", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Saba Balvardi", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Natasha Barone", imgSrc: "images/studentImages/dummy.png", url: "" },
@@ -463,7 +602,7 @@ const publications = [
             { name: "Patricia Sylla", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Steven D. Wexner", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Carol-Ann Vasilevsky", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Marylise Boutros", imgSrc: "images/studentImages/dummy.png", url: "" }
         ],
         additionalDetails: "Surg Endosc 37, 669–682 (2023)",
@@ -491,7 +630,7 @@ const publications = [
             { name: "Isabel Meirelles", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Rebecca Noonan", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Laura Pelchman", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Christina Stoiber", imgSrc: "images/studentImages/dummy.png", url: "" },
         ],
         additionalDetails: "2022 IEEE 4th Workshop on Visualization Guidelines in Research, Design, and Education (VisGuides), Oklahoma City, OK, USA, 2022 pp. 23-30.",
@@ -510,7 +649,7 @@ const publications = [
             { name: "Roxanne Bennett", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Michelle Wall", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Suzanne N Morin", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" }
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" }
         ],
         additionalDetails: "JMIR Aging 2022;5(4):e37772",
         category: "human"
@@ -524,7 +663,7 @@ const publications = [
         title: "Effectiveness of a personalized health profile on specificity of self-management goals among people living with HIV in Canada: findings from a blinded pragmatic randomized controlled trial",
         authors: [
             { name: "Maryam Mozafarinia", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Marie-Josee Brouillette", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Lesley K Fellows", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Bärbel Knäuper", imgSrc: "images/studentImages/dummy.png", url: "" },
@@ -542,7 +681,7 @@ const publications = [
         abstract: 'In this international qualitative study of 30 patients undergoing abdominal surgery, the meaning of recovery was found to go beyond traditional clinical parameters. The elements of recovery identified (returning to habits and routines, resolution of symptoms, overcoming mental strains, regaining independence, and enjoying life) should be taken into account when developing patient-centered strategies to measure and improve recovery after abdominal surgery.',
         title: "Understanding the meaning of recovery to patients undergoing abdominal surgery",
         authors: [
-            { name: "Fateme Rajabiyazdi, PhD", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi, PhD", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Roshni Alam, MSc", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Aditya Pal, MS", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Joel Montanez, PhD", imgSrc: "images/studentImages/dummy.png", url: "" },
@@ -569,7 +708,7 @@ const publications = [
         title: "Development and usability of a feedback tool, “My Personal Brain Health Dashboard”, to improve setting of self-management goals among people living with HIV in Canada",
         authors: [
             { name: "Maryam Mozafarinia", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Marie-Josee Brouillette", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Lesley K Fellows", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Nancy E Mayo", imgSrc: "images/studentImages/dummy.png", url: "" }
@@ -585,7 +724,7 @@ const publications = [
         abstract: 'Designing patient-collected health data visualizations to support communicating patient data during clinical visits is a challenging problem due to the heterogeneity of the parties involved: patients, healthcare providers, and healthcare systems. Designers must ensure that all parties’ needs are met. This complexity makes it challenging to find a definitive solution that can work for every individual. We have approached this research problem—communicating patient data during clinical visits—as a wicked problem. In this article, we outline how wicked problem characteristics apply to our research problem. We then describe the research methodologies we employed to explore the design space of individualized patient data visualization solutions. Lastly, we reflect on the insights and experiences we gained through this exploratory design process. We conclude with a call to action for researchers and visualization designers to consider patients’ and healthcare providers’ individualities when designing patient data visualizations.',
         title: "Communicating Patient Health Data: A Wicked Problem",
         authors: [
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Charles Perin", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: " Lora Oehlberg", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: " Sheelagh Carpendale", imgSrc: "images/studentImages/dummy.png", url: "" }
@@ -603,7 +742,7 @@ const publications = [
         abstract: 'We were approached by a group of healthcare providers who are involved in the care of chronic patients looking for potential technologies to facilitate the process of reviewing patient-generated data during clinical visits. Aiming at understanding the healthcare providers’ attitudes towards reviewing patient-generated data, we (1) conducted a focus group with a mixed group of healthcare providers. Next, to gain the patients’ perspectives, we (2) interviewed eight chronic patients, collected a sample of their data and designed a series of visualizations representing patient data we collected. Last, we (3) sought feedback on the visualization designs from healthcare providers who requested this exploration. We found four factors shaping patient-generated data: data & context, patient’s motivation, patient’s time commitment, and patient’s support circle. Informed by the results of our studies, we discussed the importance of designing patient-generated visualizations for individuals by considering both patient and healthcare provider rather than designing with the purpose of generalization and provided guidelines for designing future patient-generated data visualizations.',
         title: "Exploring the Design of Patient-Generated Data Visualizations",
         authors: [
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Charles Perin", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: " Lora Oehlberg", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: " Sheelagh Carpendale", imgSrc: "images/studentImages/dummy.png", url: "" }
@@ -620,7 +759,7 @@ const publications = [
         title: "Effectiveness of a personalized health profile on specificity of self-management goals among people living with HIV in Canada: a protocol for a blinded pragmatic randomized controlled trial",
         authors: [
             { name: "Maryam Mozafarinia", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Marie-Josee Brouillette", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Lesley K Fellows", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Bärbel Knäuper", imgSrc: "images/studentImages/dummy.png", url: "" },
@@ -641,7 +780,7 @@ const publications = [
         abstract: 'Patients with chronic conditions are usually advised or are selfmotivated to track their health data at home and present this data to the healthcare providers during clinical visits. However, often these patient-generated data collections are large, complex and individual. These characteristics make it challenging and time-consuming for providers to understand this data during short clinical visits. We interviewed four diabetes patients and obtained a sample of their data collections to understand their personal lifestyle and perspectives on the process of tracking, recording, and presenting their data. Based on the information we gathered from patients in our study, we designed various personal visualizations tailored to them.',
         title: "Personal Patient-Generated Data Visualizations for Diabetes Patients",
         authors: [
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Charles Perin", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: " Lora Oehlberg", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: " Sheelagh Carpendale", imgSrc: "images/studentImages/dummy.png", url: "" }
@@ -661,7 +800,7 @@ const publications = [
         abstract: 'While patients increasing willingness to collect personal health data portends improvements in the individualization of health care, helping health care providers to effectively act upon these personal data collections poses its own challenges. In this paper, we discuss the challenges we have noticed as we work towards the creation of tools to help chronic patients present their data to their clinicians.',
         title: "The challenges of individuality to technology approaches to personally collected health data",
         authors: [
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Charles Perin", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Lora Oehlberg", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Sheelagh Carpendale", imgSrc: "images/studentImages/dummy.png", url: "" }
@@ -677,7 +816,7 @@ const publications = [
         abstract: 'We provide an integrated view of patients and clinicians perspectives on the communication challenges faced when patients present their medical issues to the clinicians. By combining the results of a literature review from both the HCI and medical literature with the results of clinician interviews explicitly about in-clinic communication issues, we are able to offer a more complete picture of these crucial in-clinic communication challenges. We discuss similarities and subtle but important differences between patients and clinicians perspectives. While patients and clinicians are often talking about the same issue, we found that they differ considerably in opinion and attitude. Drawing upon these subtle yet significant differences and ideas raised by the interviewed clinicians, we offer research suggestions for the design of future in-clinic communication tools.',
         title: "Differences That Matter: In-Clinic Communication Challenges",
         authors: [
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Charles Perin", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Jo Vermeulen", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Haley MacLeod", imgSrc: "images/studentImages/dummy.png", url: "" },
@@ -700,7 +839,7 @@ const publications = [
             { name: "Alice Thudt", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Jagoda Walny", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Charles Perin", imgSrc: "images/studentImages/dummy.png", url: "" },
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Lindsay MacDonald", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Riane Vardeleon", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Saul Greenberg", imgSrc: "images/studentImages/dummy.png", url: "" },
@@ -710,14 +849,14 @@ const publications = [
         category:"data"
     },
     {
-        imgSrc: "images/research//handm/qual.jpg",
+        imgSrc: "images/research/handm/qual.jpg",
         event: "WISH '16",
         award: "",
         downloadLink: 'https://inria.hal.science/hal-01587993/file/2016_CHI_involving_patients-wish.pdf',
         abstract: 'In this paper, we present the results of a series of qualitative studies involving patients and care providers to explore opportunities for involving patients in their care. Empowering patients in their own care can facilitate the treatment process, increase patients’ quality of life, and support patients in reaching their goals. A cultural shift towards patient centered care is currently underway, however, at least in Canada, there is still much to be done. Through interviews and focus groups with patients and care providers, we aim to contribute to this cultural shift by identifying three areas of opportunity to involve patients in their own care and be a part of their care team. We then describe potential technology solutions to address these opportunities.',
         title: "Involving Patients in their Care Plan: Patients' and Care providers' Perspectives",
         authors: [
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Charles Perin", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Julie Babione", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Maria Santana", imgSrc: "images/studentImages/dummy.png", url: "" },
@@ -737,7 +876,7 @@ const publications = [
         abstract: 'A driving force behind the design of increasingly large and high resolution displays (LHRDs) has been the need to support the explosion of data in the natural sciences such as physics, chemistry, and biology. However, our experience with an LHRD accessible to researchers across multiple disciplines has shown that they are useful for a wide range of research activities involving large images and data. \ We conducted in-context, semi-structured interviews with researchers from a variety of disciplines about their experiences using the LHRD with their own data. Notably, it became apparent that the size and resolution of the LHRD supported a multitude of activities related to observation, for which zooming or other enlargement methods on standard resolution screens were not sufficient. The interview findings lead to implications for further research into supporting a broader range of disciplines in using large, high-resolution displays.',
         title: "Understanding researchers' use of a large, high-resolution display across disciplines",
         authors: [
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Jagoda Walny", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "Carrie Mah", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: "John Brosz", imgSrc: "images/studentImages/dummy.png", url: "" },
@@ -754,7 +893,7 @@ const publications = [
         abstract: 'WESt is a visualization for surgery waiting times applied to the province of British Columbia (BC) in Canada. This project is motivated by the long waiting time for surgeries in BC, which has the potential to put patients in danger and put extra pressure on clinicians [2]. WESt helps patients select a hospital and a physician, and to explore their options to get their surgery as soon as possible.',
         title: "WESt: Visualizing non-Emergency Surgery Waiting Times",
         authors: [
-            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "peopleDetails.html?type=prof&people=fateme" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" },
             { name: "Charles Perin", imgSrc: "images/studentImages/dummy.png", url: "" },
             { name: " Sheelagh Carpendale", imgSrc: "images/studentImages/dummy.png", url: "" }
         ],

@@ -1,0 +1,433 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Research – HealthVisFutures Lab</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		/* ─── Research area cards ─────────────────────── */
+		.area-grid {
+			display: grid; grid-template-columns: repeat(5, 1fr);
+			gap: 12px; margin-bottom: 2em;
+		}
+		.area-card {
+			position: relative; border-radius: 6px; overflow: hidden;
+			cursor: pointer;
+			box-shadow: 0 0 0 3px transparent;
+			transition: box-shadow 0.18s, transform 0.18s, opacity 0.18s;
+			opacity: 0.72;
+		}
+		.area-card:hover { transform: translateY(-3px); opacity: 0.88; }
+		.area-card.active {
+			box-shadow: 0 0 0 3px #2d3748;
+			opacity: 1;
+		}
+		.area-card img {
+			width: 100%; height: 140px; object-fit: cover; display: block;
+			filter: brightness(0.58); transition: filter 0.18s;
+		}
+		.area-card:hover img { filter: brightness(0.48); }
+		.area-card.active img { filter: brightness(0.38); }
+
+		/* All card — 2×2 collage */
+		.all-collage {
+			display: grid; grid-template-columns: 1fr 1fr;
+			height: 140px;
+		}
+		.all-collage img {
+			width: 100%; height: 70px; object-fit: cover;
+			display: block; filter: brightness(0.52);
+			transition: filter 0.18s;
+		}
+		.area-card:hover .all-collage img { filter: brightness(0.42); }
+		.area-card.active .all-collage img { filter: brightness(0.32); }
+
+		.area-label {
+			position: absolute; bottom: 0; left: 0; right: 0;
+			padding: 8px 8px 8px;
+			background: linear-gradient(transparent, rgba(15,30,55,0.9));
+			color: #fff; text-align: center;
+		}
+		.area-label span {
+			display: block; font-size: 0.76em; font-weight: 700; line-height: 1.25;
+		}
+		.area-label small { font-size: 0.65em; opacity: 0.75; font-weight: 400; }
+		.area-card.active .area-label::after {
+			content: '✓'; display: block;
+			font-size: 0.7em; margin-top: 3px; opacity: 0.9;
+		}
+
+		@media (max-width: 900px) { .area-grid { grid-template-columns: repeat(3, 1fr); } }
+		@media (max-width: 560px) { .area-grid { grid-template-columns: repeat(2, 1fr); } }
+
+		/* ─── Year divider ────────────────────────────── */
+		.year-group { margin-bottom: 1.8em; }
+		.year-divider {
+			font-size: 1em; font-weight: 700; color: #333;
+			border-bottom: 2px solid #2d3748;
+			padding-bottom: 4px; margin-bottom: 1em;
+		}
+
+		/* ─── Publication list items ──────────────────── */
+		.pub-item {
+			padding: 16px 8px; border-bottom: 1px solid #e8e8e8;
+			cursor: pointer; transition: background 0.15s;
+		}
+		.pub-item:last-child { border-bottom: none; }
+		.pub-item:hover { background: #f8f8f8; }
+		.pub-item:hover .pub-list-title { color: #2d3748; }
+		.pub-list-img {
+			width: 100%; height: auto; border-radius: 4px;
+			transition: opacity 0.18s;
+		}
+		.pub-item:hover .pub-list-img { opacity: 0.88; }
+		.pub-badges { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 8px; }
+		.pub-event {
+			font-size: 0.72em; font-weight: 700; padding: 3px 11px;
+			border-radius: 20px; background: #2d3748; color: #fff;
+		}
+		.pub-award {
+			font-size: 0.72em; font-weight: 600; padding: 3px 11px;
+			border-radius: 20px; background: #fff8e6; color: #8a6500;
+		}
+		.pub-list-title {
+			font-size: 0.96em; font-weight: 700; color: #333;
+			margin: 0 0 7px; line-height: 1.4;
+			transition: color 0.15s;
+		}
+		.pub-list-authors {
+			font-size: 0.8em; color: #777; margin: 0 0 4px; line-height: 1.5;
+		}
+		.pub-list-venue {
+			font-size: 0.78em; font-style: italic; color: #aaa; margin: 0;
+		}
+
+		/* ─── Modal ───────────────────────────────────── */
+		#pubModal .modal-dialog { max-width: min(94vw, 980px); }
+		#pubModal .modal-content { border: none; border-radius: 8px; overflow: hidden; }
+		#pubModal .modal-header {
+			background: #2d3748; padding: 1.1em 1.4em; border: none;
+			display: flex; align-items: flex-start; justify-content: space-between;
+			gap: 12px;
+		}
+		#pubModal .modal-title {
+			font-size: 1em; font-weight: 700; color: #fff; line-height: 1.5;
+			flex: 1; min-width: 0; margin: 0; padding-right: 0;
+		}
+		#pubModal .close {
+			color: #fff; opacity: 0.75; text-shadow: none;
+			font-size: 1.35rem; font-weight: 400; line-height: 1;
+			background: none; border: none; border-radius: 4px;
+			min-width: 0; width: 32px; height: 32px;
+			padding: 0; margin: 0; margin-left: 0.5rem;
+			display: inline-flex; align-items: center; justify-content: center;
+			flex-shrink: 0; letter-spacing: normal;
+			-moz-appearance: none; -webkit-appearance: none; appearance: none;
+			transition: opacity 0.15s, background-color 0.15s;
+		}
+		#pubModal .close span { display: block; line-height: 1; }
+		#pubModal .close:hover {
+			opacity: 1; background: rgba(255, 255, 255, 0.12);
+			color: #fff !important;
+		}
+
+		.modal-paper-img {
+			width: 100%; max-height: 420px; object-fit: contain;
+			background: #f5f5f5; border-radius: 6px; display: block;
+			margin-bottom: 1.4em;
+		}
+		.modal-venue-row {
+			display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+			margin-bottom: 1em;
+		}
+		.modal-venue-text {
+			font-size: 0.82em; font-style: italic; color: #666;
+		}
+		.modal-authors-grid {
+			display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1.2em;
+		}
+		.modal-author-chip {
+			display: flex; align-items: center; gap: 7px;
+			background: #f1f1f1; border-radius: 20px;
+			padding: 4px 12px 4px 4px;
+			font-size: 0.8em; color: #444;
+		}
+		.modal-author-chip img {
+			width: 30px; height: 30px; border-radius: 50%;
+			object-fit: cover; flex-shrink: 0;
+		}
+		.modal-abstract-label {
+			font-size: 0.7em; font-weight: 700; text-transform: uppercase;
+			letter-spacing: 0.08em; color: #999; margin-bottom: 6px;
+		}
+		.modal-abstract {
+			font-size: 0.92em; color: #444; line-height: 1.8; margin: 0;
+		}
+		#pubModal .modal-footer { border-top: 1px solid #eee; padding: 0.8em 1.4em; }
+		.btn-read {
+			background: #2d3748; color: #fff; border: none;
+			padding: 7px 24px; border-radius: 4px;
+			font-size: 0.88em; font-weight: 700;
+			font-family: 'Source Sans Pro', sans-serif;
+			transition: background 0.15s; text-decoration: none;
+		}
+		.btn-read:hover { background: #1a202c; color: #fff; text-decoration: none; }
+		#pubModal .btn-close-modal {
+			background: none; border: none; color: #888;
+			font-size: 0.88em; font-weight: 600; cursor: pointer;
+			padding: 7px 14px; margin: 0;
+			min-width: 0; width: auto; line-height: 1.4;
+			letter-spacing: normal; text-align: center;
+			border-radius: 4px;
+			font-family: 'Source Sans Pro', sans-serif;
+			-moz-appearance: none; -webkit-appearance: none; appearance: none;
+			transition: color 0.15s, background-color 0.15s;
+		}
+		#pubModal .btn-close-modal:hover {
+			color: #444 !important;
+			background: #f0f0f0;
+		}
+
+		.no-pubs { text-align: center; padding: 3em 0; color: #999; }
+
+		@media (max-width: 768px) {
+			.area-grid { grid-template-columns: 1fr 1fr; }
+		}
+	</style>
+</head>
+<body class="is-preload">
+<div id="page-wrapper">
+
+	<div id="header">
+		<nav id="nav">
+			<span><a href="index.html"><img class="logo" src="images/2022HVF-Logos-Transparent_Horizontal-DarkBlueBG.svg" alt="Logo"></a></span>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li id="logo" class="current"><a href="research-publications.html">Research</a></li>
+				<li><a href="teaching.html">Teaching</a></li>
+				<li>
+					<a href="people.html">People</a>
+					<ul>
+						<li><a onclick="selectPeople('professors')">Faculty</a></li>
+						<li><a onclick="selectPeople('postdoc')">Postdoctoral Researcher</a></li>
+						<li><a onclick="selectPeople('grad')">Graduate Students</a></li>
+						<li><a onclick="selectPeople('undergrad')">Undergraduate Students</a></li>
+						<li><a onclick="selectPeople('ra')">Research Assistant</a></li>
+						<li><a onclick="selectPeople('alumni')">Alumni</a></li>
+						<li><a onclick="selectPeople('past')">Past Contributors</a></li>
+					</ul>
+				</li>
+				<li><a href="join-our-lab.html">Join Our Lab</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<section class="wrapper style1">
+		<div class="container">
+			<div id="content">
+
+				<header><h2>Research Areas</h2></header>
+
+				<!-- Area filter cards -->
+				<div class="area-grid" id="areaGrid">
+					<div class="area-card active" data-cat="all">
+						<div class="all-collage">
+							<img src="images/research/hci.png" alt="">
+							<img src="images/research/vis.png" alt="">
+							<img src="images/research/handm.png" alt="">
+							<img src="images/research/ai.png" alt="">
+						</div>
+						<div class="area-label"><span>All Publications</span><small id="cnt-all"></small></div>
+					</div>
+					<div class="area-card" data-cat="human">
+						<img src="images/research/hci.png" alt="">
+						<div class="area-label"><span>Human-Computer Interaction</span><small id="cnt-human"></small></div>
+					</div>
+					<div class="area-card" data-cat="data">
+						<img src="images/research/vis.png" alt="">
+						<div class="area-label"><span>Data Visualization</span><small id="cnt-data"></small></div>
+					</div>
+					<div class="area-card" data-cat="health">
+						<img src="images/research/handm.png" alt="">
+						<div class="area-label"><span>Health &amp; Medicine</span><small id="cnt-health"></small></div>
+					</div>
+					<div class="area-card" data-cat="ai">
+						<img src="images/research/ai.png" alt="">
+						<div class="area-label"><span>Artificial Intelligence</span><small id="cnt-ai"></small></div>
+					</div>
+				</div>
+
+				<div id="pubContainer"></div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Publication popup modal -->
+	<div class="modal fade" id="pubModal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+			<div class="modal-content">
+
+				<div class="modal-header align-items-start">
+					<h5 class="modal-title" id="modalTitle"></h5>
+					<button type="button" class="close ml-2" data-dismiss="modal"><span>&times;</span></button>
+				</div>
+
+				<div class="modal-body" style="padding: 1.8em 2em;">
+
+					<!-- Venue + award badges -->
+					<div class="modal-venue-row" id="modalVenueRow">
+						<span id="modalEventBadge" class="pub-event"></span>
+						<span id="modalAwardBadge" class="pub-award" style="display:none;"></span>
+						<span class="modal-venue-text" id="modalVenue"></span>
+					</div>
+
+					<!-- Authors -->
+					<div class="modal-authors-grid" id="modalAuthors"></div>
+
+					<hr style="border-color:#eee; margin: 0.8em 0 1em;">
+
+					<!-- Abstract -->
+					<div class="modal-abstract-label">Abstract</div>
+					<p class="modal-abstract" id="modalAbstract"></p>
+
+					<!-- Image at bottom -->
+					<img id="modalImg" src="" alt="" class="modal-paper-img" style="margin-top: 1.6em; margin-bottom: 0;">
+
+				</div>
+
+				<div class="modal-footer">
+					<a id="modalLink" href="#" target="_blank" rel="noopener" class="btn-read">Read Paper &rarr;</a>
+					<button type="button" class="btn-close-modal" data-dismiss="modal">Close</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="publicationsData.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script>
+	function selectPeople(loc) { window.location = 'people.html?people=' + loc; }
+
+	const cats = ['all', 'human', 'data', 'health', 'ai'];
+
+	function matchesCat(pub, cat) {
+		if (cat === 'all') return true;
+		return Array.isArray(pub.category) ? pub.category.includes(cat) : pub.category === cat;
+	}
+
+	function getYear(pub) {
+		const m = (pub.event || '').match(/\d{2,4}/);
+		if (!m) return 0;
+		const y = parseInt(m[0]);
+		return y < 100 ? 2000 + y : y;
+	}
+
+	function openModal(pub) {
+		document.getElementById('modalTitle').textContent = pub.title;
+		document.getElementById('modalImg').src = pub.imgSrc;
+		document.getElementById('modalLink').href = pub.downloadLink;
+		document.getElementById('modalVenue').textContent = pub.additionalDetails || '';
+		document.getElementById('modalAbstract').textContent = pub.abstract || 'Abstract not available.';
+		document.getElementById('modalEventBadge').textContent = pub.event;
+
+		const awardEl = document.getElementById('modalAwardBadge');
+		if (pub.award) {
+			awardEl.innerHTML = '&#9733; ' + pub.award;
+			awardEl.style.display = '';
+		} else {
+			awardEl.style.display = 'none';
+		}
+
+		document.getElementById('modalAuthors').innerHTML = pub.authors.map(a =>
+			`<span class="modal-author-chip">
+				<img src="${a.imgSrc}" alt="">
+				<span>${a.name}</span>
+			</span>`
+		).join('');
+
+		$('#pubModal').modal('show');
+	}
+
+	function buildItem(pub) {
+		const awardHtml = pub.award
+			? `<span class="pub-award"><i class="fas fa-award"></i> ${pub.award}</span>` : '';
+		const authorNames = pub.authors.map(a => a.name).join(', ');
+
+		const item = document.createElement('div');
+		item.className = 'pub-item';
+		item.innerHTML = `
+			<div class="row align-items-center">
+				<div class="col-md-3">
+					<img class="pub-list-img" src="${pub.imgSrc}" alt="">
+				</div>
+				<div class="col-md-9">
+					<div class="pub-badges">
+						<span class="pub-event">${pub.event}</span>${awardHtml}
+					</div>
+					<p class="pub-list-title">${pub.title}</p>
+					<p class="pub-list-authors">${authorNames}</p>
+					<p class="pub-list-venue">${pub.additionalDetails || ''}</p>
+				</div>
+			</div>`;
+		item.addEventListener('click', () => openModal(pub));
+		return item;
+	}
+
+	function render(cat) {
+		const container = document.getElementById('pubContainer');
+		container.innerHTML = '';
+
+		const filtered = publications.filter(p => matchesCat(p, cat));
+		if (!filtered.length) {
+			container.innerHTML = '<p class="no-pubs">No publications found.</p>';
+		} else {
+			const byYear = {};
+			filtered.forEach(pub => {
+				const y = getYear(pub);
+				if (!byYear[y]) byYear[y] = [];
+				byYear[y].push(pub);
+			});
+			Object.keys(byYear).sort((a, b) => b - a).forEach(y => {
+				const group = document.createElement('div');
+				group.className = 'year-group';
+				group.innerHTML = `<div class="year-divider">${parseInt(y) > 0 ? y : 'Earlier'}</div>`;
+				byYear[y].forEach(pub => group.appendChild(buildItem(pub)));
+				container.appendChild(group);
+			});
+		}
+
+		document.querySelectorAll('.area-card').forEach(c =>
+			c.classList.toggle('active', c.dataset.cat === cat)
+		);
+	}
+
+	cats.forEach(cat => {
+		const count = publications.filter(p => matchesCat(p, cat)).length;
+		const el = document.getElementById('cnt-' + cat);
+		if (el) el.textContent = count + ' paper' + (count !== 1 ? 's' : '');
+	});
+
+	document.getElementById('areaGrid').addEventListener('click', e => {
+		const card = e.target.closest('.area-card');
+		if (card) render(card.dataset.cat);
+	});
+
+	const urlCat = new URLSearchParams(window.location.search).get('from');
+	render((urlCat && cats.includes(urlCat)) ? urlCat : 'all');
+</script>
+</body>
+</html>
