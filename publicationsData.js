@@ -1,6 +1,21 @@
 const publications = [
     // Year: 2026
     {
+        imgSrc: "images/research/handm/CRApplication.png",
+        event: "IH'26",
+        award: "",
+        title: "What Patients Want: Developing a Multifaceted Cardiovascular Rehabilitation Application",
+        downloadLink: "https://doi.org/10.1145/3786579.3804918",
+        abstract: "Cardiovascular rehabilitation (CR) is a critical element of cardiovascular treatment. However, existing CR mobile health applications do not account for all elements of CR in their design and are often developed with limited patient input. In this paper, we report the results of a user-centred design process to develop a CR application. We hosted co-design and feedback sessions with patients and caregivers to gather an understanding of patients’ needs and create low- and medium-fidelity prototypes of a CR support application. We present the design requirements and design details of our prototypes. Our work identifies that CR applications need to include a broader range of CR program elements. Furthermore, future CR applications should incorporate patients’ perspectives at all stages of the design process.",
+        authors: [
+            { name: "Darwin Jull", imgSrc: "images/studentImages/Darwin1.jpeg", url: "person.html?key=darwin-jull2" },
+            { name: "Helene Fournier", imgSrc: "images/studentImages/dummy.png", url: "" },
+            { name: "Fateme Rajabiyazdi", imgSrc: "images/profImages/Fateme.jpg", url: "person.html?key=fateme" }
+        ],
+        additionalDetails: "Proceedings of the 2026 ACM Interactive Health Conference, Article No. 64, Pages 1–5",
+        category: "health"
+    },
+    {
         imgSrc: "images/research/vis/inputVis.png",
         event: "EuroVis'26",
         award: "",
