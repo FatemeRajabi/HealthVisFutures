@@ -58,6 +58,7 @@
 						<li><a onclick="selectPeople('postdoc')">Postdoctoral Researcher</a></li>
 						<li><a onclick="selectPeople('grad')">Graduate Students</a></li>
 						<li><a onclick="selectPeople('undergrad')">Undergraduate Students</a></li>
+						<li><a onclick="selectPeople('ra')">Research Assistant</a></li>
 						<li><a onclick="selectPeople('alumni')">Alumni</a></li>
 						<li><a onclick="selectPeople('past')">Past Contributors</a></li>
 					</ul>
@@ -88,6 +89,11 @@
 			<div class="group-section" id="undergrad">
 				<div class="group-label">Undergraduate Students</div>
 				<div class="row" id="undergradGrid"></div>
+			</div>
+
+			<div class="group-section" id="ra">
+				<div class="group-label">Research Assistant</div>
+				<div class="row" id="raGrid"></div>
 			</div>
 
 			<div class="group-section" id="alumni">
@@ -124,44 +130,46 @@ const PEOPLE_LIST = {
 		{ name: "Dr. Foroozan Daneshzand", role: "Postdoctoral Researcher", imgsrc: "images/studentImages/Foroozan.png", link: "foroozan-daneshzand" }
 	],
 	grads: [
-		{ name: "Shri Harini Ramesh", role: "PhD – Computer Science", imgsrc: "images/studentImages/Shri2.jpg", link: "shri-Harini" },
 		{ name: "Falah Sheikh", role: "MSc – Computer Science", imgsrc: "images/studentImages/FalahSheikh.jpg", link: "falah-sheikh" },
-		{ name: "Tim Mammadov", role: "PhD – Computer Science", imgsrc: "images/studentImages/TimMammadov.jpg", link: "tim-mammadov" },
-		{ name: "Darwin Jull", role: "MASc – Biomedical Engineering", imgsrc: "images/studentImages/Darwin1.jpeg", link: "darwin-jull2" }
+		{ name: "Shri Harini Ramesh", role: "PhD – Computer Science", imgsrc: "images/studentImages/Shri2.jpg", link: "shri-Harini" },
+		{ name: "Tim Mammadov", role: "PhD – Computer Science", imgsrc: "images/studentImages/TimMammadov.jpg", link: "tim-mammadov" }
 	],
 	undergrads: [
-		{ name: "Grace Ilori", role: "Computer Science", imgsrc: "images/studentImages/Grace.png", link: "grace-ilori" },
-		{ name: "Essa Dietzhoff", role: "Visiting Undergraduate Researcher – Computer Science", imgsrc: "images/studentImages/Essa.jpeg", link: "essa-dietzhoff" },
-		{ name: "Muhammad Ahmad", role: "Computer Science", imgsrc: "images/studentImages/Muhammed.png", link: "muhammad-ahmad" },
 		{ name: "Dhruv Pujara", role: "Computer Science (Honours)", imgsrc: "images/studentImages/DhruvPujara.jpg", link: "dhruv-pujara" }
 	],
+	ra: [
+		{ name: "Ben Shi", role: "Doctor of Medicine (MD)", imgsrc: "images/studentImages/BenShi.jpg", link: "ben-shi" }
+	],
 	alumni: [
-		{ name: "Hareem Arif", role: "Undergrad – Computer Science", imgsrc: "images/studentImages/Hareem.jpg", link: "hareem-arif" },
-		{ name: "Connor Haberl", role: "MASc – Biomedical Engineering", imgsrc: "images/studentImages/Connor.jpg", link: "connor-haberl" },
-		{ name: "Mahsa Sinaei", role: "MASc – Systems & Computer Engineering", imgsrc: "images/studentImages/Mahsa3.png", link: "mahsa-sinaei" },
-		{ name: "Matteo Sotelo", role: "MASc – Information Technology", imgsrc: "images/studentImages/Matteo.png", link: "matteo" },
-		{ name: "Kosiso Igbokwe", role: "Undergrad – Computer Science", imgsrc: "images/studentImages/Kosiso.jpg", link: "kosiso-igbokwe" },
-		{ name: "Dr. Elahe Khorasani", role: "Postdoc (Co-supervised w/ Dr. Fiore)", imgsrc: "images/studentImages/Elaheh2.jpg", link: "elaheh-khorasani" },
-		{ name: "Mia Cornell", role: "Undergrad – Electrical Engineering", imgsrc: "images/studentImages/mia.jpg", link: "mia" },
-		{ name: "Esosa Ohangbon", role: "Undergrad – Software Engineering", imgsrc: "images/studentImages/esosa.png", link: "esosa-ohangbon" },
-		{ name: "Roshan Faisal Zaki", role: "Masters – Electrical & Computer Engineering", imgsrc: "images/studentImages/Roshan.jpeg", link: "roshan" },
-		{ name: "Mariana Perez Rodriguez", role: "Master of Design", imgsrc: "images/studentImages/Mariana.jpg", link: "mariana-perez-rodriguez" },
-		{ name: "Darwin Jull", role: "Undergrad – Biomedical Engineering", imgsrc: "images/studentImages/Darwin1.jpeg", link: "darwin-jull" },
 		{ name: "Abhishek Ahuja", role: "Software Engineering", imgsrc: "images/studentImages/AbhishekAhuja.jpg", link: "abishekahuja" },
-		{ name: "Beck Langstone", role: "MASc – Human-Computer Interaction", imgsrc: "images/studentImages/Beck2.jpg", link: "beck-langstone" },
-		{ name: "Alicia Ouskine", role: "MASc – Human-Computer Interaction", imgsrc: "images/studentImages/Alicia.jpg", link: "alicia-ouskine" },
 		{ name: "Alaa Alsatari", role: "Neuroscience & Mental Health", imgsrc: "images/studentImages/Alaa2.png", link: "alaa-alsatari" },
-		{ name: "Paddy Greene", role: "Biomedical Engineering", imgsrc: "images/studentImages/Paddy2.jpg", link: "paddy-greene" },
-		{ name: "Erin Lui-Hing", role: "Biomedical Engineering", imgsrc: "images/studentImages/Erin.jpeg", link: "erin-lui-hing" },
+		{ name: "Alicia Ouskine", role: "MASc – Human-Computer Interaction", imgsrc: "images/studentImages/Alicia.jpg", link: "alicia-ouskine" },
 		{ name: "Arsh Saleem", role: "Biomedical Engineering", imgsrc: "images/studentImages/Arsh.jpg", link: "arsh" },
-		{ name: "Rahel Gunaratne", role: "Software Engineering", imgsrc: "images/studentImages/Rahel.jpg", link: "rahel" }
+		{ name: "Beck Langstone", role: "MASc – Human-Computer Interaction", imgsrc: "images/studentImages/Beck2.jpg", link: "beck-langstone" },
+		{ name: "Connor Haberl", role: "MASc – Biomedical Engineering", imgsrc: "images/studentImages/Connor.jpg", link: "connor-haberl" },
+		{ name: "Darwin Jull", role: "MASc – Biomedical Engineering", imgsrc: "images/studentImages/Darwin1.jpeg", link: "darwin-jull2" },
+		{ name: "Dr. Elahe Khorasani", role: "Postdoc (Co-supervised w/ Dr. Fiore)", imgsrc: "images/studentImages/Elaheh2.jpg", link: "elaheh-khorasani" },
+		{ name: "Erin Lui-Hing", role: "Biomedical Engineering", imgsrc: "images/studentImages/Erin.jpeg", link: "erin-lui-hing" },
+		{ name: "Esosa Ohangbon", role: "Undergrad – Software Engineering", imgsrc: "images/studentImages/esosa.png", link: "esosa-ohangbon" },
+		{ name: "Essa Dietzhoff", role: "Visiting Undergraduate Researcher – Computer Science", imgsrc: "images/studentImages/Essa.jpeg", link: "essa-dietzhoff" },
+		{ name: "Grace Ilori", role: "Computer Science", imgsrc: "images/studentImages/Grace.png", link: "grace-ilori" },
+		{ name: "Hareem Arif", role: "Undergrad – Computer Science", imgsrc: "images/studentImages/Hareem.jpg", link: "hareem-arif" },
+		{ name: "Kosiso Igbokwe", role: "Undergrad – Computer Science", imgsrc: "images/studentImages/Kosiso.jpg", link: "kosiso-igbokwe" },
+		{ name: "Mahsa Sinaei", role: "MASc – Systems & Computer Engineering", imgsrc: "images/studentImages/Mahsa3.png", link: "mahsa-sinaei" },
+		{ name: "Mariana Perez Rodriguez", role: "Master of Design", imgsrc: "images/studentImages/Mariana.jpg", link: "mariana-perez-rodriguez" },
+		{ name: "Matteo Sotelo", role: "MASc – Information Technology", imgsrc: "images/studentImages/Matteo.png", link: "matteo" },
+		{ name: "Mia Cornell", role: "Undergrad – Electrical Engineering", imgsrc: "images/studentImages/mia.jpg", link: "mia" },
+		{ name: "Muhammad Ahmad", role: "Computer Science", imgsrc: "images/studentImages/Muhammed.png", link: "muhammad-ahmad" },
+		{ name: "Paddy Greene", role: "Biomedical Engineering", imgsrc: "images/studentImages/Paddy2.jpg", link: "paddy-greene" },
+		{ name: "Rahel Gunaratne", role: "Software Engineering", imgsrc: "images/studentImages/Rahel.jpg", link: "rahel" },
+		{ name: "Roshan Faisal Zaki", role: "Masters – Electrical & Computer Engineering", imgsrc: "images/studentImages/Roshan.jpeg", link: "roshan" }
 	],
 	past: [
-		{ name: "Daniil Kulik", role: "Master of Computer Science", imgsrc: "images/studentImages/dummy.png", link: "daniil" },
 		{ name: "Abhishek Mayurbhai Patel", role: "Master of Engineering", imgsrc: "images/studentImages/Abhishek2.png", link: "abhishek-mayurbhai-patel" },
-		{ name: "Sanhita Paluskar", role: "Master of Engineering", imgsrc: "images/studentImages/Sanhita.png", link: "sanhita" },
 		{ name: "Ali Shajari", role: "Bachelor of Arts", imgsrc: "images/studentImages/Ali.jpg", link: "ali-shajari" },
-		{ name: "Sam Serdah", role: "MASc – Data Science", imgsrc: "images/studentImages/Sam2.jpeg", link: "sam-serdah" }
+		{ name: "Daniil Kulik", role: "Master of Computer Science", imgsrc: "images/studentImages/dummy.png", link: "daniil" },
+		{ name: "Sam Serdah", role: "MASc – Data Science", imgsrc: "images/studentImages/Sam2.jpeg", link: "sam-serdah" },
+		{ name: "Sanhita Paluskar", role: "Master of Engineering", imgsrc: "images/studentImages/Sanhita.png", link: "sanhita" }
 	]
 };
 
@@ -192,12 +200,13 @@ renderGrid('profGrid',      PEOPLE_LIST.professors, 'col-md-6');
 renderGrid('postdocGrid',   PEOPLE_LIST.postdocs,   'col-md-6');
 renderGrid('gradGrid',      PEOPLE_LIST.grads,      'col-md-6');
 renderGrid('undergradGrid', PEOPLE_LIST.undergrads, 'col-md-6');
+renderGrid('raGrid',        PEOPLE_LIST.ra,         'col-md-6');
 renderGrid('alumniGrid',    PEOPLE_LIST.alumni,     'col-md-4', true);
 renderGrid('pastGrid',      PEOPLE_LIST.past,       'col-md-4', true);
 
 window.addEventListener('load', function() {
 	const sel = new URLSearchParams(window.location.search).get('people');
-	const map = { professors:'professors', postdoc:'postdoc', grad:'grad', undergrad:'undergrad', alumni:'alumni', past:'past', ra:'alumni' };
+	const map = { professors:'professors', postdoc:'postdoc', grad:'grad', undergrad:'undergrad', ra:'ra', alumni:'alumni', past:'past' };
 	const id = map[sel];
 	if (id) setTimeout(() => { const el = document.getElementById(id); if (el) el.scrollIntoView({ behavior:'smooth' }); }, 150);
 });
